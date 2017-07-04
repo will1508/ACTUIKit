@@ -30,7 +30,8 @@
   "scripts": {
     "postinstall": "node node_modules/patternlab-node/core/scripts/postinstall.js",
     "patternlab:serve": "grunt patternlab:serve",
-    "patternlab:watch": "grunt patternlab:watch"
+    "patternlab:watch": "grunt patternlab:watch",
+    "patternlab:build": "grunt patternlab:build"
   },
   "license": "MIT",
   "engines": {

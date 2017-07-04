@@ -7,7 +7,7 @@
 module.exports = function (grunt) {
 
   var path = require('path'),
-      argv = require('minimist')(process.argv.slice(2));
+    argv = require('minimist')(process.argv.slice(2));
 
   // load all grunt tasks
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -33,7 +33,7 @@ module.exports = function (grunt) {
   grunt.registerTask('patternlab', 'create design systems with atomic design', function (arg) {
 
     if (arguments.length === 0) {
-      pl.build(function(){}, getConfiguredCleanOption());
+      pl.build(function () { }, getConfiguredCleanOption());
     }
 
     if (arg && arg === 'version') {
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
     }
 
     if (arg && arg === "patternsonly") {
-      pl.patternsonly(function(){},getConfiguredCleanOption());
+      pl.patternsonly(function () { }, getConfiguredCleanOption());
     }
 
     if (arg && arg === "help") {
@@ -63,7 +63,17 @@ module.exports = function (grunt) {
 
 
   grunt.initConfig({
-
+    clean: ["source/css/style.css", "source/css/style.css.map"],
+    sass: {
+      dist: {
+        options: {
+          sourceMap: true
+        },
+        files: {
+          "source/css/style.css": "source/css/style.scss"
+        }
+      }
+    },
     /******************************************************
      * COPY TASKS
     ******************************************************/
@@ -72,7 +82,7 @@ module.exports = function (grunt) {
         files: [
           { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
           { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js.map', dest: path.resolve(paths().public.js) },
-          { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css', dest: path.resolve(paths().public.css) },        
+          { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css', dest: path.resolve(paths().public.css) },
           { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css.map', dest: path.resolve(paths().public.css) },
           { expand: true, cwd: path.resolve(paths().source.images), src: '**/*', dest: path.resolve(paths().public.images) },
           { expand: true, cwd: path.resolve(paths().source.fonts), src: '**/*', dest: path.resolve(paths().public.fonts) },
@@ -91,6 +101,7 @@ module.exports = function (grunt) {
         files: [
           path.resolve(paths().source.css + '**/*.css'),
           path.resolve(paths().source.styleguide + 'css/*.css'),
+          path.resolve(paths().source.css + '**/*.scss'),
           path.resolve(paths().source.patterns + '**/*'),
           path.resolve(paths().source.fonts + '/*'),
           path.resolve(paths().source.images + '/*'),
@@ -104,7 +115,7 @@ module.exports = function (grunt) {
     browserSync: {
       dev: {
         options: {
-          server:  path.resolve(paths().public.root),
+          server: path.resolve(paths().public.root),
           watchTask: true,
           watchOptions: {
             ignoreInitial: true,
@@ -152,9 +163,12 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.registerTask('default', ['patternlab', 'copy:main']);
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+
+  grunt.registerTask('default', ['clean', 'sass', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:build', ['patternlab', 'copy:main']);
   grunt.registerTask('patternlab:watch', ['patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['clean', 'sass', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 
 };

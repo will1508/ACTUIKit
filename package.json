@@ -7,10 +7,14 @@
     "bs-html-injector": "^3.0.0",
     "grunt": "~1.0.1",
     "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
     "minimist": "^1.2.0",
     "patternlab-node": "^2.0.0",
+    "sass": "^1.0.0-beta.1",
     "styleguidekit-assets-default": "^3.0.0",
     "styleguidekit-mustache-default": "^3.0.0"
   },
@@ -29,9 +33,9 @@
   "author": "Brian Muenzenmeyer",
   "scripts": {
     "postinstall": "node node_modules/patternlab-node/core/scripts/postinstall.js",
+    "patternlab:build": "grunt patternlab:build",
     "patternlab:serve": "grunt patternlab:serve",
-    "patternlab:watch": "grunt patternlab:watch",
-    "patternlab:build": "grunt patternlab:build"
+    "patternlab:watch": "grunt patternlab:watch"
   },
   "license": "MIT",
   "engines": {

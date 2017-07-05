@@ -1,0 +1,32 @@
+.views-exposed-form {
+  label {
+    margin-bottom: uikit-space(.25);
+    display: block;
+  }
+  .views-exposed-widget {
+    float: none;
+    padding: 0;
+  }
+	.form-item {
+		margin-bottom: uikit-space(.25);
+	}
+	.views-exposed-widget .form-submit {
+		margin-top: 0;
+	}
+}
+
+.views-widget-sort-sort_bef_combine {
+	border-bottom: solid 2px $uikit-colour-Primary;
+	margin-bottom: uikit-space(.75);
+}
+
+.form-type-bef-link {
+	display: inline-block;
+	a {
+  @extend .uikit-tags__item;
+		&.active {
+			color: #fff;
+			background: $uikit-colour-Primary;
+		}
+	}
+} 

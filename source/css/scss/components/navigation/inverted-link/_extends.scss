@@ -1,0 +1,19 @@
+// "Inverted" links
+//
+// Styles the "links" inverted colors on solid dark backgrounds.
+//
+// Markup: 
+//
+// Style guide: navigation.inverted-links
+
+.inverted-link,
+%inverted-link {
+	a {
+		border-bottom: 1px solid $uikit-colour-Link;
+		color: #fff;
+		&:hover,
+		&:focus {
+			color: $uikit-colour-Secondary;
+		}
+	}
+}

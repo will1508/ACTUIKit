@@ -1,0 +1,12 @@
+@mixin icon($icon, $size) {
+  font-size: $size;
+  content: $icon;
+}
+
+.icon {
+  font-family: "FontAwesome";
+  &--block {
+    display: block;
+  }
+}
+

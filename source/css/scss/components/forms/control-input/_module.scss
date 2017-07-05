@@ -1,0 +1,17 @@
+%uikit-form-item {
+  &--radio {
+    @extend %uikit-form-item--tight;
+  }
+
+  &--radio &__label,
+  &--radio__label {
+    display: inline;
+    font-weight: normal;
+  }
+
+  &--radio &__description,
+  &--radio__description {
+    margin-left: 1.4em;
+    @extend .uikit-text-input__hint;
+  }
+}

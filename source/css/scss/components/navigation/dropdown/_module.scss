@@ -1,0 +1,49 @@
+//--------------------------------------------------------------
+// Dropdown menu
+// Gets the main nav styling with dropdown menu styles
+//
+//-------------------------------------------------------------
+
+%uikit-dropdown {
+  // Child nav styling
+  @extend %uikit-sitenav;
+  display: none;
+  ul {
+    @extend .uikit-link-list;
+    display: block !important;
+    opacity: 1 !important;
+    width: auto !important;
+    padding: 0;
+    & > li {
+      margin: 0 0 0 uikit-space(.5);
+      font-size: 14px;
+    }
+  }
+  @include uikit-media(md) {
+    display: block;
+    ul {
+      position: absolute;
+      top: 0;
+      background: $uikit-colour-Background-5;
+      left: 0;
+      z-index: 5;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+      min-width: 250px;
+      & > li {
+        margin: 0;
+        font-size: 16px;
+        & > a {
+          padding: uikit-space(.5) uikit-space(.25);
+          border-bottom: 0;
+        }
+      }
+    }
+    // Hover rules
+    .sf-depth-1 > ul {
+      top: 100%;
+    }
+    ul.sf-hidden {
+      display: none !important;
+    }
+  }
+}  

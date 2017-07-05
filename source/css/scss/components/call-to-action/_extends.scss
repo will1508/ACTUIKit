@@ -1,0 +1,17 @@
+.block-bean-call-to-action,
+.bean-call-to-action {
+  p:last-of-type {
+    margin-bottom: uikit-space(1);
+  }
+  .field-name-field-link-to a {
+    @extend .uikit-cta-link;
+  } 
+}
+
+.title-sub .block-bean-call-to-action {
+  @extend .uikit-card;
+  .field-name-field-link-to a {
+    margin-bottom: 0;
+  }
+}
+

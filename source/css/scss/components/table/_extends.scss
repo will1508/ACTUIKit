@@ -1,0 +1,17 @@
+// Tables
+//
+// The `<table>` element displays tabular data in rows, columns, and cells.
+//
+// Markup: tables-table.twig
+//
+// Weight: 1
+//
+// Style guide: base.table
+
+table {
+  @extend %uikit-table;
+}
+
+.sticky-header {
+	background: #fff;
+}

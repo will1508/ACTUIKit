@@ -28,13 +28,13 @@
  $color-brand-green-dark: #3b4a20;
 
  /* Used in color-palette */
- $uikit-colour-Hero: #115361; //color variables (yes! the actual spelling doesn't have a u)
-$uikit-colour-Primary: #3F2583;
-$uikit-colour-Secondary: #00A3F0;
+$uikit-colour-Hero: #115361; //color variables (yes! the actual spelling doesn't have a u)
+$uikit-colour-Primary: #1B7991;
+$uikit-colour-Secondary: #313131;
 $uikit-colour-Background: #f0f3f5;
-$uikit-colour-Border: #ccc;
+$uikit-colour-Border: #555;
 $uikit-colour-Text: #313131;
-$uikit-colour-Link: #bbebff;
+$uikit-colour-Link: #5bcbe3;
 
 $uikit-colour-Error: #ff635c;
 $uikit-colour-Success: #0cac78;
@@ -117,8 +117,8 @@ $color-border: $color-gray-50;
     #TYPOGRAPHY
 \*------------------------------------*/
 
-$font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-$font-secondary : Georgia, Times, "Times New Roman", serif;
+$font : "Montserrat", "Helvetica", "Arial", sans-serif;
+$font-secondary : "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 
 $font-size-small : 0.75rem;
 $font-size-small-2 : 0.875rem;

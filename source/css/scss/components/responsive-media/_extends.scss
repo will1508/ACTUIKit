@@ -1,0 +1,21 @@
+// Embedded content
+//
+// Weight: 2
+//
+// Style guide: base.responsive
+
+// Image
+//
+// An `<img>` element represents an image.
+//
+// Markup: responsive-img.twig
+//
+// Style guide: base.responsive.img
+
+img,
+svg {
+  // Suppress the space beneath the baseline
+  // vertical-align: bottom;
+  @extend .uikit-responsive-media-img;
+	height: auto;
+}

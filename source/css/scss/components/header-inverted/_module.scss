@@ -1,0 +1,37 @@
+.uikit-header--dark {
+
+	// Inverted colours
+	h3, 
+	p,
+	a {
+		color: #fff;
+	}
+
+	// Inverted link style
+	a {
+		border-bottom: 1px solid $uikit-colour-Link;
+		&:hover,
+		&:focus {
+			color: $uikit-colour-Secondary;
+		}
+	}
+
+	// Inverted CTA links
+	.uikit-cta-link {
+		&:after {
+			background-image: uikit-svguri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+				<path fill="#fff" d="M128 64l-64 64-16-16 64-64"/>
+				<path fill="#fff" d="M128 64l-16 16-64-64L64 0"/>
+			</svg>');
+		}
+		&:hover,
+		&:focus {
+			&:after {
+				background-image: uikit-svguri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+					<path fill="#{$uikit-colour-Secondary}" d="M128 64l-64 64-16-16 64-64"/>
+					<path fill="#{$uikit-colour-Secondary}" d="M128 64l-16 16-64-64L64 0"/>
+				</svg>');
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.form-type-radio,
+.form-type-bef-radio {
+  @extend %uikit-form-item--radio;
+  input {
+    @extend .uikit-control-input__input;
+  }
+  label {
+    font-weight: 400;
+  }
+  .description {
+    @extend %uikit-form-item--radio__description;
+  }
+}
+
+.form-type-checkbox,
+.form-type-bef-checkbox {
+  @extend %uikit-form-item--radio;
+  input {
+    @extend .uikit-control-input__input;
+  }
+  label {
+    font-weight: 400;
+  }
+  .description {
+    @extend %uikit-form-item--radio__description;
+  }
+}

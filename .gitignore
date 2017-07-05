@@ -7,3 +7,5 @@ Thumbs.db
 .idea/
 public
 source/css/scss/vendors/*
+source/css/style.css
+source/css/style.css.map

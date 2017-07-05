@@ -5,6 +5,7 @@
 ******************************************************/
 
 module.exports = function (grunt) {
+  var theme = grunt.option('theme');
 
   var path = require('path'),
     argv = require('minimist')(process.argv.slice(2));
@@ -61,9 +62,48 @@ module.exports = function (grunt) {
     }
   });
 
+  updateConfig = function () {
+    // Copying patternlab files
+    var files = [
+      { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
+      { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js.map', dest: path.resolve(paths().public.js) },
+      { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css', dest: path.resolve(paths().public.css) },
+      { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css.map', dest: path.resolve(paths().public.css) },
+      { expand: true, cwd: path.resolve(paths().source.images), src: '**/*', dest: path.resolve(paths().public.images) },
+      { expand: true, cwd: path.resolve(paths().source.fonts), src: '**/*', dest: path.resolve(paths().public.fonts) },
+      { expand: true, cwd: path.resolve(paths().source.root), src: 'favicon.ico', dest: path.resolve(paths().public.root) },
+      { expand: true, cwd: path.resolve(paths().source.styleguide), src: ['*', '**'], dest: path.resolve(paths().public.root) },
+      // slightly inefficient to do this again - I am not a grunt glob master. someone fix
+      { expand: true, flatten: true, cwd: path.resolve(paths().source.styleguide, 'styleguide', 'css', 'custom'), src: '*.css)', dest: path.resolve(paths().public.styleguide, 'css') }
+    ]
+
+    // Copying theme files
+    var localSrc;
+
+    if (theme) {
+      cwd = paths().source.themes + '/' + theme;
+    } else {
+      cwd = paths().source.themes + '/default';
+    }
+
+    var themeDest = paths().source.themes + '/';
+
+    grunt.log.writeln('#####', theme, '####', themeDest);
+
+    themeFiles = [];
+    themeFiles.push({ expand: true, cwd: path.resolve(cwd), src: '*', dest: path.resolve(themeDest) });
+
+    grunt.log.writeln('****', themeFiles);
+
+    grunt.config('copy', {
+      main: { 'files': files },
+      theme: { 'files': themeFiles }
+    })
+  };
+
 
   grunt.initConfig({
-    clean: ["source/css/style.css", "source/css/style.css.map"],
+    clean: ["source/css/style.css", "source/css/style.css.map", "source/css/scss/themes/*.scss"],
     sass: {
       dist: {
         options: {
@@ -74,28 +114,6 @@ module.exports = function (grunt) {
         }
       }
     },
-    /******************************************************
-     * COPY TASKS
-    ******************************************************/
-    copy: {
-      main: {
-        files: [
-          { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
-          { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js.map', dest: path.resolve(paths().public.js) },
-          { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css', dest: path.resolve(paths().public.css) },
-          { expand: true, cwd: path.resolve(paths().source.css), src: '**/*.css.map', dest: path.resolve(paths().public.css) },
-          { expand: true, cwd: path.resolve(paths().source.images), src: '**/*', dest: path.resolve(paths().public.images) },
-          { expand: true, cwd: path.resolve(paths().source.fonts), src: '**/*', dest: path.resolve(paths().public.fonts) },
-          { expand: true, cwd: path.resolve(paths().source.root), src: 'favicon.ico', dest: path.resolve(paths().public.root) },
-          { expand: true, cwd: path.resolve(paths().source.styleguide), src: ['*', '**'], dest: path.resolve(paths().public.root) },
-          // slightly inefficient to do this again - I am not a grunt glob master. someone fix
-          { expand: true, flatten: true, cwd: path.resolve(paths().source.styleguide, 'styleguide', 'css', 'custom'), src: '*.css)', dest: path.resolve(paths().public.styleguide, 'css') }
-        ]
-      }
-    },
-    /******************************************************
-     * SERVER AND WATCH TASKS
-    ******************************************************/
     watch: {
       all: {
         files: [
@@ -159,6 +177,8 @@ module.exports = function (grunt) {
     }
   });
 
+  updateConfig();
+
   /******************************************************
    * COMPOUND TASKS
   ******************************************************/
@@ -166,9 +186,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('default', ['clean', 'sass', 'patternlab', 'copy:main']);
-  grunt.registerTask('patternlab:build', ['patternlab', 'copy:main']);
-  grunt.registerTask('patternlab:watch', ['patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['clean', 'sass', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('copytheme', ['cptheme' + theme]);
+
+  grunt.registerTask('default', ['clean', 'copy:theme', 'sass', 'patternlab', 'copy:main']);
+  grunt.registerTask('patternlab:build', ['copy:theme' ,'patternlab', 'copy:main']);
+  grunt.registerTask('patternlab:watch', ['copy:theme', 'patternlab', 'copy:main', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['clean', 'copy:theme', 'sass', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 
 };

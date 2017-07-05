@@ -16,7 +16,32 @@
     "patternlab-node": "^2.0.0",
     "sass": "^1.0.0-beta.1",
     "styleguidekit-assets-default": "^3.0.0",
-    "styleguidekit-mustache-default": "^3.0.0"
+    "styleguidekit-mustache-default": "^3.0.0",
+    "@gov.au/animate": "^0.1.2",
+    "@gov.au/body": "^0.1.0",
+    "@gov.au/breadcrumbs": "^0.1.0",
+    "@gov.au/buttons": "^0.3.0",
+    "@gov.au/callout": "^0.1.0",
+    "@gov.au/control-input": "^0.1.0",
+    "@gov.au/core": "^0.1.2",
+    "@gov.au/cta-link": "^0.1.0",
+    "@gov.au/direction-links": "^0.1.0",
+    "@gov.au/footer": "^0.1.0",
+    "@gov.au/grid-12": "^0.1.0",
+    "@gov.au/header": "^1.0.0",
+    "@gov.au/headings": "^0.1.0",
+    "@gov.au/inpage-nav": "^0.1.0",
+    "@gov.au/keyword-list": "^0.1.0",
+    "@gov.au/link-list": "^0.1.0",
+    "@gov.au/page-alerts": "^0.1.0",
+    "@gov.au/pancake": "^1.0.6",
+    "@gov.au/pancake-js": "^1.0.9",
+    "@gov.au/pancake-sass": "^1.1.0",
+    "@gov.au/responsive-media": "^0.1.0",
+    "@gov.au/select": "^0.1.0",
+    "@gov.au/skip-link": "^0.1.0",
+    "@gov.au/tags": "^0.1.0",
+    "@gov.au/text-inputs": "^0.1.0"
   },
   "keywords": [
     "Pattern Lab",
@@ -35,10 +60,39 @@
     "postinstall": "node node_modules/patternlab-node/core/scripts/postinstall.js",
     "patternlab:build": "grunt patternlab:build",
     "patternlab:serve": "grunt patternlab:serve",
-    "patternlab:watch": "grunt patternlab:watch"
+    "patternlab:watch": "grunt patternlab:watch",
+    "pancake": "node node_modules/@gov.au/pancake/bin/pancake"
   },
   "license": "MIT",
   "engines": {
     "node": ">=5.0"
+  },
+  "pancake": {
+    "auto-save": true,
+    "plugins": true,
+    "ignore": [],
+    "css": {
+      "minified": true,
+      "modules": false,
+      "browsers": [
+        "last 2 versions",
+        "ie 8",
+        "ie 9",
+        "ie 10"
+      ],
+      "location": "css/",
+      "name": false
+    },
+    "sass": {
+      "modules": false,
+      "location": "source/css/scss/vendors/",
+      "name": "_uikit.scss"
+    },
+    "js": {
+      "minified": true,
+      "modules": false,
+      "location": "pancake/js/",
+      "name": false
+    }
   }
 }

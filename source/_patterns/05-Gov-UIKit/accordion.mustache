@@ -1,0 +1,313 @@
+<h1 id="url">Test: accordion</h1>
+
+	<button onclick="return UIKIT.accordion.Open( document.querySelectorAll(&#39;.js-uikit-accordion&#39;) )">Open all</button>
+	<button onclick="return UIKIT.accordion.Close( document.querySelectorAll(&#39;.js-uikit-accordion&#39;) )">Close all</button>
+	<button onclick="return UIKIT.accordion.Toggle( document.querySelectorAll(&#39;.js-uikit-accordion&#39;) )">Toggle all</button>
+
+	<hr>
+
+
+	<div class="split-wrapper">
+		<div class="split">
+
+			<h2>Without body</h2>
+
+			<h3>Accordion open by default</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-default" class="uikit-accordion__title js-uikit-accordion" aria-controls="accordion-default" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body" id="accordion-default" aria-hidden="false">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">is</a> some accordion content
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion closed by default</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-closed" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-closed" aria-expanded="false" aria-selected="false" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-closed" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion slow</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-slow" class="uikit-accordion__title js-uikit-accordion" aria-controls="accordion-slow" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this, 1000 )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body" id="accordion-slow" aria-hidden="false">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion with all callbacks</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-callbacks" class="uikit-accordion__title js-uikit-accordion" aria-controls="accordion-callbacks" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this, undefined, {
+						onOpen: function() {
+							console.log(&#39;This function will run when an accordion opens&#39;);
+						},
+						afterOpen: function() {
+							console.log(&#39;This function will run after an accordion has opened&#39;);
+						},
+						onClose: function() {
+							console.log(&#39;This function will run when an accordion closes&#39;);
+						},
+						afterClose: function() {
+							console.log(&#39;This function will run after an accordion has closed&#39;);
+						},
+					} )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body" id="accordion-callbacks" aria-hidden="false">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion group</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-stacked1" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-stacked1" aria-expanded="false" aria-selected="false" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+						First accordion title
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked1" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+
+						<p>Here is some accordion content</p>
+
+						<section class="uikit-accordion">
+							<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#inner-accordion" class="uikit-accordion__title js-uikit-accordion" aria-controls="inner-accordion" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+									A nested accordion
+							</a>
+
+							<div class="uikit-accordion__body" id="inner-accordion" aria-hidden="false">
+								<div class="uikit-accordion__body-wrapper">
+									Here is some <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">accordion</a> content
+								</div>
+							</div>
+
+						</section>
+
+						<p>Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.</p>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-stacked2" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-stacked2" aria-expanded="false" aria-selected="false" onclick="return UIKIT.accordion.Toggle( this )">
+						Another accordion
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked2" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+						<p>Here is some accordion content</p>
+						<p>Here is some <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">accordion</a> content</p>
+						<p>Here is some accordion content</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-stacked3" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-stacked3" aria-expanded="false" aria-selected="false" onclick="return UIKIT.accordion.Toggle( this )">
+						Accordion with words and words and a very long title so that it can break into several
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked3" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+						<p>Here is some accordion content</p>
+						<p>Here is some <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">accordion</a> content</p>
+						<p>Here is some accordion content</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="split uikit-body">
+
+			<h2>With body</h2>
+
+			<h3>Accordion open by default</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-default-grid" class="uikit-accordion__title js-uikit-accordion" aria-controls="accordion-default-grid" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body" id="accordion-default-grid" aria-hidden="false">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">is</a> some accordion content
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion closed by default</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-closed-grid" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-closed-grid" aria-expanded="false" aria-selected="false" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-closed-grid" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion slow</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-slow-grid" class="uikit-accordion__title js-uikit-accordion" aria-controls="accordion-slow-grid" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this, 1000 )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body" id="accordion-slow-grid" aria-hidden="false">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion with all callbacks</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-callbacks-grid" class="uikit-accordion__title js-uikit-accordion" aria-controls="accordion-callbacks-grid" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this, undefined, {
+						onOpen: function() {
+							console.log(&#39;This function will run when an accordion opens&#39;);
+						},
+						afterOpen: function() {
+							console.log(&#39;This function will run after an accordion has opened&#39;);
+						},
+						onClose: function() {
+							console.log(&#39;This function will run when an accordion closes&#39;);
+						},
+						afterClose: function() {
+							console.log(&#39;This function will run after an accordion has closed&#39;);
+						},
+					} )">
+						Accordion title
+				</a>
+
+				<div class="uikit-accordion__body" id="accordion-callbacks-grid" aria-hidden="false">
+					<div class="uikit-accordion__body-wrapper">
+
+						Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.
+
+					</div>
+				</div>
+			</section>
+
+
+			<hr>
+			<h3>Accordion group</h3>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-stacked-grid1" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-stacked-grid1" aria-expanded="false" aria-selected="false" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+						First accordion title
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid1" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+
+						<p>Here is some accordion content</p>
+
+						<section class="uikit-accordion">
+							<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#inner-accordion-grid" class="uikit-accordion__title js-uikit-accordion" aria-controls="inner-accordion-grid" aria-expanded="true" aria-selected="true" role="tab" onclick="return UIKIT.accordion.Toggle( this )">
+									A nested accordion
+							</a>
+
+							<div class="uikit-accordion__body" id="inner-accordion-grid" aria-hidden="false">
+								<div class="uikit-accordion__body-wrapper">
+									Here is some <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">accordion</a> content
+								</div>
+							</div>
+
+						</section>
+
+						<p>Here is some accordion <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">content</a>.</p>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-stacked-grid2" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-stacked-grid2" aria-expanded="false" aria-selected="false" onclick="return UIKIT.accordion.Toggle( this )">
+						Another accordion
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid2" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+						<p>Here is some accordion content</p>
+						<p>Here is some <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">accordion</a> content</p>
+						<p>Here is some accordion content</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="uikit-accordion">
+				<a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#accordion-stacked-grid3" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion" aria-controls="accordion-stacked-grid3" aria-expanded="false" aria-selected="false" onclick="return UIKIT.accordion.Toggle( this )">
+						Accordion with words and words and a very long title so that it can break into several
+				</a>
+
+				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid3" aria-hidden="true">
+					<div class="uikit-accordion__body-wrapper">
+						<p>Here is some accordion content</p>
+						<p>Here is some <a href="http://uikit.apps.staging.digital.gov.au/packages/accordion/tests/site/#url">accordion</a> content</p>
+						<p>Here is some accordion content</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>

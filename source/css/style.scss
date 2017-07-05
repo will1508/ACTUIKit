@@ -79,7 +79,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $THEME
 \*------------------------------------*/
-
 @import "scss/themes/colors";
 @import "scss/themes/variables";
 
@@ -96,7 +95,11 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 \*------------------------------------*/
 @import "scss/abstracts/color-palette";
 
-
+/*------------------------------------*\
+    3rd party libraries
+\*------------------------------------*/
+@import "scss/vendors/uikit";
+@import "scss/vendors/fontawesome";
 
 /*------------------------------------*\
     $BASE

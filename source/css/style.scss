@@ -93,21 +93,8 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
-@import "scss/base/body";
-@import "scss/base/animation";
-@import "scss/base/forms";
-@import "scss/base/global-classes";
-@import "scss/base/headings";
-@import "scss/base/links";
-@import "scss/base/lists";
-@import "scss/base/main";
-@import "scss/base/media";
-@import "scss/base/reset";
-@import "scss/base/tables";
-@import "scss/base/text";
-
-
-
+@import "scss/base/fonts";
+@import "scss/base/normalize";
 
 
 /*------------------------------------*\

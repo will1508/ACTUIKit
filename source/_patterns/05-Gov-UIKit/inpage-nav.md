@@ -1,5 +1,5 @@
 ---
-title: alert
+title: inpage-nav
 ---
 
 this is a test

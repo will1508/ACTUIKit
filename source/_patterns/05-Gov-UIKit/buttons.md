@@ -1,5 +1,5 @@
 ---
-title: alert
+title: buttons
 ---
 
 this is a test

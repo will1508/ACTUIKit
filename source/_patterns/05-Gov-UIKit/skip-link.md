@@ -1,5 +1,5 @@
 ---
-title: alert
+title: skip-link
 ---
 
 this is a test

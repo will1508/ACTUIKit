@@ -1,5 +1,5 @@
 ---
-title: Inline Elements
+title: Button
 ---
 
 [Insert description here]

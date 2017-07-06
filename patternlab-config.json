@@ -12,7 +12,8 @@
       "images" : "./source/images",
       "fonts" : "./source/fonts",
       "css" : "./source/css/",
-      "themes": "./source/css/scss/themes"
+      "themes": "./source/css/scss/themes/",
+      "uikit":"./node_modules/@gov.au/"
     },
     "public" : {
       "root" : "./public/",

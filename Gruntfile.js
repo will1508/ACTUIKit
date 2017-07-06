@@ -10,10 +10,16 @@ module.exports = function (grunt) {
   var path = require('path'),
     argv = require('minimist')(process.argv.slice(2));
 
+
   // load all grunt tasks
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-babel');
 
   /******************************************************
    * PATTERN LAB CONFIGURATION
@@ -25,6 +31,12 @@ module.exports = function (grunt) {
 
   function paths() {
     return config.paths;
+  }
+
+  //Variables used in concat task
+  var uikit = {
+    dest: path.resolve(paths().source.js + '/uikit.js'),
+    src: path.resolve(paths().source.uikit + '**/module.js')
   }
 
   function getConfiguredCleanOption() {
@@ -63,6 +75,7 @@ module.exports = function (grunt) {
   });
 
   updateConfig = function () {
+
     // Copying patternlab files
     var files = [
       { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
@@ -88,12 +101,8 @@ module.exports = function (grunt) {
 
     var themeDest = paths().source.themes + '/';
 
-    grunt.log.writeln('#####', theme, '####', themeDest);
-
     themeFiles = [];
     themeFiles.push({ expand: true, cwd: path.resolve(cwd), src: '*', dest: path.resolve(themeDest) });
-
-    grunt.log.writeln('****', themeFiles);
 
     grunt.config('copy', {
       main: { 'files': files },
@@ -101,9 +110,11 @@ module.exports = function (grunt) {
     })
   };
 
-
   grunt.initConfig({
-    clean: ["source/css/style.css", "source/css/style.css.map", "source/css/scss/themes/*.scss"],
+    clean: {
+      initial: ["source/css/style.css", "source/css/style.css.map", "source/css/scss/themes/*.scss", "source/js/uikit.js"],
+      uglifyFiles: ["src", "src.map", "dest", "dest.map"]
+    },
     sass: {
       dist: {
         options: {
@@ -174,6 +185,43 @@ module.exports = function (grunt) {
     },
     bsReload: {
       css: path.resolve(paths().public.root + '**/*.css')
+    },
+    concat: {
+      options: {
+        separator: '\n'
+      },
+      uikit: {
+        src: uikit.src,
+        dest: uikit.dest
+      }
+    },
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ['es2015']
+      },
+      uikit: {
+        files: {
+          src: path.resolve(paths().source.js + '/uikit.js'),
+          dest: path.resolve(paths().source.js + '/uikit.js')
+        }
+      }
+    },
+    uglify: {
+      options: {
+        sourceMap: true
+      },
+      uikit: {
+        files: [
+          {
+            expand: true,
+            cwd: './source/js/',
+            src: 'uikit.js',
+            dest: './source/js/',
+            ext: '.min.js'
+          }
+        ]
+      }
     }
   });
 
@@ -183,14 +231,8 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-
-  grunt.registerTask('copytheme', ['cptheme' + theme]);
-
-  grunt.registerTask('default', ['clean', 'copy:theme', 'sass', 'patternlab', 'copy:main']);
-  grunt.registerTask('patternlab:build', ['copy:theme' ,'patternlab', 'copy:main']);
+  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
+  grunt.registerTask('patternlab:build', ['copy:theme', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:watch', ['copy:theme', 'patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['clean', 'copy:theme', 'sass', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
-
+  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 };

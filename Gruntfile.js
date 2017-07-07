@@ -33,12 +33,6 @@ module.exports = function (grunt) {
     return config.paths;
   }
 
-  //Variables used in concat task
-  var uikit = {
-    dest: path.resolve(paths().source.js + '/uikit.js'),
-    src: path.resolve(paths().source.uikit + '**/module.js')
-  }
-
   function getConfiguredCleanOption() {
     return config.cleanPublic;
   }
@@ -191,8 +185,12 @@ module.exports = function (grunt) {
         separator: '\n'
       },
       uikit: {
-        src: uikit.src,
-        dest: uikit.dest
+        src: path.resolve(paths().source.uikit + '**/module.js'),
+        dest: path.resolve(paths().source.js + '/uikit.js')
+      },
+      patterns: {
+        src: path.resolve(paths().source.patterns + '**/*.js'),
+        dest: path.resolve(paths().source.js + '/actgov.js')
       }
     },
     babel: {
@@ -231,8 +229,8 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
+  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:build', ['copy:theme', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:watch', ['copy:theme', 'patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 };

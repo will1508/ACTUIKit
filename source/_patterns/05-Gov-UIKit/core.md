@@ -1,5 +1,5 @@
 ---
-title: Core
+title: core
 ---
 
 this is a test

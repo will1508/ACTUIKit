@@ -1,5 +1,5 @@
 ---
-title: alert
+title: body
 ---
 
 this is a test

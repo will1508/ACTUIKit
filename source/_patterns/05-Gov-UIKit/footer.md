@@ -1,5 +1,5 @@
 ---
-title: alert
+title: footer
 ---
 
 this is a test

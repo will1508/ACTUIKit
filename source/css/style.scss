@@ -76,18 +76,18 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  *
  */
 
-/*------------------------------------*\
-    $THEME
-\*------------------------------------*/
-@import "scss/themes/colors";
-@import "scss/themes/variables";
-
 
 /*------------------------------------*\
     $ABSTRACTS
 \*------------------------------------*/
 @import "scss/abstracts/mixins";
 @import "scss/abstracts/variables";
+
+/*------------------------------------*\
+    $THEME
+\*------------------------------------*/
+@import "scss/themes/colors";
+@import "scss/themes/variables";
 
 
 /*------------------------------------*\
@@ -100,6 +100,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 \*------------------------------------*/
 @import "scss/vendors/uikit";
 @import "scss/vendors/fontawesome";
+@import "scss/components/components";
 
 /*------------------------------------*\
     $BASE

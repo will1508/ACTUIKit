@@ -1,5 +1,5 @@
 ---
-title: Button
+title: button
 ---
 
 [Insert description here]

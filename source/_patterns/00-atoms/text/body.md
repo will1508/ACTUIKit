@@ -1,5 +1,5 @@
 ---
-title: Headings
+title: body
 ---
 
 [Insert description here]

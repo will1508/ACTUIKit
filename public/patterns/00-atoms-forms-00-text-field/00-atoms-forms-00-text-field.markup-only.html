@@ -1,0 +1,164 @@
+    <h1>Test: text-inputs</h1>
+
+	<h2>Text inputs</h2>
+
+	<label class="uikit-text-input__label" for="textin-a">A text input field</label>
+	<input class="uikit-text-input" name="textin-a" id="textin-a" type="text" value="ABCZ abcjg liI1 12340">
+
+	<hr>
+	<h2>Text inputs with wrapping label</h2>
+
+	<label class="uikit-text-input__label">A text input field
+		<input class="uikit-text-input" name="textin2" type="text" value="ABCZ abcjg liI1 12340">
+	</label>
+
+	<hr>
+	<h2>Text inputs with block</h2>
+
+	<label class="uikit-text-input__label" for="textin-b">A text input field</label>
+	<input class="uikit-text-input uikit-text-input--block" name="textin-b" id="textin-b" type="text" value="ABCZ abcjg liI1 12340">
+
+	<hr>
+	<h2>Text inputs with wrapping label with block</h2>
+
+	<label class="uikit-text-input__label">A text input field
+		<input class="uikit-text-input uikit-text-input--block" name="textin2" type="text" value="ABCZ abcjg liI1 12340">
+	</label>
+
+	<hr>
+	<h2>Text inputs with grid</h2>
+
+	<div class="uikit-grid">
+		<div class="row">
+			<div class="col-sm-6">
+
+				<h2>Text inputs</h2>
+				<form lpformnum="1">
+					<p>
+						<label class="uikit-text-input__label" for="textin">A text input field</label>
+						<input class="uikit-text-input uikit-text-input--block" name="textin" id="textin" type="text" value="ABCZ abcjg liI1 12340" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="numberin">A number input field <small>(optional)</small></label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" name="numberin" id="numberin" type="number" value="12340">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="phonein">A phone number (tel) input field</label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" name="phonein" id="phonein" type="tel" pattern="[0-9]*" value="12340">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="textinvalid">An invalid field</label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--invalid" name="textinvalid" id="textinvalid" type="text" value="ABCZ abcjg liI1 12340">
+					</p>
+						<p>
+						<label class="uikit-text-input__label" for="textvalid">A valid field</label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--valid" name="textvalid" id="textvalid" type="text" value="ABCZ abcjg liI1 12340">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="textdisabled">A disabled field</label>
+						<input class="uikit-text-input uikit-text-input--block" name="textdisabled" id="textdisabled" type="text" disabled="" value="ABCZ abcjg liI1 12340">
+					</p>
+
+					<button class="no-a11y-test">submit</button>
+				</form>
+
+				<hr>
+				<h2>Textarea input</h2>
+
+				<hr>
+				<h2>input with an additional <code>__hint</code></h2>
+
+				<form lpformnum="3">
+					<label class="uikit-text-input__label" for="tfn1">Tax File Number</label>
+					<span class="uikit-text-input__hint" id="tfn-hint1">
+						Your Tax File Number is on your payslip. For example, 123 456 789.
+					</span>
+					<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" type="number" id="tfn1" aria-describedby="tfn-hint1" value="12340">
+
+					<button class="no-a11y-test">submit</button>
+				</form>
+
+			</div>
+			<div class="col-sm-6 uikit-body">
+
+				<h2>Text inputs, using <code>body</code></h2>
+				<form lpformnum="4">
+					<p>
+						<label class="uikit-text-input__label" for="textin2">A text input field</label>
+						<input class="uikit-text-input uikit-text-input--block" name="textin2" id="textin2" type="text" value="ABCZ abcjg liI1 12340" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="numberin2">A number input field <small>(optional)</small></label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" name="numberin2" id="numberin2" type="number" value="12340">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="phonein2">A phone number (tel) input field</label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" name="phonein2" id="phonein2" type="tel" pattern="[0-9]*" value="12340">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="textinvalid2">An invalid field</label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--invalid" name="textinvalid2" id="textinvalid2" type="text" value="ABCZ abcjg liI1 12340">
+					</p>
+						<p>
+						<label class="uikit-text-input__label" for="textvalid2">A valid field</label>
+						<input class="uikit-text-input uikit-text-input--block uikit-text-input--valid" name="textvalid2" id="textvalid2" type="text" value="ABCZ abcjg liI1 12340">
+					</p>
+					<p>
+						<label class="uikit-text-input__label" for="textdisabled2">A disabled field</label>
+						<input class="uikit-text-input uikit-text-input--block" name="textdisabled2" id="textdisabled2" type="text" disabled="" value="ABCZ abcjg liI1 12340">
+					</p>
+
+					<button class="no-a11y-test">submit</button>
+				</form>
+
+				<hr>
+				<h2>Textarea input, using <code>body</code></h2>
+
+				<hr>
+				<h2>input with an additional <code>__hint</code>, using <code>body</code></h2>
+				<p>Here the hint is nested inside the <code>label</code>.</p>
+
+				<form lpformnum="6">
+					<label class="uikit-text-input__label" for="tfn2">
+						Tax File number
+						<span class="uikit-text-input__hint" id="tfn-hint2">
+							Your Tax File Number is on your payslip. For example, <mark>987654321</mark>.
+						</span>
+					</label>
+					<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" type="number" id="tfn2" aria-describedby="tfn-hint2" value="12340">
+
+					<button class="no-a11y-test">submit</button>
+				</form>
+
+				<h2>input with an additional <code>__hint</code>, using <code>body</code></h2>
+				<p>Here the hint is sits between the <code>label</code> and the <code>input</code>.</p>
+
+				<form lpformnum="7">
+					<label class="uikit-text-input__label" for="tfn3">
+						Tax File number
+					</label>
+					<span class="uikit-text-input__hint" id="tfn-hint3">
+						Your Tax File Number is on your payslip. For example, <mark>987654321</mark>.
+					</span>
+					<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" type="number" id="tfn3" aria-describedby="tfn-hint3" value="12340">
+
+					<button class="no-a11y-test">submit</button>
+				</form>
+
+				<h2>input with an additional <code>__hint</code>, using <code>body</code></h2>
+				<p>Here the hint is comes after the <code>input</code>.</p>
+
+				<form lpformnum="8">
+					<label class="uikit-text-input__label" for="tfn4">
+						Tax File number
+					</label>
+					<input class="uikit-text-input uikit-text-input--block uikit-text-input--number" type="number" id="tfn4" aria-describedby="tfn-hint4" value="12340">
+					<span class="uikit-text-input__hint" id="tfn-hint4">
+						Your Tax File Number is on your payslip. For example, <mark>987654321</mark>.
+					</span>
+
+					<button class="no-a11y-test">submit</button>
+				</form>
+			</div>
+		</div>
+	</div>

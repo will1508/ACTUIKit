@@ -5,7 +5,6 @@ patternlab.json
 /sass-cache
 Thumbs.db
 .idea/
-public
 source/css/scss/vendors/_uikit.scss
 source/css/style.css
 source/css/style.css.map

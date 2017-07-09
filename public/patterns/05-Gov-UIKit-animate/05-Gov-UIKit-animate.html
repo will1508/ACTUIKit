@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1499409802362" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1499409802362" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1499409802362" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1499409802362" media="all" />
+
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="body">
+    
+<style>
+	.uikit-dropdown-example {
+		background-color: hotpink;
+		background-color: rebeccapurple;
+		margin-bottom: 1em
+	}
+
+	.outer-container {
+		background-color: yellow;
+		overflow: hidden;
+	}
+
+	.position-container {
+		position:relative;height:50px;margin-top:20px;
+	}
+</style>
+<div class="uikit-grid" data-gr-c-s-loaded="true">
+	<noscript>
+		&lt;p role="alert"&gt;This website needs JavaScript to work properly.&lt;/p&gt;
+	</noscript>
+	<script>
+		if (!window.console) { //removing console.log from IE8
+			console = {
+				log: function (text) { alert(text) },
+			};
+		}
+	</script>
+
+	<div class="container">
+
+		<h1>Test: animate</h1>
+
+		<div class="row">
+			<div class="grids col-sm-6">
+				<h2>#1 Open, close and toggle height between 0 and auto</h2>
+
+				<div>
+					<button aria-controls="close" onclick="closeDropdown1()">Close</button>
+					<button aria-controls="open" onclick="openDropdown1()">Open</button>
+					<button aria-controls="toggle" onclick="toggleDropdown1()">Toggle</button>
+					<button aria-controls="stop" onclick="stopDropdown1()">Stop</button>
+				</div>
+
+				<div class="uikit-dropdown-example" id="dropdown-1">
+					&nbsp;<br><br><br>
+				</div>
+			</div>
+
+			<div class="grids col-sm-6">
+				<h2>#2 Open, close and toggle width between 0 and auto</h2>
+
+				<div>
+					<button aria-controls="close" onclick="closeDropdown2()">Close</button>
+					<button aria-controls="open" onclick="openDropdown2()">Open</button>
+					<button aria-controls="toggle" onclick="toggleDropdown2()">Toggle</button>
+					<button aria-controls="stop" onclick="stopDropdown2()">Stop</button>
+				</div>
+
+				<div class="uikit-dropdown-example" id="dropdown-2">
+					&nbsp;<br><br><br>
+				</div>
+
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="grids col-sm-6">
+				<h2>#3 Animate padding</h2>
+
+				<div>
+					<button aria-controls="close" onclick="removePadding()">Remove padding</button>
+					<button aria-controls="open" onclick="addPadding()">Add padding</button>
+					<button aria-controls="toggle" onclick="togglePadding()">Toggle padding</button>
+					<button aria-controls="stop" onclick="stopPadding()">Stop</button>
+				</div>
+
+				<div style="padding:20px;border:1px solid #333;" class="uikit-dropdown-example" id="dropdown-padding1">
+					<div class="inner-container" style="background-color:#fff;">&nbsp;<br><br><br></div>
+				</div>
+			</div>
+
+			<div class="grids col-sm-6">
+				<h2>#4 Animate margin</h2>
+
+				<div>
+					<button aria-controls="open" onclick="addMargin()">Add margin</button>
+					<button aria-controls="close" onclick="removeMargin()">Remove margin</button>
+					<button aria-controls="toggle" onclick="toggleMargin()">Toggle margin</button>
+					<button aria-controls="stop" onclick="stopMargin()">Stop</button>
+				</div>
+
+				<div class="outer-container">
+					<div style="margin-bottom:0;" class="uikit-dropdown-example" id="dropdown-margin1">
+						&nbsp;<br><br><br>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="grids col-sm-6">
+				<h2>#5 Animate position</h2>
+
+				<div>
+					<button aria-controls="back" onclick="animateBack()">Back</button>
+					<button aria-controls="forward" onclick="animateForward()">Forward</button>
+					<button aria-controls="toggle" onclick="animateTogglePos()">Toggle</button>
+					<button aria-controls="stop" onclick="animateStopPos()">Stop</button>
+				</div>
+
+				<div class="position-container">
+					<div style="height:20px;width:20px;border-radius:50%;position:absolute;top:0;left:100px;" class="uikit-dropdown-example"
+					 id="dropdown-position1">
+						&nbsp;
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+
+			<div class="grids col-sm-6">
+				<h2>#6 Open, close height between specified values</h2>
+
+				<div>
+					<button aria-controls="open" onclick="openDropdown3()">Open</button>
+					<button aria-controls="close" onclick="closeDropdown3()">Close</button>
+					<button aria-controls="toggle" onclick="toggleDropdown3()">Toggle</button>
+					<button aria-controls="stop" onclick="stopDropdown3()">Stop</button>
+				</div>
+
+				<div style="height:50px;" class="uikit-dropdown-example" id="dropdown-3">
+					&nbsp;
+				</div>
+
+			</div>
+
+			<div class="grids col-sm-6">
+				<h2>#7 Open, close width between specified values</h2>
+
+				<div>
+					<button aria-controls="open" onclick="openDropdown4()">Open</button>
+					<button aria-controls="close" onclick="closeDropdown4()">Close</button>
+					<button aria-controls="toggle" onclick="toggleDropdown4()">Toggle</button>
+					<button aria-controls="stop" onclick="stopDropdown4()">Stop</button>
+				</div>
+
+				<div style="height:50px;width:50px;" class="uikit-dropdown-example" id="dropdown-4">
+					&nbsp;
+				</div>
+
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="grids col-sm-6">
+				<h2>#8 Open, close and toggle multiple items</h2>
+
+				<div>
+					<div>
+						<button aria-controls="open" onclick="openDropdown5()">Open all</button>
+						<button aria-controls="close" onclick="closeDropdown5()">Close all</button>
+						<button aria-controls="toggle" onclick="toggleDropdown5()">Toggle all</button>
+					</div>
+				</div>
+
+				<div class="uikit-dropdown-example js-vertical-dropdown-group elment1" id="dropdown-5">
+					&nbsp;<br><br><br><br><br><br>
+				</div>
+
+				<div class=" uikit-dropdown-example js-vertical-dropdown-group elment2" style="height:0;">
+					&nbsp;<br><br><br>
+				</div>
+
+				<div class="uikit-dropdown-example js-vertical-dropdown-group elment3">
+					&nbsp;<br><br><br><br>
+				</div>
+
+			</div>
+
+			<div class="grids col-sm-6">
+				<h2>#9</h2>
+
+				<div>
+					<div>
+						<button aria-controls="open" onclick="openDropdown6()">Open all</button>
+						<button aria-controls="close" onclick="closeDropdown6()">Close all</button>
+						<button aria-controls="toggle" onclick="toggleDropdown6()">Toggle all</button>
+					</div>
+				</div>
+
+				<div class="uikit-dropdown-example js-horizontal-dropdown-group elment4" id="dropdown-6">
+					&nbsp;<br><br><br>
+				</div>
+
+				<div class="uikit-dropdown-example js-horizontal-dropdown-group elment5" style="width:0;">
+					&nbsp;<br><br><br>
+				</div>
+
+				<div class="uikit-dropdown-example js-horizontal-dropdown-group elment6">
+					&nbsp;<br><br><br>
+				</div>
+
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Edge cases</h2>
+			</div>
+
+			<div class="grids col-sm-6">
+				<h2>#10 less pixel than steps</h2>
+
+				<div>
+					<div>
+						<button aria-controls="open" onclick="openEdgeCase()">Open</button>
+						<button aria-controls="close" onclick="closeEdgeCase()">Close</button>
+						<button aria-controls="toggle" onclick="toggleEdgeCase()">Toggle</button>
+					</div>
+				</div>
+
+				<div class="uikit-dropdown-example" id="edgecase1"></div>
+
+			</div>
+
+			<div class="grids col-sm-6">
+				<h2>#11 Half pixel step size</h2>
+
+				<div>
+					<div>
+						<button aria-controls="open" onclick="openEdgeCase2()">Open</button>
+						<button aria-controls="close" onclick="closeEdgeCase2()">Close</button>
+						<button aria-controls="toggle" onclick="toggleEdgeCase2()">Toggle</button>
+					</div>
+				</div>
+
+				<div class="uikit-dropdown-example" id="edgecase2" style="height:0;">
+					&nbsp;<br><br><br>
+				</div>
+
+			</div>
+		</div>
+
+	</div><!--DO NOT REMOVE-->
+<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>this is a test</p>\n","patternBreadcrumb":{"patternType":"Gov-UIKit"},"patternExtension":"mustache","patternName":"Animate","patternPartial":"Gov-UIKit-animate","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1499409802362">
+  (function() {
+    if (self != top) {
+      var cb = '1499409802362';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1499409802362">
+  (function() {
+    if (self != top) {
+      var cb = '1499409802362';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+<script type="text/javascript" src="/js/nav.js"></script>
+<script type="text/javascript" src="/js/progress.js"></script>
+<script type="text/javascript" src="/js/overlay.js"></script>
+<script type="text/javascript" src="/js/uikit.min.js"></script>
+<script type="text/javascript" src="/js/actgov.js"></script>
+</body>
+
+</html>

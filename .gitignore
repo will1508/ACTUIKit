@@ -3,9 +3,9 @@ node_modules/
 patternlab.json
 .sass-cache/*
 /sass-cache
-public
 Thumbs.db
 .idea/
+public
 source/css/scss/vendors/_uikit.scss
 source/css/style.css
 source/css/style.css.map

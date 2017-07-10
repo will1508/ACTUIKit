@@ -3,6 +3,7 @@ node_modules/
 patternlab.json
 .sass-cache/*
 /sass-cache
+public
 Thumbs.db
 .idea/
 source/css/scss/vendors/_uikit.scss

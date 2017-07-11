@@ -106,7 +106,12 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     clean: {
-      initial: ["source/css/style.css", "source/css/style.css.map", "source/css/scss/themes/*.scss", "source/js/uikit.js"],
+      initial: [
+        "source/css/style.css",
+        "source/css/style.css.map",
+        "source/css/scss/themes/*.scss",
+        "source/js/uikit.js"
+      ],
       uglifyFiles: ["src", "src.map", "dest", "dest.map"]
     },
     sass: {
@@ -116,6 +121,14 @@ module.exports = function (grunt) {
         },
         files: {
           "source/css/style.css": "source/css/style.scss"
+        }
+      },
+      uikit: {
+        options: {
+          sourceMap: true
+        },
+        files: {
+          "source/css/uikit.css": "source/css/uikit.scss"
         }
       }
     },
@@ -229,8 +242,8 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
+  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass:dist', 'sass:uikit', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:build', ['copy:theme', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:watch', ['copy:theme', 'patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass:dist', 'sass:uikit', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 };

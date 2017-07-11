@@ -296,6 +296,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  */
 /*! @gov.au/animate v0.1.3 */
 /*! @gov.au/accordion v0.1.0 */
+@import url(../fonts/iconfont/material-icons.css);
 @media print {
   .uikit-accordion__title {
     background: #fff !important; }
@@ -6746,6 +6747,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b"; }
 
 /*------------------------------------*    $BASE
+\*------------------------------------*/
+/*------------------------------------*    $GOOGLE FONTS
 \*------------------------------------*/
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------*/

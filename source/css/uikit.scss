@@ -18,6 +18,43 @@ html {
 }
 
 
+// animate UIKIT component
+.uikit-dropdown-example {
+	background-color: hotpink;
+	background-color: rebeccapurple;
+	margin-bottom: 1em;
+}
+
+// We’re undoing these test page styles in order to properly test the grid.
+body {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.test-link { //have to to make it look awesome again
+	margin-left: uikit-space( 1 );
+}
+
+
+// accordion UIKIT component 
+
+
+.split-wrapper {
+	overflow: hidden;
+	padding: 1%;
+}
+
+.split {
+	@include uikit-media( sm ) {
+		width: 49%;
+		float: right;
+
+		&:first-child {
+			float: left;
+		}
+	}
+}
+
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // BREAKPOINT TEST
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------

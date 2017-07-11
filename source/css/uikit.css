@@ -6934,6 +6934,29 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 
+.uikit-dropdown-example {
+  background-color: hotpink;
+  background-color: rebeccapurple;
+  margin-bottom: 1em; }
+
+body {
+  padding-left: 0;
+  padding-right: 0; }
+
+.test-link {
+  margin-left: 1.6em; }
+
+.split-wrapper {
+  overflow: hidden;
+  padding: 1%; }
+
+@media (min-width: 768px) {
+  .split {
+    width: 49%;
+    float: right; }
+    .split:first-child {
+      float: left; } }
+
 .sm-only,
 .md-only,
 .lg-only,

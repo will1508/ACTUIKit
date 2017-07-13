@@ -89,7 +89,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "scss/themes/colors";
 @import "scss/themes/variables";
 
-
 /*------------------------------------*\
     $COLOR PALLETE
 \*------------------------------------*/
@@ -100,7 +99,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 \*------------------------------------*/
 @import "scss/vendors/uikit";
 @import "scss/vendors/fontawesome";
-// @import "scss/components/components";
+@import "scss/components/components";
 
 /*------------------------------------*\
     $BASE
@@ -111,7 +110,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $GOOGLE FONTS
 \*------------------------------------*/
-@import '../fonts/iconfont/material-icons.css';
+// @import '../fonts/iconfont/material-icons.css';
 
 /*------------------------------------*\
     $COMPONENTS

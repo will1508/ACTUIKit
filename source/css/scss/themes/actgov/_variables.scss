@@ -13,7 +13,6 @@ $uikit-media-sm: 768px;
 $uikit-media-md: 992px;
 $uikit-media-lg: 1200px;
 
-
 /**
  * Line-height (‘leading’)
  */
@@ -25,12 +24,16 @@ $uikit-font-monospace: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bits
 $uikit-font-system: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 $fontawesome: "FontAwesome";
 
-
-
-
 // Max width for line lengths (the ‘measure’)
 $uikit-maxwidth: 42em; //Answer to life, the universe, and everything (keeps things readable on wide viewports).
 
 // Borders
 $uikit-borderize: 1px solid $uikit-colour-Border;
 $uikit-border-radius: 3px;
+
+/**
+SPF global variable
+**/
+
+$spf-min-horizontal-space: .4em;
+$spf-min-vertical-space: .4em;

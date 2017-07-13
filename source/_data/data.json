@@ -6,7 +6,7 @@
     "title" : "Pattern Lab",
     "pageTitle": "Page Title",
     "htmlClass": "pl",
-    "bodyClass": "body",
+    "bodyClass": "uikit-body",
     "btnText" : "Button",
     "progress" : true,
     "max" : "100",
@@ -26,6 +26,10 @@
         "avatar" : {
             "src" : "../../images/fpo_avatar.png",
             "alt" : "Person Name"
+        },
+        "headerLogo": {
+            "src": "../../images/logo_140x72.png",
+            "alt": "Header logo"
         }
     },
     "imgSquare" : {

@@ -1,0 +1,33 @@
+// Health header
+header.uikit-header {
+  padding: uikit-space(1) 0;
+  margin-bottom: 0;
+  @include uikit-clearfix;
+  .uikit-header__logo {
+    display: block;
+    // max-width: 140px;
+    // max-height: 100px;
+		border-bottom: none;
+		padding: uikit-space(.25);
+		&:hover,
+		&:focus {
+			border-bottom: none;
+		}
+    @include uikit-media(md) {
+      float: left;
+    }
+    &-image {
+      display: block;
+      width: 100%;
+    }
+    .uikit-header__logo-image {
+      width: 140px;
+      height: 72px;
+    }
+  }
+  .header-search-row {
+    @include uikit-media(md) {
+      margin-top: uikit-space(-.5);
+    }
+  }
+} 

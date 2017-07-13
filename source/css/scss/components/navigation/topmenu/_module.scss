@@ -1,0 +1,66 @@
+//--------------------------------------------------------------
+// Site nav
+// The main navigation element on the site
+//
+//--------------------------------------------------------------
+// @import 'print';
+
+.top-menu {
+  .uikit-link-list > li {
+    a {
+      font-weight: 700;
+      @include uikit-media(md) {
+        padding: uikit-space(1) uikit-space(.5);
+      }
+      border: none;
+
+    }
+
+    a:active,
+    a:hover {
+      border-bottom: solid 4px $uikit-colour-Primary;
+    }
+  }
+}
+
+// %uikit-sitenav {
+//   @extend .uikit-link-list;
+//   padding: 0;
+//   li a {
+//     display: block;
+//     padding: uikit-space(.5) uikit-space(.25);
+//     border-bottom: 0;
+//   }
+//   & > li {
+//     padding: 0;
+//     margin: 0;
+//     position: relative;
+// 		li {
+// 			width: 100%;
+// 			position: relative;
+// 		}
+//     & > a {
+//       border: 0;
+//       @include uikit-media(md) {
+//         padding: uikit-space(1) uikit-space(.5);
+//         font-weight: 700;
+//         border-top: 4px solid transparent;
+//       }
+//     }
+//     @include uikit-media(md) {
+//       &.sfHover > a,
+//       & > a:hover,
+//       & > a:focus
+//       & > a:active,
+//       &.active-trail > a {
+//         border-top: 4px solid $uikit-colour-Primary;
+//       }
+//     }
+//   }
+//   @include uikit-media(md) {
+//     @include uikit-clearfix;
+//     li {
+//       float: left;
+//     }
+//   }
+// }

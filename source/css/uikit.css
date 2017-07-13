@@ -167,6 +167,9 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /**
  * Line-height (‘leading’)
  */
+/**
+SPF global variable
+**/
 /*------------------------------------*    $COLOR PALLETE
 \*------------------------------------*/
 /*! PANCAKE v1.1.0 PANCAKE-SASS v1.1.1 */
@@ -302,7 +305,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  */
 /*! @gov.au/animate v0.1.3 */
 /*! @gov.au/accordion v0.1.0 */
-@import url(../fonts/iconfont/material-icons.css);
 @media print {
   .uikit-accordion__title {
     background: #fff !important; }
@@ -6751,6 +6753,95 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .icon-renren:before {
   content: "\f18b"; }
+
+header.uikit-header {
+  padding: 1.6em 0;
+  margin-bottom: 0; }
+  header.uikit-header:before, header.uikit-header:after {
+    content: " ";
+    display: table; }
+  header.uikit-header:after {
+    clear: both; }
+  header.uikit-header .uikit-header__logo {
+    display: block;
+    border-bottom: none;
+    padding: 0.4em; }
+    header.uikit-header .uikit-header__logo:hover, header.uikit-header .uikit-header__logo:focus {
+      border-bottom: none; }
+    @media (min-width: 992px) {
+      header.uikit-header .uikit-header__logo {
+        float: left; } }
+    header.uikit-header .uikit-header__logo-image {
+      display: block;
+      width: 100%; }
+    header.uikit-header .uikit-header__logo .uikit-header__logo-image {
+      width: 140px;
+      height: 72px; }
+  @media (min-width: 992px) {
+    header.uikit-header .header-search-row {
+      margin-top: -0.8em; } }
+
+.input-group {
+  display: table;
+  border-collapse: separate;
+  font-size: 16px;
+  table-layout: auto;
+  line-height: 1; }
+  .input-group > .group-element,
+  .input-group > .group-element-wrapper > .group-element {
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid #555;
+    border-left: none;
+    padding: .7em;
+    display: table-cell;
+    font-size: 1em;
+    vertical-align: bottom; }
+  .input-group .group-element:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .input-group .group-element:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #555; }
+  .input-group > .group-element-wrapper {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+    vertical-align: bottom; }
+    .input-group > .group-element-wrapper input[type="text"] {
+      width: 100%;
+      margin: 0; }
+
+.search-box {
+  margin-top: .2em; }
+  .search-box .group-element,
+  .search-box .group-element:first-child,
+  .search-box .group-element:last-child {
+    border: solid 2px #3F2583; }
+  .search-box .uikit-btn {
+    padding: .1em; }
+  .search-box .uikit-btn i {
+    font-size: 34px;
+    font-style: normal; }
+
+.top-menu .uikit-link-list > li a {
+  font-weight: 700;
+  border: none; }
+  @media (min-width: 992px) {
+    .top-menu .uikit-link-list > li a {
+      padding: 1.6em 0.8em; } }
+
+.top-menu .uikit-link-list > li a:active,
+.top-menu .uikit-link-list > li a:hover {
+  border-bottom: solid 4px #3F2583; }
 
 /*------------------------------------*    $BASE
 \*------------------------------------*/

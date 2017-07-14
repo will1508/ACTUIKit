@@ -6,7 +6,7 @@
     "title" : "Pattern Lab",
     "pageTitle": "Page Title",
     "htmlClass": "pl",
-    "bodyClass": "uikit-body",
+    "bodyClass": "uikit-body spf-body",
     "btnText" : "Button",
     "progress" : true,
     "max" : "100",
@@ -30,6 +30,14 @@
         "headerLogo": {
             "src": "../../images/logo_140x72.png",
             "alt": "Header logo"
+        },
+        "banner": {
+            "src": "../../images/banner_Xx420.png",
+            "alt": "Banner image"
+        },
+        "article": {
+            "src": "../../images/article-image_Xx176.png",
+            "alt": "Article image"
         }
     },
     "imgSquare" : {
@@ -238,5 +246,11 @@
     "sectionBlock" : true,
     "textButton" : true,
 	"overlayMessage" : "Let's go on a hike and climb in elevation",
-	"overlayAction" : "Find a Hike"
+    "overlayAction" : "Find a Hike",
+    
+    "article-box": {
+        "title": "Article box",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.",
+        "date": "12/07/2017"
+    }
 }

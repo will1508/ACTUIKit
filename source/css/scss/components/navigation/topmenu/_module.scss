@@ -6,19 +6,27 @@
 // @import 'print';
 
 .top-menu {
-  .uikit-link-list > li {
-    a {
-      font-weight: 700;
-      @include uikit-media(md) {
-        padding: uikit-space(1) uikit-space(.5);
+  .uikit-link-list {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    > li {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      a {
+        font-weight: 700;
+        @include uikit-media(md) {
+          padding: uikit-space(1) uikit-space(.5);
+        }
+        border-bottom: solid 4px transparent;
+        display: inline-block;
       }
-      border: none;
 
-    }
-
-    a:active,
-    a:hover {
-      border-bottom: solid 4px $uikit-colour-Primary;
+      a:active,
+      a:hover {
+        border-bottom: solid 4px $uikit-colour-Primary;
+      }
     }
   }
 }

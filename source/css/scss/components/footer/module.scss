@@ -1,0 +1,5 @@
+// Health header
+footer.uikit-footer {
+    @extend header.uikit-header;
+    margin-top: uikit-space(1);
+}

@@ -1,0 +1,12 @@
+.spf-body .spf-article-box {
+    width: 100%;
+    border: $uikit-borderize;
+    border-radius: $uikit-border-radius;
+    .spf-article-title,
+    .spf-article-body {
+        padding: 0 uikit-space(1);
+        .spf-article-box-date {
+            font-size: small;
+        }
+    }
+}

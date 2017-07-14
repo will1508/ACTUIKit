@@ -17,6 +17,10 @@
 
 // // Components
 @import 'header/module';
+@import 'footer/module';
+@import 'alert/module';
+@import 'callout/module';
+@import 'article-box/module';
 // @import 'alert/module';
 // @import 'alert/extends';
 // @import 'date/module';
@@ -107,3 +111,6 @@
 // @import 'navigation/tabs/extends';
 // @import 'navigation/tags/extends';
 
+// Style guide: images
+@import 'images/banner/module';
+@import 'images/article/module';

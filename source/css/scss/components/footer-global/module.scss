@@ -1,9 +1,9 @@
-.spf-body footer .uikit-footer {
-  @include uikit-clearfix;
+.spf-body footer .spf-footer-global {
+  @extend .uikit-footer;
 
-  padding: uikit-space(1) 0;
-  margin-bottom: 0;
-  margin-top: uikit-space(1);
+  border: none;
+  background-color: $uikit-colour-Secondary;
+  margin-top: uikit-space(0);
 
   .spf-social-media-icon-bar {
     text-align: right;
@@ -21,7 +21,7 @@
       border-bottom: none;
     }
     @include uikit-media(md) {
-      float: left;
+      float: right;
     }
 
     &-image {

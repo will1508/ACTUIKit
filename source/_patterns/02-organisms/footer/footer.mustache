@@ -1,10 +1,17 @@
-<footer class="uikit-grid uikit-footer uikit-footer--light">
-    <ul class="uikit-link-list uikit-link-list--inline">
-        <li>
-            <a href="#" title="link" class="menu__link">Footer link</a>
-        </li>
-        <li>
-            <a href="#" title="link" class="menu__link">Footer link</a>
-        </li>
-    </ul>
+<footer class="uikit-grid">
+    <div class="row uikit-footer uikit-footer--light">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                {{> molecules-link-list-hr}}
+            </div>
+            <div class="col-md-6 align-right">
+                {{> molecules-social-media-icon-bar}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            {{> organisms-footer-global}}
+        </div>
+    </div>
 </footer>

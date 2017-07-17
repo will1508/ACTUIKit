@@ -18,9 +18,13 @@
 // // Components
 @import 'header/module';
 @import 'footer/module';
+@import 'footer-global/module';
 @import 'alert/module';
 @import 'callout/module';
 @import 'article-box/module';
+@import "social-media-icon/social-media-icon-bar/module";
+@import "social-media-icon/social-media-icon-sm/module";
+
 // @import 'alert/module';
 // @import 'alert/extends';
 // @import 'date/module';
@@ -114,3 +118,4 @@
 // Style guide: images
 @import 'images/banner/module';
 @import 'images/article/module';
+

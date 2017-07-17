@@ -1016,20 +1016,20 @@ SPF global variable
 
 /*! @gov.au/footer v0.1.0 */
 @media print {
-  .uikit-footer {
+  .uikit-footer, .spf-body footer .spf-footer-global {
     background: #fff !important;
     border-color: #000 !important; } }
 
 /**
  * Basic footer block styling.
  */
-.uikit-footer {
+.uikit-footer, .spf-body footer .spf-footer-global {
   background-color: #f0f3f5;
   border-top: 6px solid #555;
   padding: 1.6em;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
   color: #313131; }
-  .uikit-footer p:last-child {
+  .uikit-footer p:last-child, .spf-body footer .spf-footer-global p:last-child {
     margin: 0; }
 
 /**
@@ -4172,20 +4172,20 @@ html > body .uikit-select__element, x:-moz-any-link, x:default {
 
 /*! @gov.au/footer v0.1.0 */
 @media print {
-  .uikit-footer {
+  .uikit-footer, .spf-body footer .spf-footer-global {
     background: #fff !important;
     border-color: #000 !important; } }
 
 /**
  * Basic footer block styling.
  */
-.uikit-footer {
+.uikit-footer, .spf-body footer .spf-footer-global {
   background-color: #f0f3f5;
   border-top: 6px solid #555;
   padding: 1.6em;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
   color: #313131; }
-  .uikit-footer p:last-child {
+  .uikit-footer p:last-child, .spf-body footer .spf-footer-global p:last-child {
     margin: 0; }
 
 /**
@@ -6754,35 +6754,81 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
-header.uikit-header, footer.uikit-footer {
+.spf-body header.uikit-header {
   padding: 1.6em 0;
   margin-bottom: 0; }
-  header.uikit-header:before, footer.uikit-footer:before, header.uikit-header:after, footer.uikit-footer:after {
+  .spf-body header.uikit-header:before, .spf-body header.uikit-header:after {
     content: " ";
     display: table; }
-  header.uikit-header:after, footer.uikit-footer:after {
+  .spf-body header.uikit-header:after {
     clear: both; }
-  header.uikit-header .uikit-header__logo, footer.uikit-footer .uikit-header__logo {
+  .spf-body header.uikit-header .uikit-header__logo {
     display: block;
     border-bottom: none;
     padding: 0.4em; }
-    header.uikit-header .uikit-header__logo:hover, footer.uikit-footer .uikit-header__logo:hover, header.uikit-header .uikit-header__logo:focus, footer.uikit-footer .uikit-header__logo:focus {
+    .spf-body header.uikit-header .uikit-header__logo:hover, .spf-body header.uikit-header .uikit-header__logo:focus {
       border-bottom: none; }
     @media (min-width: 992px) {
-      header.uikit-header .uikit-header__logo, footer.uikit-footer .uikit-header__logo {
+      .spf-body header.uikit-header .uikit-header__logo {
         float: left; } }
-    header.uikit-header .uikit-header__logo-image, footer.uikit-footer .uikit-header__logo-image {
+    .spf-body header.uikit-header .uikit-header__logo-image {
       display: block;
       width: 100%; }
-    header.uikit-header .uikit-header__logo .uikit-header__logo-image, footer.uikit-footer .uikit-header__logo .uikit-header__logo-image {
+    .spf-body header.uikit-header .uikit-header__logo .uikit-header__logo-image {
       width: 140px;
       height: 72px; }
   @media (min-width: 992px) {
-    header.uikit-header .header-search-row, footer.uikit-footer .header-search-row {
+    .spf-body header.uikit-header .header-search-row {
       margin-top: -0.8em; } }
 
-footer.uikit-footer {
+.spf-body footer .uikit-footer, .spf-body footer .spf-footer-global {
+  padding: 1.6em 0;
+  margin-bottom: 0;
   margin-top: 1.6em; }
+  .spf-body footer .uikit-footer:before, .spf-body footer .spf-footer-global:before, .spf-body footer .uikit-footer:after, .spf-body footer .spf-footer-global:after {
+    content: " ";
+    display: table; }
+  .spf-body footer .uikit-footer:after, .spf-body footer .spf-footer-global:after {
+    clear: both; }
+  .spf-body footer .uikit-footer .spf-social-media-icon-bar, .spf-body footer .spf-footer-global .spf-social-media-icon-bar {
+    text-align: right; }
+  .spf-body footer .uikit-footer .uikit-footer__logo, .spf-body footer .spf-footer-global .uikit-footer__logo {
+    display: block;
+    border-bottom: none;
+    padding: 0.4em; }
+    .spf-body footer .uikit-footer .uikit-footer__logo:focus, .spf-body footer .spf-footer-global .uikit-footer__logo:focus, .spf-body footer .uikit-footer .uikit-footer__logo:hover, .spf-body footer .spf-footer-global .uikit-footer__logo:hover {
+      border-bottom: none; }
+    @media (min-width: 992px) {
+      .spf-body footer .uikit-footer .uikit-footer__logo, .spf-body footer .spf-footer-global .uikit-footer__logo {
+        float: left; } }
+    .spf-body footer .uikit-footer .uikit-footer__logo-image, .spf-body footer .spf-footer-global .uikit-footer__logo-image {
+      display: block;
+      width: 100%; }
+    .spf-body footer .uikit-footer .uikit-footer__logo .uikit-footer__logo-image, .spf-body footer .spf-footer-global .uikit-footer__logo .uikit-footer__logo-image {
+      width: 140px;
+      height: 72px; }
+
+.spf-body footer .spf-footer-global {
+  border: none;
+  background-color: #313131;
+  margin-top: 0em; }
+  .spf-body footer .spf-footer-global .spf-social-media-icon-bar {
+    text-align: right; }
+  .spf-body footer .spf-footer-global .uikit-footer__logo {
+    display: block;
+    border-bottom: none;
+    padding: 0.4em; }
+    .spf-body footer .spf-footer-global .uikit-footer__logo:focus, .spf-body footer .spf-footer-global .uikit-footer__logo:hover {
+      border-bottom: none; }
+    @media (min-width: 992px) {
+      .spf-body footer .spf-footer-global .uikit-footer__logo {
+        float: right; } }
+    .spf-body footer .spf-footer-global .uikit-footer__logo-image {
+      display: block;
+      width: 100%; }
+    .spf-body footer .spf-footer-global .uikit-footer__logo .uikit-footer__logo-image {
+      width: 140px;
+      height: 72px; }
 
 .spf-body .spf-alert {
   width: 100%;
@@ -6790,7 +6836,8 @@ footer.uikit-footer {
 
 .spf-body .spf-callout {
   width: 100%;
-  max-width: initial; }
+  max-width: initial;
+  margin-left: 0; }
 
 .spf-body .spf-article-box {
   width: 100%;
@@ -6802,6 +6849,14 @@ footer.uikit-footer {
     .spf-body .spf-article-box .spf-article-title .spf-article-box-date,
     .spf-body .spf-article-box .spf-article-body .spf-article-box-date {
       font-size: small; }
+
+.spf-body .spf-social-media-icon-bar a {
+  display: inline-block;
+  border: none;
+  margin: 0 .5em; }
+
+.spf-body i.social-media-icon-sm {
+  font-style: initial; }
 
 .input-group {
   display: table;

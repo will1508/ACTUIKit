@@ -1,0 +1,20 @@
+{{# radioButton.enabled}}
+<label class="uikit-control-input">
+	<input class="uikit-control-input__input" type="radio" name="{{radioButton.name}}">
+	<span class="uikit-control-input__text">{{radioButton.text}}</span>
+</label>
+{{/ radioButton.enabled}}
+
+{{# radioButton.checked}}
+<label class="uikit-control-input">
+	<input class="uikit-control-input__input" type="radio" name="{{radioButton.name}}" checked="">
+	<span class="uikit-control-input__text">{{radioButton.text}}</span>
+</label>
+{{/ radioButton.checked}}
+
+{{# radioButton.disabled}}
+<label class="uikit-control-input">
+	<input class="uikit-control-input__input" type="radio" name="{{radioButton.name}}" disabled="">
+	<span class="uikit-control-input__text">{{radioButton.text}}</span>
+</label>
+{{/ radioButton.disabled}}

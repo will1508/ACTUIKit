@@ -18,6 +18,34 @@
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis."
     },
     "smIconClassname": "fa-facebook-square",
+    "buttonEnabled": true,
+    "buttonDisabled": false,
+    "buttonText": "Button",
+    "textFieldLabel": "Text Field label",
+    "textFieldValue": "Text field value",
+    "textFieldNotValidated": true,
+    "textFieldValid": true,
+    "textFieldInvalid": true,
+    "textFieldDisabled": true,
+    "dropdownLabel": "Dropdown label",
+    "dropdownOptions": [
+        {
+            "text": "Option 1"
+        },
+        {
+            "text": "Option 2"
+        },
+        {
+            "text": "Option 3"
+        }
+    ],
+    "radioButton": {
+        "text": "Option name",
+        "name": "optionName",
+        "checked": true,
+        "disabled": true,
+        "enabled": true
+    },
     "social-media-icon": {
         "facebook": {
             "fontawesome": "fa-facebook-square",
@@ -56,10 +84,6 @@
             "alt": "Article image"
         }
     },
-
-
-
-
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

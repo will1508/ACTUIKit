@@ -545,7 +545,7 @@ SPF global variable
   .uikit-body ::selection, .kss-modifier__example ::selection {
     background-color: rgba(250, 194, 102, 0.5); }
   .uikit-body p, .kss-modifier__example p {
-    max-width: 42em;
+    max-width: initial;
     margin: 0 0 1.6em 0; }
   .uikit-body ul, .kss-modifier__example ul,
   .uikit-body ol, .kss-modifier__example ol,
@@ -803,7 +803,7 @@ SPF global variable
   border-left: 6px solid #3F2583;
   border-radius: 3px;
   box-shadow: 2px 0 6px rgba(49, 49, 49, 0.7);
-  max-width: 42em; }
+  max-width: initial; }
   .uikit-callout :first-child {
     margin-top: 0; }
   .uikit-callout :last-child {
@@ -1615,7 +1615,7 @@ SPF global variable
 .uikit-header-subline {
   font-size: 18px;
   line-height: 1.6;
-  max-width: 42em; }
+  max-width: initial; }
   @media (min-width: 768px) {
     .uikit-header-subline {
       font-size: 20px; } }
@@ -1798,7 +1798,7 @@ p + .uikit-display-6 {
   border: solid 2px #00bfe9;
   border-left: 48px solid #00bfe9;
   border-radius: 3px;
-  max-width: 42em; }
+  max-width: initial; }
   .uikit-page-alerts :first-child {
     margin-top: 0; }
   .uikit-page-alerts :last-child {
@@ -3701,7 +3701,7 @@ html > body .uikit-select__element, x:-moz-any-link, x:default {
   .uikit-body ::selection, .kss-modifier__example ::selection {
     background-color: rgba(250, 194, 102, 0.5); }
   .uikit-body p, .kss-modifier__example p {
-    max-width: 42em;
+    max-width: initial;
     margin: 0 0 1.6em 0; }
   .uikit-body ul, .kss-modifier__example ul,
   .uikit-body ol, .kss-modifier__example ol,
@@ -3959,7 +3959,7 @@ html > body .uikit-select__element, x:-moz-any-link, x:default {
   border-left: 6px solid #3F2583;
   border-radius: 3px;
   box-shadow: 2px 0 6px rgba(49, 49, 49, 0.7);
-  max-width: 42em; }
+  max-width: initial; }
   .uikit-callout :first-child {
     margin-top: 0; }
   .uikit-callout :last-child {
@@ -4771,7 +4771,7 @@ html > body .uikit-select__element, x:-moz-any-link, x:default {
 .uikit-header-subline {
   font-size: 18px;
   line-height: 1.6;
-  max-width: 42em; }
+  max-width: initial; }
   @media (min-width: 768px) {
     .uikit-header-subline {
       font-size: 20px; } }
@@ -4954,7 +4954,7 @@ p + .uikit-display-6 {
   border: solid 2px #00bfe9;
   border-left: 48px solid #00bfe9;
   border-radius: 3px;
-  max-width: 42em; }
+  max-width: initial; }
   .uikit-page-alerts :first-child {
     margin-top: 0; }
   .uikit-page-alerts :last-child {
@@ -6754,31 +6754,31 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
-.spf-body header.uikit-header {
+.spf-body .uikit-header {
   padding: 1.6em 0;
   margin-bottom: 0; }
-  .spf-body header.uikit-header:before, .spf-body header.uikit-header:after {
+  .spf-body .uikit-header:before, .spf-body .uikit-header:after {
     content: " ";
     display: table; }
-  .spf-body header.uikit-header:after {
+  .spf-body .uikit-header:after {
     clear: both; }
-  .spf-body header.uikit-header .uikit-header__logo {
+  .spf-body .uikit-header .uikit-header__logo {
     display: block;
     border-bottom: none;
     padding: 0.4em; }
-    .spf-body header.uikit-header .uikit-header__logo:hover, .spf-body header.uikit-header .uikit-header__logo:focus {
+    .spf-body .uikit-header .uikit-header__logo:hover, .spf-body .uikit-header .uikit-header__logo:focus {
       border-bottom: none; }
     @media (min-width: 992px) {
-      .spf-body header.uikit-header .uikit-header__logo {
+      .spf-body .uikit-header .uikit-header__logo {
         float: left; } }
-    .spf-body header.uikit-header .uikit-header__logo-image {
+    .spf-body .uikit-header .uikit-header__logo-image {
       display: block;
       width: 100%; }
-    .spf-body header.uikit-header .uikit-header__logo .uikit-header__logo-image {
+    .spf-body .uikit-header .uikit-header__logo .uikit-header__logo-image {
       width: 140px;
       height: 72px; }
   @media (min-width: 992px) {
-    .spf-body header.uikit-header .header-search-row {
+    .spf-body .uikit-header .header-search-row {
       margin-top: -0.8em; } }
 
 .spf-body footer .uikit-footer, .spf-body footer .spf-footer-global {
@@ -6857,6 +6857,14 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .spf-body i.social-media-icon-sm {
   font-style: initial; }
+
+.spf-body .spf-text-banner {
+  padding: 1.6em;
+  margin: 0.8em;
+  background-color: #2C1A5C;
+  display: block;
+  color: white;
+  line-height: 1; }
 
 .input-group {
   display: table;
@@ -7190,7 +7198,7 @@ body {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif; }
 
 .max-width {
-  max-width: 42em; }
+  max-width: initial; }
 
 .borderize {
   border: none;

@@ -25,7 +25,7 @@ $uikit-font-system: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Helve
 $fontawesome: "FontAwesome";
 
 // Max width for line lengths (the ‘measure’)
-$uikit-maxwidth: 42em; //Answer to life, the universe, and everything (keeps things readable on wide viewports).
+$uikit-maxwidth: initial; //Answer to life, the universe, and everything (keeps things readable on wide viewports).
 
 // Borders
 $uikit-borderize: 1px solid $uikit-colour-Border;

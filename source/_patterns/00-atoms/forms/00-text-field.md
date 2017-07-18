@@ -1,5 +1,9 @@
 ---
 title: Text Field
 ---
-
-[Insert description here]
+  
+Text fields examples including  
+- Not validated  
+- Valid  
+- Invalid  
+- Disabled

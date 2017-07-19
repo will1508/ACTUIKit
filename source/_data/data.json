@@ -67,6 +67,7 @@
         }
     ],
     "pageTitle": "Title",
+    "searchTerm": "Search term",
     "img": {
         "headerLogo": {
             "src": "../../images/logo_140x72.png",

@@ -6858,13 +6858,39 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .spf-body i.social-media-icon-sm {
   font-style: initial; }
 
-.spf-body .spf-text-banner {
+.spf-body .spf-text-banner,
+.spf-body .spf-text-banner-primary {
   padding: 1.6em;
-  margin: 0.8em;
   background-color: #2C1A5C;
   display: block;
   color: white;
   line-height: 1; }
+
+.spf-body .spf-text-banner-primary {
+  background-color: #f0f3f5;
+  color: #313131; }
+
+.spf-page-content, .spf-page-content--middle, .spf-page-content--left, .spf-page-content--right {
+  position: relative;
+  display: block;
+  padding: 0 1.6em;
+  margin: 1.6em 0; }
+
+.spf-page-content--middle {
+  border-right: 1px solid #555;
+  border-left: 1px solid #555; }
+
+.spf-page-content--left {
+  border-right: 1px solid #555; }
+
+.spf-page-content--right {
+  border-left: 1px solid #555; }
+
+.spf-page-sidebar {
+  padding: 0 1.6em;
+  margin: 1.6em 0; }
+  .spf-page-sidebar h3 {
+    margin: 0; }
 
 .input-group {
   display: table;
@@ -6916,6 +6942,20 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   .search-box .uikit-btn i {
     font-size: 34px;
     font-style: normal; }
+
+.spf-body .spf-form {
+  margin: 0.8em 0 0 0; }
+  .spf-body .spf-form > input,
+  .spf-body .spf-form > select,
+  .spf-body .spf-form > .uikit-select {
+    margin: 0; }
+  .spf-body .spf-form > label,
+  .spf-body .spf-form > p,
+  .spf-body .spf-form > button {
+    margin: 3.2em 0 0 0;
+    display: block; }
+  .spf-body .spf-form > p {
+    display: block; }
 
 .top-menu .uikit-link-list {
   padding-top: 0;

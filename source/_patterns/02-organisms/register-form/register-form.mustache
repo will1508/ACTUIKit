@@ -1,0 +1,14 @@
+<form class="spf-form">
+    {{> atoms-text-field-responsive(textFieldLabel: "Username*", textFieldValue: "") }}
+    {{> atoms-text-field-responsive(textFieldLabel: "Email address*", textFieldValue: "") }}
+    {{> atoms-text-field-responsive(textFieldLabel: "Password*", textFieldValue: "") }}
+    {{> atoms-text-field-responsive(textFieldLabel: "Confirm password*", textFieldValue: "") }}
+    {{> atoms-text-field-responsive(textFieldLabel: "Gender*", textFieldValue: "") }}
+    {{> atoms-text-field-responsive(textFieldLabel: "Age group*", textFieldValue: "") }}
+    {{> atoms-dropdown-responsive(dropdownLabel: "Where do you live?*")}}
+    {{> atoms-checkbox(radioButtonName: "agreements", radioButtonText:"I am happy to receive updates on ACT Government engagements", radioButtonChecked:"checked") }}
+    {{> atoms-checkbox(radioButtonName: "privacy", radioButtonText:"I agree to the privacy statement*") }}
+    <p>By creating an account you agree to our {{> atoms-text-link(textLinkTitle:"Privacy Policy", textLinkText: "Privacy Policy") }} and {{> atoms-text-link(textLinkTitle:"Terms of Use", textLinkText:"Terms of Use") }}.</p>
+    {{> atoms-button(buttonEnabled:"true", buttonText:"Sign up") }}
+    <p>Already have an account? {{> atoms-text-link(textLinkTitle:"Terms of Use", textLinkText: "Log in now") }}</p>
+</form>

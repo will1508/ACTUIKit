@@ -1,0 +1,19 @@
+.spf-body .spf-form {
+    margin: uikit-space(.5) 0 0 0;
+   > input,
+  > select,
+  > .uikit-select {
+    margin: 0;
+  }
+
+  > label,
+  > p,
+  > button {
+    margin: uikit-space(2) 0 0 0;
+    display: block;
+  }
+
+  > p {
+      display: block;
+  }
+}

@@ -25,7 +25,8 @@
 @import "social-media-icon/social-media-icon-bar/module";
 @import "social-media-icon/social-media-icon-sm/module";
 @import 'text-banner/module';
-
+@import 'page-content/module';
+@import 'sidebar/module';
 // @import 'alert/module';
 // @import 'alert/extends';
 // @import 'date/module';
@@ -58,6 +59,7 @@
 // // Style guide: forms
 @import 'forms/input/module';
 @import 'forms/search/module';
+@import 'forms/form/module';
 // @import 'forms/autocomplete/module';
 // @import 'forms/autocomplete/extends';
 // @import 'forms/button/module';

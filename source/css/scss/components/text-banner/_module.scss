@@ -1,8 +1,15 @@
-.spf-body .spf-text-banner {
-  padding: uikit-space(1);
-  margin: uikit-space(.5);
-  background-color: $uikit-colour-Hero;
-  display: block;
-  color: white;
-  line-height: 1;
+.spf-body {
+  .spf-text-banner,
+  .spf-text-banner-primary {
+    padding: uikit-space(1);
+    // margin: uikit-space(.5);
+    background-color: $uikit-colour-Hero;
+    display: block;
+    color: white;
+    line-height: 1;
+  }
+  .spf-text-banner-primary {
+    background-color: $uikit-colour-Background;
+    color: $uikit-colour-Text;
+  }
 }

@@ -1,0 +1,40 @@
+<div class="uikit-grid">
+    <div class="row">
+        <div class="col-md-12">
+            {{> organisms-header }}
+        </div>
+        <div class="col-md-12">
+            {{> organisms-top-menu }}
+        </div>
+        <div class="col-md-12">
+            {{> organisms-page-title-banner }}
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <p>{{> molecules-search }}</p>
+                    <p>{{> atoms-text-link(textLinkText:"Advanced search") }}</p>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-12">
+                    {{> atoms-text-banner-primary(content: "x-y of Z search results for 'search term'")}}
+                </div>
+                <div class="col-md-2 spf-page-sidebar">
+                    <h2>Sudebar title</h2>
+                    <h3>section title</h3>
+                    {{> molecules-link-list}}
+                    <h3>section title</h3>
+                    {{> molecules-link-list}}
+                </div>
+                <div class="col-md-10">
+                    <div class="spf-page-content--right">
+                        {{> atoms-text-link}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            {{> organisms-footer }}
+        </div>
+    </div>
+</div>

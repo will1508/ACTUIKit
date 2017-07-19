@@ -23,10 +23,6 @@
     "buttonText": "Button",
     "textFieldLabel": "Text Field label",
     "textFieldValue": "Text field value",
-    "textFieldNotValidated": true,
-    "textFieldValid": true,
-    "textFieldInvalid": true,
-    "textFieldDisabled": true,
     "dropdownLabel": "Dropdown label",
     "dropdownOptions": [
         {
@@ -39,13 +35,10 @@
             "text": "Option 3"
         }
     ],
-    "radioButton": {
-        "text": "Option name",
-        "name": "optionName",
-        "checked": true,
-        "disabled": true,
-        "enabled": true
-    },
+    "radioButtonText": "Option name",
+    "radioButtonName": "optionName",
+    "radioButtonChecked": "",
+    "radioButtonDisabled": "",
     "social-media-icon": {
         "facebook": {
             "fontawesome": "fa-facebook-square",
@@ -60,6 +53,9 @@
             "title": "Youtube"
         }
     },
+    "textLinkTitle": "title",
+    "textLinkText": "Link",
+    "textLinkHref": "#",
     "linkLists": [
         {
             "title": "Link 1",
@@ -70,6 +66,7 @@
             "text": "Link 2"
         }
     ],
+    "pageTitle": "Title",
     "img": {
         "headerLogo": {
             "src": "../../images/logo_140x72.png",

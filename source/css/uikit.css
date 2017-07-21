@@ -6944,9 +6944,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   .search-box .group-element:last-child {
     border: solid 2px #3F2583; }
   .search-box .uikit-btn {
-    padding: .1em; }
+    padding: .3em; }
   .search-box .uikit-btn i {
-    font-size: 34px;
+    font-size: 30px;
     font-style: normal; }
 
 .spf-body .spf-form {

@@ -82,6 +82,19 @@
             "alt": "Article image"
         }
     },
+    "tagText": "Tag",
+    "tagList": [
+        {
+            "tagText": "Tag 1"
+        },
+        {
+            "tagText": "Tag 2"
+        },
+        {
+            "tagText": "Tag 3"
+        }
+    ],
+
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

@@ -101,5 +101,8 @@
       "location": "pancake/js/",
       "name": false
     }
+  },
+  "devDependencies": {
+    "plugin-node-data-inheritance": "git+https://github.com/Altinn/plugin-node-data-inheritance.git"
   }
 }

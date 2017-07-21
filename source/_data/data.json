@@ -66,6 +66,7 @@
             "text": "Link 2"
         }
     ],
+    "accordionContent": "Accordion body",
     "pageTitle": "Title",
     "searchTerm": "Search term",
     "img": {

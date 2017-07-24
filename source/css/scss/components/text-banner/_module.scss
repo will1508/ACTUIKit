@@ -1,6 +1,7 @@
 .spf-body {
   .spf-text-banner,
-  .spf-text-banner-primary {
+  .spf-text-banner-primary,
+  .spf-text-banner-gradiant  {
     padding: uikit-space(1);
     // margin: uikit-space(.5);
     background-color: $uikit-colour-Hero;
@@ -11,5 +12,9 @@
   .spf-text-banner-primary {
     background-color: $uikit-colour-Background;
     color: $uikit-colour-Text;
+  }
+
+  .spf-text-banner-gradiant {
+    background: linear-gradient(to right, $uikit-colour-Primary, $uikit-colour-Link)
   }
 }

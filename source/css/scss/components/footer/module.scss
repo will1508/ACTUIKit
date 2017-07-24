@@ -1,4 +1,4 @@
-.spf-body footer .uikit-footer {
+.spf-body .uikit-footer {
   @include uikit-clearfix;
 
   padding: uikit-space(1) 0;
@@ -11,8 +11,6 @@
 
   .uikit-footer__logo {
     display: block;
-    // max-width: 140px;
-    // max-height: 100px;
     border-bottom: none;
     padding: uikit-space(.25);
 

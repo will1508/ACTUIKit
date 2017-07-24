@@ -95,7 +95,35 @@
             "tagText": "Tag 3"
         }
     ],
-
+    "fontawesomeFont": "fa-question-circle-o",
+    "fontawesomeSize": "fa-2x",
+    "tileTitle": "Title",
+    "tilesSection": [
+        {
+            "tileTitle": "Title"
+        },
+        {
+            "tileTitle": "Title"
+        },
+        {
+            "tileTitle": "Title"
+        },
+        {
+            "tileTitle": "Title"
+        },
+        {
+            "tileTitle": "Title"
+        },
+        {
+            "tileTitle": "Title"
+        },
+        {
+            "tileTitle": "Title"
+        },
+        {
+            "tileTitle": "Title"
+        }
+    ],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

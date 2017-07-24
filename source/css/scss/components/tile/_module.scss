@@ -1,0 +1,21 @@
+.spf-body .spf-tile {
+  border: $uikit-borderize;
+  border-radius: $uikit-border-radius;
+  border-color: $uikit-colour-Primary;
+  padding: uikit-space(.5);
+  margin-bottom: uikit-space(1);
+
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  span.icon {
+    color: $uikit-colour-Primary;
+    margin-right: uikit-space(.5);
+  }
+
+  span.title {
+    font-size: large;
+  }
+}

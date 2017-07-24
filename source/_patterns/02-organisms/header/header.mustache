@@ -1,20 +1,26 @@
 <header class="uikit-grid uikit-header uikit-header--light">
-    <div class="col-md-4">
-        <a href="#" title="Home" rel="home" class="uikit-header__logo">{{> atoms-header-logo }}</a>
-    </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <div class="row header-search-row">
-            <div class="col-md-12">
-                <div class="pull-right header-menu">
-                    {{> molecules-link-list-hr}}
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" title="Home" rel="home" class="uikit-header__logo">{{> atoms-header-logo }}</a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="row header-search-row">
+                    <div class="col-md-12">
+                        <div class="pull-right header-menu">
+                            {{> molecules-link-list-hr}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        {{> molecules-search }}
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                {{> molecules-search }}
-            </div>
-        </div>
     </div>
-</header>
+    <div class="col-md-1"></div>
+</header> 

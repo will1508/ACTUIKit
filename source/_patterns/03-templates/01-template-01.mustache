@@ -1,40 +1,56 @@
 <div class="uikit-grid">
     <div class="row">
         <div class="col-md-12">
-            {{> organisms-header }}
+            {{> organisms-cross-site-alert}}
         </div>
         <div class="col-md-12">
-            {{> organisms-top-menu }}
+            {{> organisms-header }}
         </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-12">
+                {{> organisms-top-menu }}
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <hr class="col-md-12 no-margin" />
         <div class="col-md-12">
             {{> atoms-banner }}
         </div>
-        <div class="col-md-12">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
             <div class="col-md-12">
-                {{> atoms-alert-info }}
+                <div class="col-md-12">
+                    {{> atoms-alert-info }}
+                </div>
             </div>
-        </div>
-        <div class="col-md-12">
+            {{> organisms-tiles-section}}
             <div class="col-md-12">
-                {{> atoms-callout }}
+                <div class="col-md-12">
+                    {{> atoms-callout }}
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    {{> organisms-article-box }}
+                </div>
+                <div class="col-md-3">
+                    {{> organisms-article-box }}
+                </div>
+                <div class="col-md-3">
+                    {{> organisms-article-box }}
+                </div>
+                <div class="col-md-3">
+                    {{> organisms-article-box }}
+                </div>
             </div>
         </div>
-        <div class="col-md-12">
-            <div class="col-md-3">
-                {{> organisms-article-box }}
-            </div>
-            <div class="col-md-3">
-                {{> organisms-article-box }}
-            </div>
-            <div class="col-md-3">
-                {{> organisms-article-box }}
-            </div>
-            <div class="col-md-3">
-                {{> organisms-article-box }}
-            </div>
-        </div>
+        <div class="col-md-1"></div>
         <div class="col-md-12">
             {{> organisms-footer }}
+        </div>
+        <div class="col-md-12">
+            {{> organisms-footer-global }}
         </div>
     </div>
 </div>

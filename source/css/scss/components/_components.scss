@@ -16,6 +16,7 @@
 // @import 'typography/headings/extends';
 
 // // Components
+@import 'images/module';
 @import 'header/module';
 @import 'footer/module';
 @import 'footer-global/module';
@@ -31,6 +32,7 @@
 @import 'fontawesome/module';
 @import 'tile/module';
 @import 'cross-site-alert/module';
+
 // @import 'alert/module';
 // @import 'alert/extends';
 // @import 'date/module';
@@ -121,8 +123,3 @@
 // @import 'navigation/tabs/module';
 // @import 'navigation/tabs/extends';
 // @import 'navigation/tags/extends';
-
-// Style guide: images
-@import 'images/banner/module';
-@import 'images/article/module';
-

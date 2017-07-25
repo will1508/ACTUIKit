@@ -7,7 +7,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div class="col-md-12">
-                    {{> organisms-top-menu }}
+                    {{> organisms-top-nav }}
                 </div>
                 <div class="col-md-12">
                     {{> organisms-page-title-banner }}
@@ -25,17 +25,15 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 spf-page-sidebar">
+                        <div class="col-md-2 spf-page-sidebar--left">
                             <h2>Sudebar title</h2>
                             <h3>section title</h3>
                             {{> molecules-link-list}}
                             <h3>section title</h3>
                             {{> molecules-link-list}}
                         </div>
-                        <div class="col-md-10">
-                            <div class="spf-page-content--right spf-search-result">
-                                {{> organisms-search-results}}
-                            </div>
+                        <div class="col-md-10 spf-page-content--right spf-search-result">
+                            {{> organisms-search-results}}
                         </div>
                     </div>
                 </div>

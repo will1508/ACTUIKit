@@ -122,7 +122,7 @@ module.exports = function (grunt) {
         },
         files: {
           "source/css/style.css": "source/css/style.scss",
-          "source/css/templates.css": "source/css/templates.scss"
+          // "source/css/templates.css": "source/css/templates.scss"
         }
       },
       uikit: {

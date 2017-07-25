@@ -2,6 +2,7 @@
     "article-box": {
         "title": "Article box",
         "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "date": "12/07/2017"
     },
     "alert": {
@@ -81,6 +82,10 @@
         "article": {
             "src": "../../images/article-image_Xx176.png",
             "alt": "Article image"
+        },
+        "feature-article": {
+            "src": "../../images/article-image_Xx176.png",
+            "alt": "Feature article image"
         }
     },
     "tagText": "Tag",

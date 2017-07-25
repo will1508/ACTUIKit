@@ -1,8 +1,16 @@
 .spf-page-sidebar {
-    padding: 0 uikit-space(1);
-    margin: uikit-space(1) 0;
+    padding: uikit-space(1);
+    // margin: uikit-space(1) 0;
+}
 
-    h3 {
-        margin: 0;
-    }
+.spf-page-sidebar--right {
+    @extend .spf-page-sidebar;
+    border-left: $uikit-borderize;
+    margin-left: -1px;
+}
+
+.spf-page-sidebar--left {
+    @extend .spf-page-sidebar;
+    border-right: $uikit-borderize;
+    margin-right: -1px;
 }

@@ -4,7 +4,7 @@
 
 .spf-body {
   table {
-    background-color: $table-bg;
+    background-color: transparent;
     border-collapse: collapse;
     border-spacing: 0;
   }
@@ -111,13 +111,21 @@
     }
   }
 
+  // Wrapped version
+  //
+  // Add borders around the table only. Rows are bordered by default
+
+    .table-wrapped {
+      border: $uikit-borderize;
+    }
+
   // Zebra-striping
   //
   // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
   .table-striped {
     > tbody > tr:nth-of-type(odd) {
-      background-color: $uikit-colour-Primary-20;
+      background-color: $uikit-colour-Background;
     }
   }
 
@@ -127,7 +135,7 @@
 
   .table-hover {
     > tbody > tr:hover {
-      background-color: $uikit-colour-Primary-30;
+      background-color: $uikit-colour-Background--10;
     }
   }
 
@@ -158,7 +166,7 @@
   // inheritance to nested tables.
 
   // Generate the contextual variants
-  @include table-row-variant( 'active', $uikit-colour-Primary-30);
+  @include table-row-variant( 'active', $uikit-colour-Link);
   @include table-row-variant( 'success', $uikit-colour-Success);
   @include table-row-variant( 'info', $uikit-colour-Info);
   @include table-row-variant( 'warning', $uikit-colour-Warning);

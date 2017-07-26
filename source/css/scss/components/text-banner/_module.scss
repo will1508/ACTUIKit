@@ -1,20 +1,33 @@
 .spf-body {
-  .spf-text-banner,
-  .spf-text-banner-primary,
-  .spf-text-banner-gradiant  {
+  .spf-text-banner {
     padding: uikit-space(1);
-    // margin: uikit-space(.5);
-    background-color: $uikit-colour-Hero;
     display: block;
     color: white;
     line-height: 1;
-  }
-  .spf-text-banner-primary {
-    background-color: $uikit-colour-Background;
-    color: $uikit-colour-Text;
-  }
 
-  .spf-text-banner-gradiant {
-    background: linear-gradient(to right, $uikit-colour-Primary, $uikit-colour-Link)
+    &.spf-text-banner--large {
+      padding: uikit-space(2);
+    }
+
+    &.spf-text-banner--hero {
+      background-color: $uikit-colour-Hero;
+    }
+
+    &.spf-text-banner--primary {
+      background-color: $uikit-colour-Primary;
+      color: $uikit-colour-Text;
+    }
+
+    &.spf-text-banner--light {
+      background-color: $uikit-colour-Primary;
+    }
+
+    &.spf-text-banner--dark {
+      background-color: $uikit-colour-Secondary;
+    }
+
+    &.spf-text-banner--gradiant {
+      background: linear-gradient(to right, $uikit-colour-Primary, $uikit-colour-Link);
+    }
   }
 }

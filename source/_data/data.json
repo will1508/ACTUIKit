@@ -129,6 +129,86 @@
             "tileTitle": "Title"
         }
     ],
+    "tableHeadings": [
+        {
+            "tableHeading": "Heading 1"
+        },
+        {
+            "tableHeading": "Heading 2"
+        },
+        {
+            "tableHeading": "Heading 3"
+        },
+        {
+            "tableHeading": "Heading 4"
+        }
+    ],
+    "tableRows": [
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        },
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        },
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        },
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        }
+    ],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

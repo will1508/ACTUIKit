@@ -1,0 +1,22 @@
+.spf-page-content {
+  position: relative;
+  display: block;
+  padding: uikit-space(1);
+  // margin: uikit-space(1) 0;
+}
+
+.spf-page-content--middle {
+  @extend .spf-page-content;
+  border-right: $uikit-borderize;
+  border-left: $uikit-borderize;
+}
+
+.spf-page-content--left {
+  @extend .spf-page-content;
+  border-right: $uikit-borderize;
+}
+
+.spf-page-content--right {
+  @extend .spf-page-content;
+  border-left: $uikit-borderize;
+}

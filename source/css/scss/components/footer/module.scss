@@ -1,0 +1,35 @@
+.spf-body .uikit-footer {
+  @include uikit-clearfix;
+
+  padding: uikit-space(1) 0;
+  margin-bottom: 0;
+  // margin-top: uikit-space(1);
+
+  .spf-social-media-icon-bar {
+    text-align: right;
+  }
+
+  .uikit-footer__logo {
+    display: block;
+    border-bottom: none;
+    padding: uikit-space(.25);
+
+    &:focus,
+    &:hover {
+      border-bottom: none;
+    }
+    @include uikit-media(md) {
+      float: left;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+    }
+
+    .uikit-footer__logo-image {
+      width: 140px;
+      height: 72px;
+    }
+  }
+}

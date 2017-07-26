@@ -18,6 +18,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-babel');
 
@@ -106,7 +107,12 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     clean: {
-      initial: ["source/css/style.css", "source/css/style.css.map", "source/css/scss/themes/*.scss", "source/js/uikit.js"],
+      initial: [
+        "source/css/style.css",
+        "source/css/style.css.map",
+        "source/css/scss/themes/*.scss",
+        "source/js/uikit.js"
+      ],
       uglifyFiles: ["src", "src.map", "dest", "dest.map"]
     },
     sass: {
@@ -115,8 +121,28 @@ module.exports = function (grunt) {
           sourceMap: true
         },
         files: {
-          "source/css/style.css": "source/css/style.scss"
+          "source/css/style.css": "source/css/style.scss",
+          // "source/css/templates.css": "source/css/templates.scss"
         }
+      },
+      uikit: {
+        options: {
+          sourceMap: true
+        },
+        files: {
+          "source/css/uikit.css": "source/css/uikit.scss"
+        }
+      }
+    },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'source/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'source/css',
+          ext: '.min.css'
+        }]
       }
     },
     watch: {
@@ -229,8 +255,8 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
+  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:build', ['copy:theme', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:watch', ['copy:theme', 'patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 };

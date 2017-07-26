@@ -1,0 +1,49 @@
+<div class="uikit-grid">
+    <div class="row">
+        <div class="col-md-12">
+            {{> organisms-header }}
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-12">
+                {{> organisms-top-nav }}
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <hr class="col-md-12 no-margin" />
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8 spf-page-content">
+                        {{> organisms-feature-article-box}}
+                    </div>
+                    <div class="col-md-4 spf-page-sidebar">
+                        {{> organisms-article-card}}
+                        {{> organisms-article-card}}
+                        {{> organisms-article-card}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8 spf-page-content--left">
+                        {{> atoms-text-banner-gradiant(content:"<h2>Title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis.</p>") }}
+                        <p></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies fermentum felis, quis eleifend mauris tempus convallis. Nulla faucibus ante in purus bibendum congue. Phasellus consectetur commodo ligula, sit amet dapibus eros blandit nec. Donec et tortor turpis. Phasellus ut mattis lacus.</p>
+                        <p>
+                    </div>
+                    <div class="col-md-4 spf-page-sidebar--right">{{> organisms-link-text-sidebar}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-12">
+            {{> organisms-footer }}
+        </div>
+        <div class="col-md-12">
+            {{> organisms-footer-global }}
+        </div>
+    </div>
+</div>

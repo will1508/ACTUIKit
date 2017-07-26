@@ -1,278 +1,305 @@
+<script type="text/javascript">
+	var head = document.head
+		, link = document.createElement('link')
+
+	link.type = 'text/css'
+	link.rel = 'stylesheet'
+	link.href = "../../css/uikit.min.css"
+
+	head.appendChild(link)
+</script>
+
 <div class="js split-wrapper">
-		<div class="split">
+	<div class="split">
 
-			<h2>Without body</h2>
+		<h2>Without body</h2>
 
-			<h3>Accordion open by default</h3>
+		<h3>Accordion open by default</h3>
 
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="accordion-default" aria-expanded="true" aria-selected="true" role="tab">
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="accordion-default" aria-expanded="true"
+			 aria-selected="true" role="tab">
 						Accordion title
 				</a>
 
-				<div class="uikit-accordion__body" id="accordion-default" aria-hidden="false">
-					<div class="uikit-accordion__body-wrapper">
+			<div class="uikit-accordion__body" id="accordion-default" aria-hidden="false">
+				<div class="uikit-accordion__body-wrapper">
 
-						Here <a href="#url">is</a> some accordion content
+					Here <a href="#url">is</a> some accordion content
 
-					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 
-			<hr>
-			<h3>Accordion closed by default</h3>
+		<hr>
+		<h3>Accordion closed by default</h3>
 
-			<section class="uikit-accordion">
-				<a class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-closed" aria-expanded="false" aria-selected="false" role="tab">
+		<section class="uikit-accordion">
+			<a class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-closed"
+			 aria-expanded="false" aria-selected="false" role="tab">
 						Accordion title
 				</a>
 
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-closed" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-closed" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
 
-						Here is some accordion <a href="#url">content</a>.
+					Here is some accordion <a href="#url">content</a>.
 
-					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 
-			<hr>
-			<h3>Accordion slow</h3>
+		<hr>
+		<h3>Accordion slow</h3>
 
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleSlow" aria-controls="accordion-slow" aria-expanded="true" aria-selected="true" role="tab">
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleSlow" aria-controls="accordion-slow" aria-expanded="true"
+			 aria-selected="true" role="tab">
 						Accordion title
 				</a>
 
-				<div class="uikit-accordion__body" id="accordion-slow" aria-hidden="false">
-					<div class="uikit-accordion__body-wrapper">
+			<div class="uikit-accordion__body" id="accordion-slow" aria-hidden="false">
+				<div class="uikit-accordion__body-wrapper">
 
-						Here is some accordion <a href="#url">content</a>.
+					Here is some accordion <a href="#url">content</a>.
 
-					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 
-			<hr>
-			<h3>Accordion with all callbacks</h3>
+		<hr>
+		<h3>Accordion with all callbacks</h3>
 
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleCallback" aria-controls="accordion-callbacks" aria-expanded="true" aria-selected="true" role="tab">
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleCallback" aria-controls="accordion-callbacks"
+			 aria-expanded="true" aria-selected="true" role="tab">
 						Accordion title
 				</a>
 
-				<div class="uikit-accordion__body" id="accordion-callbacks" aria-hidden="false">
-					<div class="uikit-accordion__body-wrapper">
+			<div class="uikit-accordion__body" id="accordion-callbacks" aria-hidden="false">
+				<div class="uikit-accordion__body-wrapper">
 
-						Here is some accordion <a href="#url">content</a>.
+					Here is some accordion <a href="#url">content</a>.
 
-					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 
-			<hr>
-			<h3>Accordion group</h3>
+		<hr>
+		<h3>Accordion group</h3>
 
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked1" aria-expanded="false" aria-selected="false" role="tab">
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked1"
+			 aria-expanded="false" aria-selected="false" role="tab">
 						First accordion title
 				</a>
 
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked1" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked1" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
 
-						<p>Here is some accordion content</p>
+					<p>Here is some accordion content</p>
 
-						<section class="uikit-accordion">
-							<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="inner-accordion" aria-expanded="true" aria-selected="true" role="tab">
+					<section class="uikit-accordion">
+						<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="inner-accordion" aria-expanded="true"
+						 aria-selected="true" role="tab">
 									A nested accordion
 							</a>
 
-							<div class="uikit-accordion__body" id="inner-accordion" aria-hidden="false">
-								<div class="uikit-accordion__body-wrapper">
-									Here is some <a href="#url">accordion</a> content
-								</div>
+						<div class="uikit-accordion__body" id="inner-accordion" aria-hidden="false">
+							<div class="uikit-accordion__body-wrapper">
+								Here is some <a href="#url">accordion</a> content
 							</div>
+						</div>
 
-						</section>
+					</section>
 
-						<p>Here is some accordion <a href="#url">content</a>.</p>
-
-					</div>
+					<p>Here is some accordion <a href="#url">content</a>.</p>
 
 				</div>
-			</section>
 
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked2" aria-expanded="false" aria-selected="false">
+			</div>
+		</section>
+
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked2"
+			 aria-expanded="false" aria-selected="false">
 						Another accordion
 				</a>
 
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked2" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
-						<p>Here is some accordion content</p>
-						<p>Here is some <a href="#url">accordion</a> content</p>
-						<p>Here is some accordion content</p>
-					</div>
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked2" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
+					<p>Here is some accordion content</p>
+					<p>Here is some <a href="#url">accordion</a> content</p>
+					<p>Here is some accordion content</p>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<div class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked3" aria-expanded="false" aria-selected="false">
+		<div class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked3"
+			 aria-expanded="false" aria-selected="false">
 						Accordion with words and words and a very long title so that it can break into several
 				</a>
 
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked3" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
-						<p>Here is some accordion content</p>
-						<p>Here is some <a href="#url">accordion</a> content</p>
-						<p>Here is some accordion content</p>
-					</div>
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked3" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
+					<p>Here is some accordion content</p>
+					<p>Here is some <a href="#url">accordion</a> content</p>
+					<p>Here is some accordion content</p>
 				</div>
 			</div>
-
 		</div>
 
-
-		<div class="split uikit-body">
-
-			<h2>With body</h2>
-
-			<h3>Accordion open by default</h3>
-
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="accordion-default-grid" aria-expanded="true" aria-selected="true" role="tab">
-						Accordion title
-				</a>
-
-				<div class="uikit-accordion__body" id="accordion-default-grid" aria-hidden="false">
-					<div class="uikit-accordion__body-wrapper">
-
-						Here <a href="#url">is</a> some accordion content
-
-					</div>
-				</div>
-			</section>
-
-
-			<hr>
-			<h3>Accordion closed by default</h3>
-
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-closed-grid" aria-expanded="false" aria-selected="false" role="tab">
-						Accordion title
-				</a>
-
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-closed-grid" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
-
-						Here is some accordion <a href="#url">content</a>.
-
-					</div>
-				</div>
-			</section>
-
-
-			<hr>
-			<h3>Accordion slow</h3>
-
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleSlow" aria-controls="accordion-slow-grid" aria-expanded="true" aria-selected="true" role="tab">
-						Accordion title
-				</a>
-
-				<div class="uikit-accordion__body" id="accordion-slow-grid" aria-hidden="false">
-					<div class="uikit-accordion__body-wrapper">
-
-						Here is some accordion <a href="#url">content</a>.
-
-					</div>
-				</div>
-			</section>
-
-
-			<hr>
-			<h3>Accordion with all callbacks</h3>
-
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleCallback" aria-controls="accordion-callbacks-grid" aria-expanded="true" aria-selected="true" role="tab">
-						Accordion title
-				</a>
-
-				<div class="uikit-accordion__body" id="accordion-callbacks-grid" aria-hidden="false">
-					<div class="uikit-accordion__body-wrapper">
-
-						Here is some accordion <a href="#url">content</a>.
-
-					</div>
-				</div>
-			</section>
-
-
-			<hr>
-			<h3>Accordion group</h3>
-
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked-grid1" aria-expanded="false" aria-selected="false" role="tab">
-						First accordion title
-				</a>
-
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid1" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
-
-						<p>Here is some accordion content</p>
-
-						<section class="uikit-accordion">
-							<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="inner-accordion-grid" aria-expanded="true" aria-selected="true" role="tab">
-									A nested accordion
-							</a>
-
-							<div class="uikit-accordion__body" id="inner-accordion-grid" aria-hidden="false">
-								<div class="uikit-accordion__body-wrapper">
-									Here is some <a href="#url">accordion</a> content
-								</div>
-							</div>
-
-						</section>
-
-						<p>Here is some accordion <a href="#url">content</a>.</p>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked-grid2" aria-expanded="false" aria-selected="false">
-						Another accordion
-				</a>
-
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid2" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
-						<p>Here is some accordion content</p>
-						<p>Here is some <a href="#url">accordion</a> content</p>
-						<p>Here is some accordion content</p>
-					</div>
-				</div>
-			</section>
-
-			<div class="uikit-accordion">
-				<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked-grid3" aria-expanded="false" aria-selected="false">
-						Accordion with words and words and a very long title so that it can break into several
-				</a>
-
-				<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid3" aria-hidden="true">
-					<div class="uikit-accordion__body-wrapper">
-						<p>Here is some accordion content</p>
-						<p>Here is some <a href="#url">accordion</a> content</p>
-						<p>Here is some accordion content</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
 	</div>
+
+
+	<div class="split uikit-body">
+
+		<h2>With body</h2>
+
+		<h3>Accordion open by default</h3>
+
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="accordion-default-grid" aria-expanded="true"
+			 aria-selected="true" role="tab">
+						Accordion title
+				</a>
+
+			<div class="uikit-accordion__body" id="accordion-default-grid" aria-hidden="false">
+				<div class="uikit-accordion__body-wrapper">
+
+					Here <a href="#url">is</a> some accordion content
+
+				</div>
+			</div>
+		</section>
+
+
+		<hr>
+		<h3>Accordion closed by default</h3>
+
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-closed-grid"
+			 aria-expanded="false" aria-selected="false" role="tab">
+						Accordion title
+				</a>
+
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-closed-grid" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
+
+					Here is some accordion <a href="#url">content</a>.
+
+				</div>
+			</div>
+		</section>
+
+
+		<hr>
+		<h3>Accordion slow</h3>
+
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleSlow" aria-controls="accordion-slow-grid" aria-expanded="true"
+			 aria-selected="true" role="tab">
+						Accordion title
+				</a>
+
+			<div class="uikit-accordion__body" id="accordion-slow-grid" aria-hidden="false">
+				<div class="uikit-accordion__body-wrapper">
+
+					Here is some accordion <a href="#url">content</a>.
+
+				</div>
+			</div>
+		</section>
+
+
+		<hr>
+		<h3>Accordion with all callbacks</h3>
+
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggleCallback" aria-controls="accordion-callbacks-grid"
+			 aria-expanded="true" aria-selected="true" role="tab">
+						Accordion title
+				</a>
+
+			<div class="uikit-accordion__body" id="accordion-callbacks-grid" aria-hidden="false">
+				<div class="uikit-accordion__body-wrapper">
+
+					Here is some accordion <a href="#url">content</a>.
+
+				</div>
+			</div>
+		</section>
+
+
+		<hr>
+		<h3>Accordion group</h3>
+
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked-grid1"
+			 aria-expanded="false" aria-selected="false" role="tab">
+						First accordion title
+				</a>
+
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid1" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
+
+					<p>Here is some accordion content</p>
+
+					<section class="uikit-accordion">
+						<a href="#" class="uikit-accordion__title js-uikit-accordion accordion-toggle" aria-controls="inner-accordion-grid" aria-expanded="true"
+						 aria-selected="true" role="tab">
+									A nested accordion
+							</a>
+
+						<div class="uikit-accordion__body" id="inner-accordion-grid" aria-hidden="false">
+							<div class="uikit-accordion__body-wrapper">
+								Here is some <a href="#url">accordion</a> content
+							</div>
+						</div>
+
+					</section>
+
+					<p>Here is some accordion <a href="#url">content</a>.</p>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked-grid2"
+			 aria-expanded="false" aria-selected="false">
+						Another accordion
+				</a>
+
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid2" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
+					<p>Here is some accordion content</p>
+					<p>Here is some <a href="#url">accordion</a> content</p>
+					<p>Here is some accordion content</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="uikit-accordion">
+			<a href="#" class="uikit-accordion__title uikit-accordion--closed js-uikit-accordion accordion-toggle" aria-controls="accordion-stacked-grid3"
+			 aria-expanded="false" aria-selected="false">
+						Accordion with words and words and a very long title so that it can break into several
+				</a>
+
+			<div class="uikit-accordion__body uikit-accordion--closed" id="accordion-stacked-grid3" aria-hidden="true">
+				<div class="uikit-accordion__body-wrapper">
+					<p>Here is some accordion content</p>
+					<p>Here is some <a href="#url">accordion</a> content</p>
+					<p>Here is some accordion content</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,37 @@
+.spf-body .spf-footer-global {
+  @extend .uikit-footer;
+
+  border: none;
+  background-color: $uikit-colour-Secondary;
+  margin-top: uikit-space(0);
+
+  .spf-social-media-icon-bar {
+    text-align: right;
+  }
+
+  .uikit-footer__logo {
+    display: block;
+    // max-width: 140px;
+    // max-height: 100px;
+    border-bottom: none;
+    padding: uikit-space(.25);
+
+    &:focus,
+    &:hover {
+      border-bottom: none;
+    }
+    @include uikit-media(md) {
+      float: right;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+    }
+
+    .uikit-footer__logo-image {
+      width: 140px;
+      height: 72px;
+    }
+  }
+}

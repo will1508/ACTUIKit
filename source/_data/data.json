@@ -85,7 +85,11 @@
             "alt": "Article image"
         },
         "feature-article": {
-            "src": "../../images/article-image_Xx176.png",
+            "src": "../../images/feature_article_Xx290.png",
+            "alt": "Feature article image"
+        },
+        "article-card": {
+            "src": "../../images/article_card_100x100.png",
             "alt": "Feature article image"
         }
     },

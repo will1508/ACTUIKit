@@ -17,6 +17,7 @@
 
     &.spf-text-banner--primary {
       background-color: $uikit-colour-Primary;
+      color: $uikit-colour-Background;
     }
 
     &.spf-text-banner--light {
@@ -25,10 +26,12 @@
 
     &.spf-text-banner--dark {
       background-color: $uikit-colour-Secondary;
+      color: $uikit-colour-Background;
     }
 
     &.spf-text-banner--gradiant {
       background: linear-gradient(to right, $uikit-colour-Primary, $spf-colour-second-Gradiant);
+      color: $uikit-colour-Background;
     }
   }
 }

@@ -1,12 +1,25 @@
 .spf-body.uikit-body {
   .spf-pagination {
     .uikit-link-list > li {
-      padding: uikit-space(0) uikit-space(.5);
+      padding: uikit-space(0) uikit-space(.1);
+      display: inline-block;
+      border-bottom: solid 2px transparent;
+
+      &:active,
+      &:hover {
+        border-color: $uikit-colour-Primary;
+        background-color: $uikit-colour-Link;
+      }
+
+      > a {
+        border: none;
+        display: inline-block;
+      }
     }
 
-     > .spf-pagination--prev,
-    > .spf-pagination--next {
-      padding: uikit-space(.5);
+     > .spf-pagination--next,
+    > .spf-pagination--prev {
+      padding: uikit-space(.1);
       border: none;
       vertical-align: middle;
       display: inline-block;

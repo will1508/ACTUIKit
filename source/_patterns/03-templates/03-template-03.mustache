@@ -9,9 +9,16 @@
                 <div class="col-md-12">
                     {{> organisms-top-nav }}
                 </div>
-                <div class="col-md-12">
-                    {{> organisms-page-title-banner }}
-                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {{> organisms-page-title-banner }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
@@ -21,7 +28,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            {{> atoms-text-banner-primary(content: "x-y of Z search results for 'search term'")}}
+                            {{> atoms-text-banner-light(content: "x-y of Z search results for 'search term'")}}
                         </div>
                     </div>
                     <div class="row">
@@ -33,7 +40,7 @@
                             {{> molecules-link-list}}
                         </div>
                         <div class="col-md-10 spf-page-content--right spf-search-result">
-                            {{> organisms-search-results}}
+                            {{> organisms-search-results}} {{> molecules-pagination(classNames:"text-center") }}
                         </div>
                     </div>
                 </div>

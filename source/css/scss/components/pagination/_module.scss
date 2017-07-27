@@ -1,0 +1,29 @@
+.spf-body.uikit-body {
+  .spf-pagination {
+    .uikit-link-list > li {
+      padding: uikit-space(0) uikit-space(.5);
+    }
+
+     > .spf-pagination--prev,
+    > .spf-pagination--next {
+      padding: uikit-space(.5);
+      border: none;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    > .spf-pagination--prev::after {
+      content: '\f053';
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+    }
+
+    > .spf-pagination--next::after {
+      @extend .spf-pagination--prev::after;
+
+      content: '\f054';
+    }
+  }
+}

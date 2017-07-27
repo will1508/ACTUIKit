@@ -59,12 +59,12 @@
     "textLinkHref": "#",
     "linkLists": [
         {
-            "title": "Link 1",
-            "text": "Link 1"
+            "textLinkTitle": "Link 1",
+            "textLinkText": "Link 1"
         },
         {
-            "title": "Link 2",
-            "text": "Link 2"
+            "textLinkTitle": "Link 2",
+            "textLinkText": "Link 2"
         }
     ],
     "accordionContent": "Accordion body",

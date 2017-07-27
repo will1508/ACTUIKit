@@ -1,4 +1,3 @@
-
 $spf-colour-second-Gradiant: #A33790 !default; //SPF colors added as extension of UIkit default colors. Gradiant secondary color is not provided by UIkit 
 
 $spf-colour-second-Gradiant--10: mix(black, $spf-colour-second-Gradiant, 10) !default;
@@ -22,3 +21,17 @@ $spf-colour-second-Gradiant-30: mix(white, $spf-colour-second-Gradiant, 70) !def
 $spf-colour-second-Gradiant-20: mix(white, $spf-colour-second-Gradiant, 80) !default;
 $spf-colour-second-Gradiant-10: mix(white, $spf-colour-second-Gradiant, 90) !default;
 $spf-colour-second-Gradiant-5: mix(white, $spf-colour-second-Gradiant, 95) !default;
+
+
+$uikit-colour-Primary: #3F2583;
+$uikit-colour-Hero: mix(black, $uikit-colour-Primary, 30);
+$uikit-colour-Secondary: #313131;
+$uikit-colour-Border: #555;
+$uikit-colour-Text: #313131;
+// $uikit-colour-Link: #ebd2e7;
+$uikit-colour-Link: mix(white, $spf-colour-second-Gradiant, 80);
+
+$uikit-colour-Error: #ff635c;
+$uikit-colour-Success: #0cac78;
+$uikit-colour-Warning: #f69900;
+$uikit-colour-Info: #00bfe9;

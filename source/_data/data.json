@@ -94,6 +94,11 @@
             "alt": "Feature article image"
         }
     },
+    "logoList": [
+        {"logoTitle": "logo 1"},
+        {"logoTitle": "logo 2"},
+        {"logoTitle": "logo 3"}
+    ],
     "tagText": "Tag",
     "tagList": [
         {

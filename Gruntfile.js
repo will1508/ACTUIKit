@@ -99,9 +99,38 @@ module.exports = function (grunt) {
     themeFiles = [];
     themeFiles.push({ expand: true, cwd: path.resolve(cwd), src: '*', dest: path.resolve(themeDest) });
 
+    var fontawesomePaths = {
+      fonts: {
+        cwd: paths().source.fontawesome + 'fonts/',
+        dest: paths().source.fonts + '/font-awesome/fonts/'
+      },
+      cssfile: {
+        cwd: paths().source.fontawesome + 'css/',
+        dest: paths().source.fonts + '/font-awesome/css/'
+
+      }
+    }
+
+    var fontawesome = [
+      {
+        expand: true,
+        cwd: path.resolve(fontawesomePaths.fonts.cwd),
+        src: '*',
+        dest: path.resolve(fontawesomePaths.fonts.dest)
+      },
+      {
+        expand: true,
+        cwd: path.resolve(fontawesomePaths.cssfile.cwd),
+        src: 'font-awesome.min.css',
+        dest: path.resolve(fontawesomePaths.cssfile.dest)
+
+      }
+    ];
+
     grunt.config('copy', {
       main: { 'files': files },
-      theme: { 'files': themeFiles }
+      theme: { 'files': themeFiles },
+      fontawesome: { 'files': fontawesome }
     })
   };
 
@@ -258,5 +287,5 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:build', ['copy:theme', 'patternlab', 'copy:main']);
   grunt.registerTask('patternlab:watch', ['copy:theme', 'patternlab', 'copy:main', 'watch:all']);
-  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 };

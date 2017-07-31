@@ -10,6 +10,7 @@
 }
 
 .spf-feature-article-image {
+  @extend .spf-image;
   width: 100%;
   height: 290px;
 }

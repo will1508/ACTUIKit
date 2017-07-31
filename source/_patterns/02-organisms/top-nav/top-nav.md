@@ -1,4 +1,4 @@
 ---
 title: Top navigation
 ---  
-Top menu
+Top navigation

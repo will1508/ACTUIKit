@@ -1,5 +1,4 @@
 ---
 title: button
 ---
-
-this is a test
+Primary button colored as the theme's primary color

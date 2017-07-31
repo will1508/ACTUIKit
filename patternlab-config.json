@@ -13,7 +13,8 @@
       "fonts" : "./source/fonts",
       "css" : "./source/css/",
       "themes": "./source/css/scss/themes/",
-      "uikit":"./node_modules/@gov.au/"
+      "uikit":"./node_modules/@gov.au/",
+      "fontawesome":"./node_modules/font-awesome/"
     },
     "public" : {
       "root" : "./public/",

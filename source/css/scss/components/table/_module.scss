@@ -1,0 +1,245 @@
+//
+// Tables
+// --------------------------------------------------
+
+.spf-body {
+  table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  //   caption {
+  //     padding-top: $table-cell-padding;
+  //     padding-bottom: $table-cell-padding;
+  //     color: $text-muted;
+  //     text-align: left;
+  //   }
+
+  th {
+    text-align: left;
+  }
+
+  // Baseline styles
+
+  .spf-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: uikit-space(1);
+
+    // Cells
+     > tbody,
+     > thead,
+    > tfoot {
+      > tr {
+         > td,
+        > th {
+          padding: uikit-space(.5);
+          line-height: uikit-space(1);
+          vertical-align: top;
+          border-top: 1px solid $uikit-colour-Border;
+        }
+      }
+    }
+    // Bottom align for column headings
+    > thead > tr > th {
+      vertical-align: bottom;
+      border-bottom: 2px solid $uikit-colour-Border;
+      background-color: $uikit-colour-Primary;
+      color: $uikit-colour-Primary-10;
+    }
+    // Remove top border from thead by default
+     > colgroup + thead,
+     > thead:first-child,
+    > caption + thead {
+      > tr:first-child {
+         > td,
+        > th {
+          border-top: 0;
+        }
+      }
+    }
+    // Account for multiple tbody instances
+    > tbody + tbody {
+      border-top: 2px solid $uikit-colour-Border;
+    }
+
+    // Nesting
+    .spf-table {
+      background-color: $uikit-colour-Background;
+    }
+  }
+
+  // Condensed table w/ half padding
+
+  .table-condensed {
+     > tbody,
+     > thead,
+    > tfoot {
+      > tr {
+         > td,
+        > th {
+          padding: uikit-space(.5);
+        }
+      }
+    }
+  }
+
+  // Bordered version
+  //
+  // Add borders all around the table and between all the columns.
+
+  .table-bordered {
+    border: 1px solid $uikit-colour-Border;
+
+     > tbody,
+     > thead,
+    > tfoot {
+      > tr {
+         > td,
+        > th {
+          border: 1px solid $uikit-colour-Border;
+        }
+      }
+    }
+
+    > thead > tr {
+       > td,
+      > th {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+
+  // Wrapped version
+  //
+  // Add borders around the table only. Rows are bordered by default
+
+    .table-wrapped {
+      border: $uikit-borderize;
+    }
+
+  // Zebra-striping
+  //
+  // Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+  .table-striped {
+    > tbody > tr:nth-of-type(odd) {
+      background-color: $uikit-colour-Background;
+    }
+  }
+
+  // Hover effect
+  //
+  // Placed here since it has to come after the potential zebra striping
+
+  .table-hover {
+    > tbody > tr:hover {
+      background-color: $uikit-colour-Background--10;
+    }
+  }
+
+  // Table cell sizing
+  //
+  // Reset default table behavior
+
+  table col[class*="col-"] {
+    position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+    float: none;
+    display: table-column;
+  }
+
+  table {
+    td,
+    th {
+      &[class*="col-"] {
+        position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+        float: none;
+        display: table-cell;
+      }
+    }
+  }
+
+  // Table backgrounds
+  //
+  // Exact selectors below required to override `.table-striped` and prevent
+  // inheritance to nested tables.
+
+  // Generate the contextual variants
+  @include table-row-variant( 'active', $uikit-colour-Link);
+  @include table-row-variant( 'success', $uikit-colour-Success);
+  @include table-row-variant( 'info', $uikit-colour-Info);
+  @include table-row-variant( 'warning', $uikit-colour-Warning);
+  @include table-row-variant( 'danger', $uikit-colour-Error);
+
+  // Responsive tables
+  //
+  // Wrap your tables in `.table-responsive` and we'll make them mobile friendly
+  // by enabling horizontal scrolling. Only applies <768px. Everything above that
+  // will display normally.
+
+  .table-responsive {
+    overflow-x: auto;
+    min-height: .01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+    @media screen and (max-width: $uikit-media-xs) {
+      width: 100%;
+      margin-bottom: uikit-space(.75);
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid $uikit-colour-Border;
+
+      // Tighten up spacing
+      > .table {
+        margin-bottom: 0;
+
+        // Ensure the content doesn't wrap
+         > tbody,
+         > thead,
+        > tfoot {
+          > tr {
+             > td,
+            > th {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+      // Special overrides for the bordered tables
+      > .table-bordered {
+        border: 0;
+
+        // Nuke the appropriate borders so that the parent can handle them
+         > tbody,
+         > thead,
+        > tfoot {
+          > tr {
+             > td:first-child,
+            > th:first-child {
+              border-left: 0;
+            }
+
+             > td:last-child,
+            > th:last-child {
+              border-right: 0;
+            }
+          }
+        }
+
+        // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
+        // chances are there will be only one `tr` in a `thead` and that would
+        // remove the border altogether.
+         > tfoot,
+        > tbody {
+          > tr:last-child {
+             > td,
+            > th {
+              border-bottom: 0;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

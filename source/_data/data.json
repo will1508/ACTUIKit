@@ -1,4 +1,6 @@
 {
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.",
+    "bannerContent": "<h1>Title</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
     "article-box": {
         "title": "Article box",
         "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.",
@@ -59,12 +61,12 @@
     "textLinkHref": "#",
     "linkLists": [
         {
-            "title": "Link 1",
-            "text": "Link 1"
+            "textLinkTitle": "Link 1",
+            "textLinkText": "Link 1"
         },
         {
-            "title": "Link 2",
-            "text": "Link 2"
+            "textLinkTitle": "Link 2",
+            "textLinkText": "Link 2"
         }
     ],
     "accordionContent": "Accordion body",
@@ -84,10 +86,19 @@
             "alt": "Article image"
         },
         "feature-article": {
-            "src": "../../images/article-image_Xx176.png",
+            "src": "../../images/feature_article_Xx290.png",
+            "alt": "Feature article image"
+        },
+        "article-card": {
+            "src": "../../images/article_card_100x100.png",
             "alt": "Feature article image"
         }
     },
+    "logoList": [
+        {"logoTitle": "logo 1"},
+        {"logoTitle": "logo 2"},
+        {"logoTitle": "logo 3"}
+    ],
     "tagText": "Tag",
     "tagList": [
         {
@@ -129,6 +140,94 @@
             "tileTitle": "Title"
         }
     ],
+    "tableHeadings": [
+        {
+            "tableHeading": "Heading 1"
+        },
+        {
+            "tableHeading": "Heading 2"
+        },
+        {
+            "tableHeading": "Heading 3"
+        },
+        {
+            "tableHeading": "Heading 4"
+        }
+    ],
+    "tableRows": [
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        },
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        },
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        },
+        {
+            "tableCells": [
+                {
+                    "tableCell": "Cell 1"
+                },
+                {
+                    "tableCell": "Cell 2"
+                },
+                {
+                    "tableCell": "Cell 3"
+                },
+                {
+                    "tableCell": "Cell 4"
+                }
+            ]
+        }
+    ],
+    "sideNavLevel1": [{
+        "textLinkTitle": "Level 1",
+        "textLinkText": "Level 1"
+    }],
+    "sideNavLevel2": [{
+        "textLinkTitle": "Level 2",
+        "textLinkText": "Level 2"
+    }],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

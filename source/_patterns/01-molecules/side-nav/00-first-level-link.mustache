@@ -1,6 +1,6 @@
-<div class="spf-side-nav">
-    <ul>
-        <li>{{> atoms-first-level-link-close}}</li>
-        <li>{{> atoms-first-level-link-close}}</li>
-    </ul>
-</div>
+{{# sideNavLevel1}}
+<li class="{{classname}}" {{{attributes}}}>
+    {{> atoms-text-link}}
+    {{> atoms-second-level-link}}
+</li>
+{{/ sideNavLevel1}}

@@ -7,33 +7,30 @@
       margin: 0;
       padding: 0;
     }
+  }
 
-    ul {
-      border: $uikit-borderize;
-      border-color: $uikit-colour-Primary;
+  .spf-side-nav--first {
+    border: $uikit-borderize;
+    border-color: $uikit-colour-Primary;
+    border-top: none;
+
+    &:first-child {
+      border-top: $uikit-borderize;
+      border-top-color: $uikit-colour-Primary;
     }
 
-    li {
-      border-bottom: $uikit-borderize;
-      border-color: inherit;
-    }
-
-    li:last-child {
-      border-bottom: none;
-    }
-
-    a.spf-side-nav--first {
+    > a {
       display: block;
       padding: uikit-space(1);
       border: none;
-      border-color: $uikit-colour-Primary;
       border-left: solid uikit-space(.3) transparent;
 
       &:active,
       &:focus,
       &:hover {
         background-color: transparent;
-        border-color: $uikit-colour-Primary;
+        border-left: solid uikit-space(.3) $uikit-colour-Primary;
+        outline: none;
       }
 
       &::after {
@@ -48,25 +45,60 @@
         font-size: x-large;
         line-height: 1;
       }
+    }
 
-      &.close::after {
+    &.close {
+      > a::after {
         content: '\f054';
         transform: rotate(0deg);
       }
+    }
 
-      &.open::after {
+    &.open {
+      > a {
+        background-color: transparent;
+        border-left: solid uikit-space(.3) $uikit-colour-Primary;
+        outline: none;
+      }
+
+      > a::after {
         content: '\f054';
         transform: rotate(90deg);
+
+      }
+    }
+  }
+
+  .spf-side-nav--second {
+    overflow: hidden;
+    height: auto;
+    transition: max-height .3s;
+
+    > li {
+      @extend .spf-side-nav--first;
+      &:first-child {
+        border: none;
+        border-top: $uikit-borderize;
+        border-color: $uikit-colour-Primary;
+      }
+      a {
+        background-color: $uikit-colour-Background;
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $uikit-colour-Background;
+        }
+
       }
     }
 
-    a.spf-side-nav--second {
-      @extend a.spf-side-nav--first;
-      background-color: $uikit-colour-Background;
+    &.close {
+      max-height: 0;
+    }
 
-      &:hover,&:active {
-        @extend .spf-side-nav--second;
-      }
+    &.open {
+      max-height: 2000px;
     }
   }
 }

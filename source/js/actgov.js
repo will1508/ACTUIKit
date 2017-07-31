@@ -1,3 +1,4 @@
+SPF.isSideNav(document.querySelector('.spf-body .spf-side-nav'));
 try {
     var accordionToggles = document.querySelectorAll('.accordion-toggle');
     for (elem of accordionToggles) {

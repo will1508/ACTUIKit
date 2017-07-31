@@ -220,6 +220,14 @@
             ]
         }
     ],
+    "sideNavLevel1": [{
+        "textLinkTitle": "Level 1",
+        "textLinkText": "Level 1"
+    }],
+    "sideNavLevel2": [{
+        "textLinkTitle": "Level 2",
+        "textLinkText": "Level 2"
+    }],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

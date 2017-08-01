@@ -247,7 +247,15 @@
             "classname": "spf-side-nav--first close",
             "textLinkTitle": "Level 1",
             "textLinkText": "Level 1",
-            "attributes": "aria-controls='side-nav-1' aria-expanded='false'"
+            "attributes": "aria-controls='side-nav-1' aria-expanded='false'",
+            "sideNavLevel2": [
+                {
+                    "classname": "spf-side-nav--second",
+                    "id": "side-nav-2",
+                    "textLinkTitle": "Level 2",
+                    "textLinkText": "Level 2"
+                }
+            ]
         }
     ],
     "sideNavLevel1Open": [
@@ -255,7 +263,15 @@
             "classname": "spf-side-nav--first open",
             "textLinkTitle": "Level 1",
             "textLinkText": "Level 1",
-            "attributes": "aria-controls='side-nav-1' aria-expanded='true'"
+            "attributes": "aria-controls='side-nav-1' aria-expanded='false'",
+            "sideNavLevel2": [
+                {
+                    "classname": "spf-side-nav--second",
+                    "id": "side-nav-2",
+                    "textLinkTitle": "Level 2",
+                    "textLinkText": "Level 2"
+                }
+            ]
         }
     ],
     "sideNavLevel2": [

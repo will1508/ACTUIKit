@@ -95,9 +95,15 @@
         }
     },
     "logoList": [
-        {"logoTitle": "logo 1"},
-        {"logoTitle": "logo 2"},
-        {"logoTitle": "logo 3"}
+        {
+            "logoTitle": "logo 1"
+        },
+        {
+            "logoTitle": "logo 2"
+        },
+        {
+            "logoTitle": "logo 3"
+        }
     ],
     "tagText": "Tag",
     "tagList": [
@@ -220,14 +226,84 @@
             ]
         }
     ],
-    "sideNavLevel1": [{
-        "textLinkTitle": "Level 1",
-        "textLinkText": "Level 1"
-    }],
-    "sideNavLevel2": [{
-        "textLinkTitle": "Level 2",
-        "textLinkText": "Level 2"
-    }],
+    "sideNavLevel1": [
+        {
+            "classname": "spf-side-nav--first",
+            "textLinkTitle": "Level 1",
+            "textLinkText": "Level 1",
+            "attributes": "aria-controls='side-nav-1' aria-expanded='false'",
+            "sideNavLevel2": [
+                {
+                    "classname": "spf-side-nav--second",
+                    "id": "side-nav-2",
+                    "textLinkTitle": "Level 2",
+                    "textLinkText": "Level 2"
+                }
+            ]
+        }
+    ],
+    "sideNavLevel1Close": [
+        {
+            "classname": "spf-side-nav--first close",
+            "textLinkTitle": "Level 1",
+            "textLinkText": "Level 1",
+            "attributes": "aria-controls='side-nav-1' aria-expanded='false'"
+        }
+    ],
+    "sideNavLevel1Open": [
+        {
+            "classname": "spf-side-nav--first open",
+            "textLinkTitle": "Level 1",
+            "textLinkText": "Level 1",
+            "attributes": "aria-controls='side-nav-1' aria-expanded='true'"
+        }
+    ],
+    "sideNavLevel2": [
+        {
+            "classname": "spf-side-nav--second",
+            "id": "side-nav-2",
+            "textLinkTitle": "Level 2",
+            "textLinkText": "Level 2"
+        }
+    ],
+    "sideNavMolecule": [
+        {
+            "sideNavLevel1": [
+                {
+                    "classname": "spf-side-nav--first close",
+                    "textLinkTitle": "Level 1",
+                    "textLinkText": "Level 1",
+                    "attributes": "aria-controls='side-nav-1' aria-expanded='false'",
+                    "sideNavLevel2": [
+                        {
+                            "classname": "spf-side-nav--second",
+                            "id": "side-nav-1",
+                            "textLinkTitle": "Level 2",
+                            "textLinkText": "Level 2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sideNavLevel1": [
+                {
+                    "classname": "spf-side-nav--first close",
+                    "textLinkTitle": "Level 1",
+                    "textLinkText": "Level 1",
+                    "attributes": "aria-controls='side-nav-2' aria-expanded='false'",
+                    "sideNavLevel2": [
+                        {
+                            "classname": "spf-side-nav--second",
+                            "id": "side-nav-2",
+                            "textLinkTitle": "Level 2",
+                            "textLinkText": "Level 2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

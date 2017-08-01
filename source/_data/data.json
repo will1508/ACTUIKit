@@ -92,6 +92,10 @@
         "article-card": {
             "src": "../../images/article_card_100x100.png",
             "alt": "Feature article image"
+        },
+        "text-banner-image": {
+            "src": "../../images/text-banner-image.png",
+            "alt": "Text banner image background"
         }
     },
     "logoList": [

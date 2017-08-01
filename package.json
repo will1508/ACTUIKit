@@ -100,6 +100,9 @@
       "modules": false,
       "location": "pancake/js/",
       "name": false
+    },
+    "react": {
+      "location": "pancake/react/"
     }
   },
   "devDependencies": {

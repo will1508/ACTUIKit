@@ -1,104 +1,89 @@
 .spf-body {
-  .spf-side-nav {
-    li,
-    ul {
-      list-style: none;
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  .spf-side-nav--first {
-    border: $uikit-borderize;
-    border-color: $uikit-colour-Primary;
-    border-top: none;
-
-    &:first-child {
-      border-top: $uikit-borderize;
-      border-top-color: $uikit-colour-Primary;
-    }
-
-    > a {
-      display: block;
-      padding: uikit-space(1);
-      border: none;
-      border-left: solid uikit-space(.3) transparent;
-
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: transparent;
-        border-left: solid uikit-space(.3) $uikit-colour-Primary;
-        outline: none;
-      }
-
-      &::after {
-        content: '';
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: inherit;
-        float: right;
-        transition: all .2s;
-        color: $uikit-colour-Primary;
-        font-size: x-large;
-        line-height: 1;
-      }
-    }
-
-    &.close {
-      > a::after {
-        content: '\f054';
-        transform: rotate(0deg);
-      }
-    }
-
-    &.open {
-      > a {
-        background-color: transparent;
-        border-left: solid uikit-space(.3) $uikit-colour-Primary;
-        outline: none;
-      }
-
-      > a::after {
-        content: '\f054';
-        transform: rotate(90deg);
-
-      }
-    }
-  }
-
-  .spf-side-nav--second {
-    overflow: hidden;
-    height: auto;
-    transition: max-height .3s;
-
-    > li {
-      @extend .spf-side-nav--first;
-      &:first-child {
-        border: none;
-        border-top: $uikit-borderize;
-        border-color: $uikit-colour-Primary;
-      }
-      a {
-        background-color: $uikit-colour-Background;
-
-        &:active,
-        &:focus,
-        &:hover {
-          background-color: $uikit-colour-Background;
+    .spf-side-nav {
+        li,
+        ul {
+            list-style: none;
+            display: block;
+            margin: 0;
+            padding: 0;
         }
-
-      }
     }
-
-    &.close {
-      max-height: 0;
+    .spf-side-nav--first {
+        border: $uikit-borderize;
+        border-color: $uikit-colour-Primary;
+        border-top: none;
+        &:first-child {
+            border-top: $uikit-borderize;
+            border-top-color: $uikit-colour-Primary;
+        }
+        >a {
+            display: block;
+            padding: uikit-space(1);
+            border: none;
+            border-left: solid uikit-space(.3) transparent;
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: transparent;
+                border-left: solid uikit-space(.3) $uikit-colour-Primary;
+                outline: none;
+            }
+            &::after {
+                content: '';
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                float: right;
+                transition: all .2s;
+                color: $uikit-colour-Primary;
+                font-size: x-large;
+                line-height: 1;
+            }
+        }
+        .spf-side-nav--second {
+            overflow: hidden;
+            height: auto;
+            transition: max-height .3s;
+            >li {
+                @extend .spf-side-nav--first;
+                &:first-child {
+                    border: none;
+                    border-top: $uikit-borderize;
+                    border-color: $uikit-colour-Primary;
+                }
+                a {
+                    background-color: $uikit-colour-Background;
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        background-color: $uikit-colour-Background;
+                    }
+                }
+            }
+        }
+        &.close {
+            >a::after {
+                content: '\f054';
+                transform: rotate(0deg);
+            }
+            .spf-side-nav--second {
+                max-height: 0;
+            }
+        }
+        &.open {
+            >a {
+                background-color: transparent;
+                border-left: solid uikit-space(.3) $uikit-colour-Primary;
+                outline: none;
+            }
+            >a::after {
+                content: '\f054';
+                transform: rotate(90deg);
+            }
+            .spf-side-nav--second {
+                max-height: 2000px;
+            }
+        }
     }
-
-    &.open {
-      max-height: 2000px;
-    }
-  }
 }

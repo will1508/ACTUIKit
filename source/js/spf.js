@@ -37,31 +37,51 @@ var SPF = SPF || {};
 
     // --------------Tabs functions
     SPF.isTabElement = function (element) {
-        var tabMenuItems = element.querySelectorAll(' ul.uikit-link-list > li');
-        for (i = 0; i < tabMenuItems.length; i++) {
-            var thisMenuClickableItem = tabMenuItems[i].querySelector('a');
-            thisMenuClickableItem.addEventListener('click', function (e) {
-                SPF.toggleTab(e.currentTarget, element);
-            });
+        var tabMenuItems = element.querySelectorAll('.spf-tabs-menu---item');
+
+        if (tabMenuItems && tabMenuItems.length > 0) {
+            for (i = 0; i < tabMenuItems.length; i++) {
+                tabMenuItems[i].addEventListener('click', function (e) {
+                    SPF.toggleTab(e.currentTarget, element);
+                });
+            }
+            SPF.initiateTabElement(element);
+        }
+    }
+
+    SPF.initiateTabElement = function(element) {
+        var activeMenu = element.querySelector('.spf-tabs-menu---item.active');
+        if(activeMenu) {
+            SPF.toggleTab(activeMenu, element);
+        } else {
+            var firstElement = element.querySelector('.spf-tabs-menu---item');
+            SPF.toggleTab(firstElement, element);
         }
     }
 
     SPF.toggleTab = function (clickedMenuItem, tabsElement) {
-        var tabMenuItems = tabsElement.querySelectorAll('ul > li');
+        var tabMenuItems = tabsElement.querySelectorAll('.spf-tabs-menu---item');
         var tabId = clickedMenuItem.getAttribute('aria-controls');
-        var tabsContentElements = tabsElement.querySelectorAll('.spf-tabs-content .spf-tab-item');
+        var tabsContentElements = tabsElement.querySelectorAll('.spf-tabs-content .spf-tabs-content--item');
         for (i = 0; i < tabsContentElements.length; i++) {
             var thisTabElement = tabsContentElements[i];
-            var menuItem = tabMenuItems.find(function (item) {
-                return item.getAttribute('aria-controls') === thisTabElement.getAttribute('id');
-            });
+
             if (thisTabElement.getAttribute('id') !== tabId) {
                 thisTabElement.classList.remove('active');
-                menuItem.classList.remove('active');
             } else {
                 thisTabElement.classList.add('active');
             }
         }
+
+        for (j = 0; j < tabMenuItems.length; j++) {
+            var thisMenuItem = tabMenuItems[j];
+            if (thisMenuItem.getAttribute('aria-controls') === tabId) {
+                thisMenuItem.classList.add('active');
+            } else {
+                thisMenuItem.classList.remove('active');
+            }
+        };
+
     };
     // End of - Tabs functions------------
 

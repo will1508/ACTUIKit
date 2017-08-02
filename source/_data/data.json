@@ -330,19 +330,39 @@
                 {
                     "textLinkText": "Tab 1",
                     "textLinkTitle": "Tab 1",
+                    "linkListLiClass": "spf-tabs-menu---item-wrapper",
+                    "textLinkClassname": "spf-tabs-menu---item",
                     "extraAttributes": "aria-controls='tab1'"
                 },
                 {
                     "textLinkText": "Tab 2",
                     "textLinkTitle": "Tab 2",
+                    "linkListLiClass": "spf-tabs-menu---item-wrapper",
+                    "textLinkClassname": "spf-tabs-menu---item",
                     "extraAttributes": "aria-controls='tab2'"
                 },
                 {
                     "textLinkText": "Tab 3",
                     "textLinkTitle": "Tab 3",
+                    "linkListLiClass": "spf-tabs-menu---item-wrapper",
+                    "textLinkClassname": "spf-tabs-menu---item active",
                     "extraAttributes": "aria-controls='tab3'"
                 }
             ]
+        }
+    ],
+    "tabsContent": [
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.",
+            "id": "tab1"
+        },
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor.",
+            "id": "tab2"
+        },
+        {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor.</p><p> Fusce in tincidunt risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.</p>",
+            "id": "tab3"
         }
     ],
     "company": {

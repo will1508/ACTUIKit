@@ -1,14 +1,10 @@
 <div class="spf-tabs">
         {{> molecules-tabs-menu}}
         <div class="spf-tabs-content">
-                <div class="spf-tab-item" id="tab1">
-                {{text}}
+        {{# tabsContent}}
+                <div class="spf-tabs-content--item" id="{{id}}">
+                        {{{text}}}
                 </div>
-                <div class="spf-tab-item" id="tab2">
-                {{text}}
-                </div>
-                <div class="spf-tab-item" id="tab3">
-                {{text}}
-                </div>
+        {{/ tabsContent}}
         </div>
 </div>

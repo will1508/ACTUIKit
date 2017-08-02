@@ -1,4 +1,10 @@
-SPF.isSideNav(document.querySelector('.spf-body .spf-side-nav'));
+if(document.querySelector('.spf-body .spf-side-nav')) {
+    SPF.isSideNav(document.querySelector('.spf-body .spf-side-nav'));
+}
+
+if(document.querySelector('.spf-body .spf-tabs')) {
+    SPF.isTabElement(document.querySelector('.spf-body .spf-tabs'));
+}
 try {
     var accordionToggles = document.querySelectorAll('.accordion-toggle');
     for (elem of accordionToggles) {

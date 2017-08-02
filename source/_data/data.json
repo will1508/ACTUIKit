@@ -324,6 +324,27 @@
             ]
         }
     ],
+    "tabsMenu": [
+        {
+            "linkLists": [
+                {
+                    "textLinkText": "Tab 1",
+                    "textLinkTitle": "Tab 1",
+                    "extraAttributes": "aria-controls='tab1'"
+                },
+                {
+                    "textLinkText": "Tab 2",
+                    "textLinkTitle": "Tab 2",
+                    "extraAttributes": "aria-controls='tab2'"
+                },
+                {
+                    "textLinkText": "Tab 3",
+                    "textLinkTitle": "Tab 3",
+                    "extraAttributes": "aria-controls='tab3'"
+                }
+            ]
+        }
+    ],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

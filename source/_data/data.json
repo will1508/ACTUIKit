@@ -374,6 +374,33 @@
             "fontawesomeSize": "fa-1x"
         }
     ],
+    "contactUsForm": [{
+        "contactUsFormTitle": "Contact us",
+        "textFields": [
+            {
+                "textFieldLabel": "Full Name",
+                "textFieldValue": "",
+                "labelClassname": "spf-contact-form-fullname",
+                "inputClassname": "spf-contact-form-fullname col-sm-6"
+            },
+            {
+                "textFieldLabel": "Email Address",
+                "textFieldValue": "",
+                "labelClassname": "spf-contact-form-email",
+                 "inputClassname": "spf-contact-form-email col-sm-6"
+           },
+            {
+                "textFieldLabel": "Subject",
+                "textFieldValue": "",
+                "labelClassname": "spf-contact-form-subject",
+                "inputClassname": "spf-contact-form-subject col-sm-6"
+            }
+        ],
+        "textarea": [{
+            "textFieldLabel": "Reason for submission",
+            "textFieldValue": ""
+        }]
+    }],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

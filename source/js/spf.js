@@ -49,9 +49,9 @@ var SPF = SPF || {};
         }
     }
 
-    SPF.initiateTabElement = function(element) {
+    SPF.initiateTabElement = function (element) {
         var activeMenu = element.querySelector('.spf-tabs-menu---item.active');
-        if(activeMenu) {
+        if (activeMenu) {
             SPF.toggleTab(activeMenu, element);
         } else {
             var firstElement = element.querySelector('.spf-tabs-menu---item');
@@ -83,6 +83,38 @@ var SPF = SPF || {};
         };
 
     };
+    // End of - Tabs functions------------
+
+    // --------------Tabs functions
+
+    SPF.isTopNav = function (element) {
+        var topNavMenuLink = element.querySelector('.spf-top-nav-mobile--title > a');
+
+        if (topNavMenuLink) {
+            topNavMenuLink.addEventListener('click', function (e) {
+                SPF.toggleTopNav(element);
+            });
+            SPF.initiateTopNav(element);
+        }
+
+    }
+
+    SPF.toggleTopNav = function (element) {
+        if (element.classList.contains('close')) {
+            element.classList.remove('close');
+            element.classList.add('open');
+        } else if (element.classList.contains('open')) {
+            element.classList.remove('open');
+            element.classList.add('close');
+        }
+    }
+
+    SPF.initiateTopNav = function (element) {
+        if (!(element.classList.contains('close') || element.classList.contains('open'))) {
+            element.classList.add('close');
+        }
+    }
+
     // End of - Tabs functions------------
 
 }(SPF));

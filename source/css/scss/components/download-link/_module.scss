@@ -1,0 +1,58 @@
+.spf-download-link {
+    &::after {
+        content: " \f0ab";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        color: $uikit-colour-Primary;
+    }
+    .spf-download-link--size {
+        &::before {
+            content: "[ ";
+            margin-right: 4px;
+        }
+        &::after {
+            content: " ]";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        }
+    }
+    &.spf-download-link--pdf {
+        .spf-download-link--size::before {
+            content: "[ \f1c1 ";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        }
+    }
+    &.spf-download-link--word {
+        .spf-download-link--size::before {
+            content: "[ \f1c2 ";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        }
+    }
+    &.spf-download-link--ppt {
+        .spf-download-link--size::before {
+            content: "[ \f1c4 ";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        }
+    }
+    &.spf-download-link--txt {
+        .spf-download-link--size::before {
+            content: "[ \f0f6 ";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        }
+    }
+}

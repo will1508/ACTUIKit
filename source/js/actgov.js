@@ -5,6 +5,10 @@ if(document.querySelector('.spf-body .spf-side-nav')) {
 if(document.querySelector('.spf-body .spf-tabs')) {
     SPF.isTabElement(document.querySelector('.spf-body .spf-tabs'));
 }
+if(document.querySelector('.spf-top-nav-mobile')) {
+    SPF.isTopNav(document.querySelector('.spf-top-nav-mobile'));
+}
+
 try {
     var accordionToggles = document.querySelectorAll('.accordion-toggle');
     for (elem of accordionToggles) {

@@ -365,6 +365,15 @@
             "id": "tab3"
         }
     ],
+    "downloadLinks": [
+        {
+            "downloadLinkTitle": "Download PDF",
+            "downloadLinkSize": "xx.x MB",
+            "textLinkClassname": "spf-download-link spf-download-link--pdf",
+            "fontawesomeFont": "fa-arrow-circle-down",
+            "fontawesomeSize": "fa-1x"
+        }
+    ],
     "company": {
         "name": "HikeTracker",
         "url": "http://hiketracker.com"

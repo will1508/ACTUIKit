@@ -8,6 +8,11 @@
     .spf-contact-us-form--title,
     .spf-contact-us-form--body {
         padding: uikit-space(1);
+        .spf-form {
+            >label {
+                margin-top: uikit-space(1);
+            }
+        }
         label.spf-contact-form-fullname::before,
         label.spf-contact-form-email::before {
             font-family: FontAwesome;

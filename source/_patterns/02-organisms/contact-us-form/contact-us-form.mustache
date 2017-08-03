@@ -1,15 +1,19 @@
 {{# contactUsForm}}
-<div class="spf-contact-us-form uikit-grid">
+<div class="spf-contact-us-form ">
     <div class="spf-contact-us-form--title">
         <h2>{{contactUsFormTitle}}</h2>
     </div>
-    <form class="spf-contact-us-form--body spf-form">
-        {{# textFields}}
-            {{> atoms-text-field}}
-        {{/ textFields}}
-        {{# textarea}}
-            {{> atoms-text-area}}
-        {{/ textarea}}
+    <form class="spf-contact-us-form--body uikit-grid">
+        <div class="row">
+            <div class="col-sm-6 spf-form">
+                {{# textFields}} {{> atoms-text-field}} {{/ textFields}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 spf-form">
+                {{# textarea}} {{> atoms-text-area}} {{/ textarea}} {{> atoms-button}}
+            </div>
+        </div>
     </form>
 </div>
 {{/ contactUsForm}}

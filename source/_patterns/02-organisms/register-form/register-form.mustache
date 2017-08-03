@@ -1,10 +1,9 @@
 <form class="spf-form">
-    {{> atoms-text-field-responsive(textFieldLabel: "Username*", textFieldValue: "") }}
-    {{> atoms-text-field-responsive(textFieldLabel: "Email address*", textFieldValue: "") }}
-    {{> atoms-text-field-responsive(textFieldLabel: "Password*", textFieldValue: "") }}
-    {{> atoms-text-field-responsive(textFieldLabel: "Confirm password*", textFieldValue: "") }}
-    {{> atoms-text-field-responsive(textFieldLabel: "Gender*", textFieldValue: "") }}
-    {{> atoms-text-field-responsive(textFieldLabel: "Age group*", textFieldValue: "") }}
+    {{# registerForm}}
+        {{# textFields}}
+            {{> atoms-text-field}}
+        {{/ textFields}}
+    {{/ registerForm}}
     {{> atoms-dropdown-responsive(dropdownLabel: "Where do you live?*")}}
     {{> atoms-checkbox(radioButtonName: "agreements", radioButtonText:"I am happy to receive updates on ACT Government engagements", radioButtonChecked:"checked") }}
     {{> atoms-checkbox(radioButtonName: "privacy", radioButtonText:"I agree to the privacy statement*") }}

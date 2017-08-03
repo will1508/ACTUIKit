@@ -1,0 +1,14 @@
+.spf-body {
+    .spf-block {
+        border: $uikit-borderize;
+        border-color: $uikit-colour-Primary;
+        .spf-block--title,
+        .spf-block--body {
+            padding: uikit-space(1);
+        }
+        .spf-block--title {
+            background-color: $uikit-colour-Primary;
+            color: $uikit-colour-Background;
+        }
+    }
+}

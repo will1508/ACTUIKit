@@ -1,34 +1,29 @@
-.spf-body .spf-contact-us-form {
-    border: $uikit-borderize;
-    border-color: $uikit-colour-Primary;
-    .spf-contact-us-form--title {
-        background-color: $uikit-colour-Primary;
-        color: $uikit-colour-Background;
-    }
-    .spf-contact-us-form--title,
-    .spf-contact-us-form--body {
-        padding: uikit-space(1);
-        .spf-form {
-            >label {
-                margin-top: uikit-space(1);
+.spf-body {
+    .spf-contact-us-form {
+        .spf-contact-us-form--title,
+        .spf-contact-us-form--body {
+            .spf-form {
+                >label {
+                    margin-top: uikit-space(1);
+                }
+            }
+            label.spf-contact-form-fullname::before,
+            label.spf-contact-form-email::before {
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                margin-right: 4px;
+            }
+            label.spf-contact-form-fullname::before {
+                content: "\f007";
+            }
+            label.spf-contact-form-email::before {
+                content: "\f003";
             }
         }
-        label.spf-contact-form-fullname::before,
-        label.spf-contact-form-email::before {
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration: inherit;
-            margin-right: 4px;
+        .spf-contact-us-form--body {
+            padding-top: 0;
         }
-        label.spf-contact-form-fullname::before {
-            content: "\f007";
-        }
-        label.spf-contact-form-email::before {
-            content: "\f003";
-        }
-    }
-    .spf-contact-us-form--body {
-        padding-top: 0;
     }
 }

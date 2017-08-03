@@ -442,6 +442,37 @@
             ]
         }
     ],
+    "contactBlock": [
+        {
+            "title": "Contact us",
+            "subTitle": "Subtitle section",
+            "phone": [{
+                "textLinkTitle": "Phone number",
+                "textLinkText": "+61 X XXXX XXXX",
+                "textLinkClassname": "spf-contact-block--phone"
+            }],
+            "email": [{
+                "textLinkTitle": "Email address",
+                "textLinkText": "email@domain.com.au",
+                "textLinkClassname": "spf-contact-block--email"
+            }],
+            "address": [{
+                "textLinkTitle": "Postal address",
+                "textLinkText": "Street address<br>Street address line 2<br>GPO box xxxx<br>State, Post code<br>",
+                "textLinkClassname": "spf-contact-block--address"
+            }],
+            "phone2": [{
+                "textLinkTitle": "Phone number",
+                "textLinkText": "+61 X XXXX XXXX",
+                "textLinkClassname": "spf-contact-block--phone"
+            }],
+            "email2": [{
+                "textLinkTitle": "Email address",
+                "textLinkText": "email@domain.com.au",
+                "textLinkClassname": "spf-contact-block--email"
+            }]
+        }
+    ],
     "title": "Pattern Lab",
     "bodyClass": "uikit-body spf-body"
 }

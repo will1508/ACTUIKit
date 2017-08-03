@@ -1,0 +1,25 @@
+{{# contactBlock}}
+<div class="spf-block spf-contact-block">
+    <div class="spf-block--title">
+        <h2>{{title}}</h2>
+    </div>
+    <div class="spf-block--body">
+        <p>
+            {{# phone}} {{> atoms-text-link}} {{/ phone}}
+        </p>
+        <p>
+            {{# email}} {{> atoms-text-link}} {{/ email}}
+        </p>
+        <p>
+            {{# address}} {{> atoms-text-link}} {{/ address}}
+        </p>
+        <h3>{{subTitle}}</h3>
+        <p>
+            {{# phone2}} {{> atoms-text-link}} {{/ phone2}}
+        </p>
+        <p>
+            {{# email2}} {{> atoms-text-link}} {{/ email2}}
+        </p>
+    </div>
+</div>
+{{/ contactBlock}}

@@ -25,7 +25,58 @@
     "buttonDisabled": false,
     "buttonText": "Button",
     "textFieldLabel": "Text Field label",
-    "textFieldValue": "Text field value",
+    "textFieldValue": "",
+    "fieldName": "textField1",
+    "placeholder": "Place holder",
+    "labelClassname": "",
+    "inputClassname": "",
+    "extraAttributes": "",
+    "textFields": {
+        "textFieldDisabled": [
+            {
+                "textFieldLabel": "Text Field diabled",
+                "textFieldValue": "",
+                "fieldName": "textField2",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "",
+                "extraAttributes": "disabled='disabled'"
+            }
+        ],
+        "textFieldInvalid": [
+            {
+                "textFieldLabel": "Text Field invalid",
+                "textFieldValue": "",
+                "fieldName": "textField3",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "uikit-text-input--invalid",
+                "extraAttributes": ""
+            }
+        ],
+        "textFieldValid": [
+            {
+                "textFieldLabel": "Text Field valid",
+                "textFieldValue": "",
+                "fieldName": "textField4",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "uikit-text-input--valid",
+                "extraAttributes": ""
+            }
+        ],
+        "textFieldResponsive": [
+            {
+                "textFieldLabel": "Text Field responsive",
+                "textFieldValue": "",
+                "fieldName": "textField6",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "uikit-text-input--block",
+                "extraAttributes": ""
+            }
+        ]
+    },
     "dropdownLabel": "Dropdown label",
     "dropdownOptions": [
         {
@@ -107,6 +158,26 @@
         },
         {
             "logoTitle": "logo 3"
+        }
+    ],
+    "headerLogoList": [
+        {
+            "headerLogoTitle": "Header logo title",
+            "logoList": [
+                {
+                    "logoTitle": "logo 1"
+                },
+                {
+                    "logoTitle": "logo 2"
+                }
+            ]
+        }
+    ],
+    "headerLogoTextList": [
+        {
+            "headerLogoTitle": "Header logo title",
+            "logoTitle": "Logo 1",
+            "logoText": "Title"
         }
     ],
     "tagText": "Tag",
@@ -446,31 +517,41 @@
         {
             "title": "Contact us",
             "subTitle": "Subtitle section",
-            "phone": [{
-                "textLinkTitle": "Phone number",
-                "textLinkText": "+61 X XXXX XXXX",
-                "textLinkClassname": "spf-contact-block--phone"
-            }],
-            "email": [{
-                "textLinkTitle": "Email address",
-                "textLinkText": "email@domain.com.au",
-                "textLinkClassname": "spf-contact-block--email"
-            }],
-            "address": [{
-                "textLinkTitle": "Postal address",
-                "textLinkText": "Street address<br>Street address line 2<br>GPO box xxxx<br>State, Post code<br>",
-                "textLinkClassname": "spf-contact-block--address"
-            }],
-            "phone2": [{
-                "textLinkTitle": "Phone number",
-                "textLinkText": "+61 X XXXX XXXX",
-                "textLinkClassname": "spf-contact-block--phone"
-            }],
-            "email2": [{
-                "textLinkTitle": "Email address",
-                "textLinkText": "email@domain.com.au",
-                "textLinkClassname": "spf-contact-block--email"
-            }]
+            "phone": [
+                {
+                    "textLinkTitle": "Phone number",
+                    "textLinkText": "+61 X XXXX XXXX",
+                    "textLinkClassname": "spf-contact-block--phone"
+                }
+            ],
+            "email": [
+                {
+                    "textLinkTitle": "Email address",
+                    "textLinkText": "email@domain.com.au",
+                    "textLinkClassname": "spf-contact-block--email"
+                }
+            ],
+            "address": [
+                {
+                    "textLinkTitle": "Postal address",
+                    "textLinkText": "Street address<br>Street address line 2<br>GPO box xxxx<br>State, Post code<br>",
+                    "textLinkClassname": "spf-contact-block--address"
+                }
+            ],
+            "phone2": [
+                {
+                    "textLinkTitle": "Phone number",
+                    "textLinkText": "+61 X XXXX XXXX",
+                    "textLinkClassname": "spf-contact-block--phone"
+                }
+            ],
+            "email2": [
+                {
+                    "textLinkTitle": "Email address",
+                    "textLinkText": "email@domain.com.au",
+                    "textLinkClassname": "spf-contact-block--email"
+                }
+            ]
         }
     ],
     "title": "Pattern Lab",

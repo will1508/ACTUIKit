@@ -1,0 +1,25 @@
+.spf-body {
+    .spf-contact-block {
+        [class*="spf-contact-block--"] {
+            position: relative;
+            left: uikit-space(1);
+            &::before {
+                content: "";
+                font-family: fontAwesome;
+                font-size: large;
+                text-decoration: none;
+                position: absolute;
+                left: uikit-space(-1);
+            }
+        }
+        .spf-contact-block--phone::before {
+            content: '\f095';
+        }
+        .spf-contact-block--email::before {
+            content: '\f003';
+        }
+        .spf-contact-block--address::before {
+            content: '\f041';
+        }
+    }
+}

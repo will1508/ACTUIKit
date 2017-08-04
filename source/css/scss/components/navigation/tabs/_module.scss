@@ -1,0 +1,59 @@
+.spf-body {
+  .spf-tabs-menu {
+    @extend .spf-top-nav;
+    float: left;
+    width: 100%;
+
+    .uikit-link-list {
+      float: left;
+      background: white;
+      position: relative;
+
+      > .spf-tabs-menu---item-wrapper {
+        margin: 0;
+        float: left;
+
+        > .spf-tabs-menu---item {
+          @include uikit-media(md) {
+            padding-top: uikit-space(.5);
+            padding-bottom: uikit-space(.5);
+            outline: none;
+          }
+          border-top: $uikit-borderize;
+          border-top-color: $uikit-colour-Primary;
+          border-right: $uikit-borderize;
+          border-right-color: $uikit-colour-Primary;
+
+          &.active {
+            border-bottom-color: $uikit-colour-Primary;
+          }
+        }
+
+        &:first-child > .spf-tabs-menu---item {
+          border-left: $uikit-borderize;
+          border-left-color: $uikit-colour-Primary;
+        }
+      }
+    }
+  }
+
+  .spf-tabs-content {
+    float: left;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    background: white;
+    margin-top: -2px;
+    border-top: $uikit-borderize;
+    border-color: $uikit-colour-Primary;
+    padding: uikit-space(1);
+
+    .spf-tabs-content--item {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

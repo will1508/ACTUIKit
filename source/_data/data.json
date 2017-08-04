@@ -25,7 +25,58 @@
     "buttonDisabled": false,
     "buttonText": "Button",
     "textFieldLabel": "Text Field label",
-    "textFieldValue": "Text field value",
+    "textFieldValue": "",
+    "fieldName": "textField1",
+    "placeholder": "Place holder",
+    "labelClassname": "",
+    "inputClassname": "",
+    "extraAttributes": "",
+    "textFields": {
+        "textFieldDisabled": [
+            {
+                "textFieldLabel": "Text Field diabled",
+                "textFieldValue": "",
+                "fieldName": "textField2",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "",
+                "extraAttributes": "disabled='disabled'"
+            }
+        ],
+        "textFieldInvalid": [
+            {
+                "textFieldLabel": "Text Field invalid",
+                "textFieldValue": "",
+                "fieldName": "textField3",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "uikit-text-input--invalid",
+                "extraAttributes": ""
+            }
+        ],
+        "textFieldValid": [
+            {
+                "textFieldLabel": "Text Field valid",
+                "textFieldValue": "",
+                "fieldName": "textField4",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "uikit-text-input--valid",
+                "extraAttributes": ""
+            }
+        ],
+        "textFieldResponsive": [
+            {
+                "textFieldLabel": "Text Field responsive",
+                "textFieldValue": "",
+                "fieldName": "textField6",
+                "placeholder": "Place holder",
+                "labelClassname": "",
+                "inputClassname": "uikit-text-input--block",
+                "extraAttributes": ""
+            }
+        ]
+    },
     "dropdownLabel": "Dropdown label",
     "dropdownOptions": [
         {
@@ -92,6 +143,10 @@
         "article-card": {
             "src": "../../images/article_card_100x100.png",
             "alt": "Feature article image"
+        },
+        "text-banner-image": {
+            "src": "../../images/text-banner-image.png",
+            "alt": "Text banner image background"
         }
     },
     "logoList": [
@@ -103,6 +158,26 @@
         },
         {
             "logoTitle": "logo 3"
+        }
+    ],
+    "headerLogoList": [
+        {
+            "headerLogoTitle": "Header logo title",
+            "logoList": [
+                {
+                    "logoTitle": "logo 1"
+                },
+                {
+                    "logoTitle": "logo 2"
+                }
+            ]
+        }
+    ],
+    "headerLogoTextList": [
+        {
+            "headerLogoTitle": "Header logo title",
+            "logoTitle": "Logo 1",
+            "logoText": "Title"
         }
     ],
     "tagText": "Tag",
@@ -320,222 +395,165 @@
             ]
         }
     ],
-    "company": {
-        "name": "HikeTracker",
-        "url": "http://hiketracker.com"
-    },
+    "tabsMenu": [
+        {
+            "linkLists": [
+                {
+                    "textLinkText": "Tab 1",
+                    "textLinkTitle": "Tab 1",
+                    "linkListLiClass": "spf-tabs-menu---item-wrapper",
+                    "textLinkClassname": "spf-tabs-menu---item",
+                    "extraAttributes": "aria-controls='tab1'"
+                },
+                {
+                    "textLinkText": "Tab 2",
+                    "textLinkTitle": "Tab 2",
+                    "linkListLiClass": "spf-tabs-menu---item-wrapper",
+                    "textLinkClassname": "spf-tabs-menu---item",
+                    "extraAttributes": "aria-controls='tab2'"
+                },
+                {
+                    "textLinkText": "Tab 3",
+                    "textLinkTitle": "Tab 3",
+                    "linkListLiClass": "spf-tabs-menu---item-wrapper",
+                    "textLinkClassname": "spf-tabs-menu---item active",
+                    "extraAttributes": "aria-controls='tab3'"
+                }
+            ]
+        }
+    ],
+    "tabsContent": [
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.",
+            "id": "tab1"
+        },
+        {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor.",
+            "id": "tab2"
+        },
+        {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor.</p><p> Fusce in tincidunt risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ultricies ante. Fusce feugiat placerat porttitor. Pellentesque ac dignissim turpis. Vivamus at fermentum lorem. Aenean aliquam odio quis viverra auctor. Maecenas diam neque, feugiat et enim vel, viverra lobortis dolor. Fusce in tincidunt risus.</p>",
+            "id": "tab3"
+        }
+    ],
+    "downloadLinks": [
+        {
+            "downloadLinkTitle": "Download PDF",
+            "downloadLinkSize": "xx.x MB",
+            "textLinkClassname": "spf-download-link spf-download-link--pdf",
+            "fontawesomeFont": "fa-arrow-circle-down",
+            "fontawesomeSize": "fa-1x"
+        }
+    ],
+    "contactUsForm": [
+        {
+            "buttonText": "Submit",
+            "contactUsFormTitle": "Contact us",
+            "textFields": [
+                {
+                    "textFieldLabel": "Full Name",
+                    "textFieldValue": "",
+                    "labelClassname": "spf-contact-form-fullname",
+                    "inputClassname": "spf-contact-form-fullname uikit-text-input--block"
+                },
+                {
+                    "textFieldLabel": "Email Address",
+                    "textFieldValue": "",
+                    "labelClassname": "spf-contact-form-email",
+                    "inputClassname": "spf-contact-form-email uikit-text-input--block"
+                },
+                {
+                    "textFieldLabel": "Subject",
+                    "textFieldValue": "",
+                    "labelClassname": "spf-contact-form-subject",
+                    "inputClassname": "spf-contact-form-subject uikit-text-input--block"
+                }
+            ],
+            "textarea": [
+                {
+                    "textFieldLabel": "Reason for submission",
+                    "textFieldValue": ""
+                }
+            ]
+        }
+    ],
+    "registerForm": [
+        {
+            "textFields": [
+                {
+                    "textFieldLabel": "Username*",
+                    "textFieldValue": "",
+                    "inputClassname": "uikit-text-input--block"
+                },
+                {
+                    "textFieldLabel": "Email address*",
+                    "textFieldValue": "",
+                    "inputClassname": "uikit-text-input--block"
+                },
+                {
+                    "textFieldLabel": "Password*",
+                    "textFieldValue": "",
+                    "inputClassname": "uikit-text-input--block"
+                },
+                {
+                    "textFieldLabel": "Confirm password*",
+                    "textFieldValue": "",
+                    "inputClassname": "uikit-text-input--block"
+                },
+                {
+                    "textFieldLabel": "Gender*",
+                    "textFieldValue": "",
+                    "inputClassname": "uikit-text-input--block"
+                },
+                {
+                    "textFieldLabel": "Age group*",
+                    "textFieldValue": "",
+                    "inputClassname": "uikit-text-input--block"
+                }
+            ]
+        }
+    ],
+    "contactBlock": [
+        {
+            "title": "Contact us",
+            "subTitle": "Subtitle section",
+            "phone": [
+                {
+                    "textLinkTitle": "Phone number",
+                    "textLinkText": "+61 X XXXX XXXX",
+                    "textLinkClassname": "spf-contact-block--phone"
+                }
+            ],
+            "email": [
+                {
+                    "textLinkTitle": "Email address",
+                    "textLinkText": "email@domain.com.au",
+                    "textLinkClassname": "spf-contact-block--email"
+                }
+            ],
+            "address": [
+                {
+                    "textLinkTitle": "Postal address",
+                    "textLinkText": "Street address<br>Street address line 2<br>GPO box xxxx<br>State, Post code<br>",
+                    "textLinkClassname": "spf-contact-block--address"
+                }
+            ],
+            "phone2": [
+                {
+                    "textLinkTitle": "Phone number",
+                    "textLinkText": "+61 X XXXX XXXX",
+                    "textLinkClassname": "spf-contact-block--phone"
+                }
+            ],
+            "email2": [
+                {
+                    "textLinkTitle": "Email address",
+                    "textLinkText": "email@domain.com.au",
+                    "textLinkClassname": "spf-contact-block--email"
+                }
+            ]
+        }
+    ],
     "title": "Pattern Lab",
-    "pageTitle": "Page Title",
-    "htmlClass": "pl",
-    "bodyClass": "uikit-body spf-body",
-    "btnText": "Button",
-    "progress": true,
-    "max": "100",
-    "progressValue": "85",
-    "alertText": "An alert is messaging that tells the user some information. Alerts can be error, warning, success, or info messages",
-    "quoteText": "A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
-    "quoteSource": "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
-    "imgSquare": {
-        "src": "../../images/fpo_square.png",
-        "alt": "Square Image"
-    },
-    "imgHero": {
-        "src": "../../images/fpo_hero.png",
-        "alt": "Hero Image"
-    },
-    "imgLandscape": {
-        "src": "../../images/fpo_16x9.png",
-        "alt": "Landscape Image"
-    },
-    "headline": {
-        "short": "Lorem ipsum dolor sit (37 characters)",
-        "medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit iopa. (76 characters)"
-    },
-    "sectionTitle": "Section Title",
-    "excerpt": {
-        "short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    "number": "12",
-    "primaryNav": [
-        {
-            "label": "About",
-            "url": "link.pages-about"
-        },
-        {
-            "label": "Blog",
-            "url": "link.pages-blog-index"
-        },
-        {
-            "label": "Contact",
-            "url": "link.pages-contact"
-        },
-        {
-            "label": "Login",
-            "url": "link.pages-login"
-        }
-    ],
-    "footerNav": [
-        {
-            "label": "About",
-            "url": "link.pages-about"
-        },
-        {
-            "label": "Blog",
-            "url": "link.pages-blog-index"
-        },
-        {
-            "label": "Contact",
-            "url": "link.pages-contact"
-        },
-        {
-            "label": "Login",
-            "url": "link.pages-login"
-        }
-    ],
-    "url": "#",
-    "htmlText": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, unde, dolore? Ex fugit, necessitatibus tempore neque ullam nostrum ducimus alias beatae voluptatibus iusto, perspiciatis tenetur consectetur reprehenderit, harum quae rerum!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit corrupti fuga, quas quisquam perspiciatis. Consequatur, atque ducimus dolores natus officia qui rerum consectetur repellat ullam accusantium laboriosam, reprehenderit nemo deleniti</p>",
-    "form": true,
-    "field": {
-        "id": "field-id",
-        "label": "label",
-        "type": "text",
-        "placeholder": "Placeholder",
-        "value": "",
-        "fieldNote": ""
-    },
-    "year": "2016",
-    "fields": [
-        {},
-        {}
-    ],
-    "textarea": {
-        "label": "label"
-    },
-    "hero": true,
-    "latestPosts": {
-        "mediaList": [
-            {},
-            {},
-            {}
-        ],
-        "textButton": false,
-        "pagination": true
-    },
-    "featuredPosts": {
-        "mediaList": [
-            {
-                "styleModifier": "small"
-            },
-            {
-                "styleModifier": "small"
-            },
-            {
-                "styleModifier": "small"
-            }
-        ],
-        "pagination": false
-    },
-    "featuredChallenges": {
-        "mediaList": [
-            {},
-            {},
-            {},
-            {}
-        ],
-        "textButton": false,
-        "pagination": true
-    },
-    "featuredPeople": {
-        "mediaList": [
-            {
-                "styleModifier": "small"
-            },
-            {
-                "styleModifier": "small"
-            },
-            {
-                "styleModifier": "small"
-            }
-        ],
-        "pagination": false
-    },
-    "featuredHikes": {
-        "mediaList": [
-            {
-                "styleModifier": "small"
-            },
-            {
-                "styleModifier": "small"
-            },
-            {
-                "styleModifier": "small"
-            }
-        ],
-        "pagination": false
-    },
-    "toutList": [
-        {},
-        {},
-        {}
-    ],
-    "mediaList": [
-        {},
-        {},
-        {}
-    ],
-    "blockFeature": true,
-    "tileList": [
-        {},
-        {},
-        {},
-        {}
-    ],
-    "paginationList": [
-        {
-            "url": "#",
-            "number": "1"
-        },
-        {
-            "url": "#",
-            "number": "2"
-        },
-        {
-            "url": "#",
-            "number": "3"
-        },
-        {
-            "url": "#",
-            "number": "4"
-        },
-        {
-            "url": "#",
-            "number": "5"
-        },
-        {
-            "url": "#",
-            "number": "6"
-        },
-        {
-            "url": "#",
-            "number": "7"
-        },
-        {
-            "url": "#",
-            "number": "8"
-        },
-        {
-            "url": "#",
-            "number": "9"
-        },
-        {
-            "url": "#",
-            "number": "10"
-        }
-    ],
-    "sectionBlock": true,
-    "textButton": true,
-    "overlayMessage": "Let's go on a hike and climb in elevation",
-    "overlayAction": "Find a Hike"
+    "bodyClass": "uikit-body spf-body"
 }

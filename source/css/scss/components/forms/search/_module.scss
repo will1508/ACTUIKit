@@ -5,14 +5,15 @@
   .group-element:first-child,
   .group-element:last-child {
     border: solid 2px $uikit-colour-Primary;
+    max-height: 42px;
   }
 
   .uikit-btn {
-    padding: .3em;
+    padding: 7px;
   }
 
   .uikit-btn i {
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
   }
 }

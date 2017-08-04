@@ -1,4 +1,4 @@
 ---
-title: button
+title: buttglossaryon
 ---
-Primary button colored as the theme's primary color
+A glossary of class names used in ACT Gov UI Kit

@@ -1,4 +1,4 @@
 ---
-title: button
+title: overview
 ---
-Primary button colored as the theme's primary color
+An overview of SPF UI kit 1.0

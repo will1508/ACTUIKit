@@ -1,0 +1,13 @@
+.spf-body {
+    .spf-key-tasks-icon-set {
+        background-color: $uikit-colour-Primary;
+        padding: uikit-space(2);
+        color: $uikit-colour-Background;
+        .spf-key-tasks-icon-set--task {
+            text-align: center;
+        }
+        .spf-key-tasks--title {
+            border-color: $uikit-colour-Link;
+        }
+    }
+}

@@ -1,19 +1,18 @@
-.search-box {
-  margin-top: .2em;
-
-  .group-element,
-  .group-element:first-child,
-  .group-element:last-child {
-    border: solid 2px $uikit-colour-Primary;
-    max-height: 42px;
-  }
-
-  .uikit-btn {
-    padding: 7px;
-  }
-
-  .uikit-btn i {
-    font-size: 25px;
-    font-style: normal;
-  }
+.spf-body {
+    .spf-search-box {
+        margin-top: .2em;
+        .spf-group-element,
+        .spf-group-element:first-child,
+        .spf-group-element:last-child {
+            border: solid 2px $uikit-colour-Primary;
+            max-height: 42px;
+        }
+        .uikit-btn {
+            padding: 7px;
+        }
+        .uikit-btn i {
+            font-size: 25px;
+            font-style: normal;
+        }
+    }
 }

@@ -554,6 +554,41 @@
             ]
         }
     ],
+    "keyTask": [
+        {
+            "fontawesomeFont": "fa-question-circle-o",
+            "fontawesomeSize": "fa-4x",
+            "textLinkTitle": "Title",
+            "textLinkText": "Title",
+            "keyTaskText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ],
+    "keyTasksIconSet": [
+        {
+            "fontawesomeFont": "fa-question-circle-o",
+            "fontawesomeSize": "fa-4x",
+            "keyTaskTitle": "Title",
+            "keyTaskText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "fontawesomeFont": "fa-question-circle-o",
+            "fontawesomeSize": "fa-4x",
+            "keyTaskTitle": "Title",
+            "keyTaskText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "fontawesomeFont": "fa-question-circle-o",
+            "fontawesomeSize": "fa-4x",
+            "keyTaskTitle": "Title",
+            "keyTaskText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "fontawesomeFont": "fa-question-circle-o",
+            "fontawesomeSize": "fa-4x",
+            "keyTaskTitle": "Title",
+            "keyTaskText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ],
     "title": "Pattern Lab",
     "bodyClass": "uikit-body spf-body"
 }

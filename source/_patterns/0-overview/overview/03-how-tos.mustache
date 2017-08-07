@@ -1,0 +1,91 @@
+<main class="uikit-grid">
+
+    <div class="spf-text-banner spf-text-banner--hero">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p>
+                    <h1>How-Tos</h1>
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-2">
+                {{> overview-menu}}
+            </div>
+            <div class="col-md-10 spf-page-content spf-page-content--right">
+                <h2>Download code</h2>
+                <p>
+                    There are two ways to download the source code:
+                    <ul>
+                        <li>
+                            Cloning using GIT: Clone from the
+                            <a href="{{overview-content.built-version-url}}" title="SPF UIKit repository" rel="external" target="_blank">repository</a>
+                        </li>
+                        <li>
+                            Download zip file repositoty: Clone from the
+                            <a href="{{overview-content.repository-downloads}}" title="SPF UIKit repository" rel="external" target="_blank">repository downloads</a>
+                        </li>
+                    </ul>
+                </p>
+                <h2>Install</h2>
+                <p>
+                    Installing required packages to run SPF UIkit can be done using NPM. Simply:
+                    <ul>
+                        <li>After downloaing/extracting the source code, open terminal and navigate to the root directory.</li>
+                        <li>run <code>npm install</code></li>
+                    </ul>
+
+                </p>
+                <h2>Start/Build</h2>
+                <p>
+                    Both GRUNT and NPM can be used to run and build SPF UIKit.
+                    <ul>
+                        <li>Navigate the root directory.</li>
+                        <li>GRUNT
+                            <ul>
+                                <li>To start UIKit and watch the changes run: <code>grunt patternlab:serve</code></li>
+                                <li>To build run: <code>grunt patternlab:build</code></li>
+                            </ul>
+                        </li>
+                        <li>NPM
+                            <ul>
+                                <li>To start UIKit and watch the changes run: <code>npm run patternlab:serve</code></li>
+                                <li>To build run: <code>npm run patternlab:build</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <h2>Themes</h2>
+                <p>
+                    In SPF UIKit, multiple themes can be defined and uses. Themes might be different in color schemes, or default padding and
+                    margins. This can be done by defining different values for SASS global variables that are uses in SPF
+                    UIKit.
+                </p>
+                <p>
+                    When running or building only one theme can be selected. Theme name can be passed as a parameter in command. As example "actgov" theme can be selected as following:
+                    <ul>
+                        <li>Navigate the root directory.</li>
+                        <li>GRUNT
+                            <ul>
+                                <li>To start UIKit and watch the changes run: <code>grunt patternlab:serve --theme=actgov</code></li>
+                                <li>To build run: <code>grunt patternlab:build --theme=actgov</code></li>
+                            </ul>
+                        </li>
+                        <li>NPM
+                            <ul>
+                                <li>To start UIKit and watch the changes run: <code>npm run patternlab:serve -- --theme=actgov</code></li>
+                                <li>To build run: <code>npm run patternlab:build -- --theme=actgov</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</main>

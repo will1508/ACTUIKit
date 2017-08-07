@@ -2,4 +2,4 @@
 title: Article card image
 ---  
 
-Image to be used in article card.
+Size of images used in article cards

@@ -1,4 +1,4 @@
 ---
 title: Header
 ---  
-Header bar
+Header bar with title. Used when sites do not have co branding

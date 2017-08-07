@@ -1,5 +1,4 @@
 ---
 title: Radio Button
 ---
-
-[Insert description here]
+Radio button with tick icon

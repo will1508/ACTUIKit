@@ -1,4 +1,4 @@
 ---
 title: Header
 ---  
-Header bar
+Header bar with co branding

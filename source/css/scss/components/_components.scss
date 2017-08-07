@@ -38,6 +38,8 @@
 @import 'download-link/module';
 @import 'block/module';
 @import 'contact-block/module';
+@import 'key-task/module';
+@import 'key-tasks-icon-set/module';
 // @import 'alert/module';
 // @import 'alert/extends';
 // @import 'date/module';
@@ -68,7 +70,7 @@
 // // Weight: 3
 // //
 // // Style guide: forms
-@import 'forms/input/module';
+@import 'forms/input-group/module';
 @import 'forms/search/module';
 @import 'forms/form/module';
 @import 'forms/contact-us-form/module';

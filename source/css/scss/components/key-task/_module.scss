@@ -1,0 +1,23 @@
+.spf-body {
+    .spf-key-task {
+        color: inherit;
+        max-width: 250px;
+        display: inline-block;
+        position: relative;
+        >[class*="spf-key-tasks--"] {
+            float: left;
+            width: 100%;
+            text-align: center
+        }
+        .spf-key-tasks--title {
+            &>a,
+            &>a:hover,
+            &>a:active,
+            &>a:focus {
+                color: inherit;
+                font-size: x-large;
+                border-color: $uikit-colour-Link;
+            }
+        }
+    }
+}

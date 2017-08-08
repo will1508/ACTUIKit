@@ -70,7 +70,8 @@
             display: inline-block;
             position: absolute;
             right: uikit-space(.4);
-            top: 40%;
+            top: 50%;
+            margin-top: -.5em;
         }
         &.close {
             >a::after {

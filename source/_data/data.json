@@ -147,6 +147,14 @@
         "text-banner-image": {
             "src": "../../images/text-banner-image.png",
             "alt": "Text banner image background"
+        },
+        "intro-diagram": {
+            "src": "../../images/overview-section/intro_diagram.png",
+            "alt": "Atomic design"
+        },
+        "intro-diagram-small": {
+            "src": "../../images/overview-section/intro_diagram_small.png",
+            "alt": "Atomic design"
         }
     },
     "logoList": [

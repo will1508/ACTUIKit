@@ -147,6 +147,14 @@
         "text-banner-image": {
             "src": "../../images/text-banner-image.png",
             "alt": "Text banner image background"
+        },
+        "intro-diagram": {
+            "src": "../../images/overview-section/intro_diagram.png",
+            "alt": "Atomic design"
+        },
+        "intro-diagram-small": {
+            "src": "../../images/overview-section/intro_diagram_small.png",
+            "alt": "Atomic design"
         }
     },
     "logoList": [
@@ -590,5 +598,10 @@
         }
     ],
     "title": "Pattern Lab",
-    "bodyClass": "uikit-body spf-body"
+    "bodyClass": "uikit-body spf-body",
+    "overview-content": {
+        "repository-url":"https://bitbucket.org/actgovproject/actgov-patternlab",
+        "repository-downloads": "https://bitbucket.org/actgovproject/actgov-patternlab/downloads/",
+        "built-version-url": "https://bitbucket.org/actgovproject/actgovproject.bitbucket.io"
+    }
 }

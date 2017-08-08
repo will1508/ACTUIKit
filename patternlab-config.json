@@ -32,7 +32,8 @@
     "templates",
     "pages"
   ],
-  "defaultPattern": "all",
+  "defaultPattern": "/?p=overview-overview",
+  "startPath": "/?p=overview-overview",
   "cleanPublic": true,
   "patternExtension": "mustache",
   "ignored-extensions": [

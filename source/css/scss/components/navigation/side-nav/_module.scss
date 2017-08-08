@@ -17,6 +17,7 @@
             border-top-color: $uikit-colour-Primary;
         }
         >a {
+            position: relative;
             display: block;
             padding: uikit-space(1);
             border: none;
@@ -47,6 +48,9 @@
             transition: max-height .3s;
             >li {
                 @extend .spf-side-nav--first;
+                border: none;
+                border-top: $uikit-borderize;
+                border-color: $uikit-colour-Primary;
                 &:first-child {
                     border: none;
                     border-top: $uikit-borderize;
@@ -61,6 +65,13 @@
                     }
                 }
             }
+        }
+        >a::after {
+            display: inline-block;
+            position: absolute;
+            right: uikit-space(.4);
+            top: 50%;
+            margin-top: -.5em;
         }
         &.close {
             >a::after {

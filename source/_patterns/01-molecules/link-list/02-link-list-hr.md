@@ -1,4 +1,4 @@
 ---
 title: Horizontal link list
 ---
-Hotizontal link list
+Link style in a horizontal arrangment

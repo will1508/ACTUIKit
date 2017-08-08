@@ -2,4 +2,4 @@
 title: body
 ---
 
-[Insert description here]
+Variety of body text styles

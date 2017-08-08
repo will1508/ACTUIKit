@@ -1,4 +1,4 @@
 ---
 title: Tabs menu
 ---
-Tabs menu
+In page tab menu element

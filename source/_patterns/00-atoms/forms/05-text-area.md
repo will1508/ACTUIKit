@@ -1,5 +1,4 @@
 ---
 title: Text Area
 ---
-
-[Insert description here]
+Multiline text field that is expandable

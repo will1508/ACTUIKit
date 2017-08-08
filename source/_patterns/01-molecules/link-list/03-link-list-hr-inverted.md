@@ -1,4 +1,5 @@
 ---
 title: Horizontal link list
 ---
-Hotizontal link list, inverted colors
+Alternative dark link style in a horizontal arrangment
+

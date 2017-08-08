@@ -61,8 +61,17 @@
                             </ul>
                         </li>
                     </ul>
-
                 </p>
+                <h3>js folder</h3>
+                <p>
+                    All the JS files are located in this folder. There are files that are required for Pattern Lab or build process to work. Important ones are as following:
+                    <ul>
+                        <li><strong>actgov.js:</strong> The JS file reuired for Pattern Lab pages to work. This is not SPF UIKit's js library and are not required in projets that use this UIKit. actgob.js is auto generated from each individual pattern in "_patterns" folder and any change to this will be wiped after each build.</li>
+                        <li><strong>spf.js:</strong> SPF UIKit's js library. This should be imported in projects and required for JS components to work.</li>
+                        <li><strong>uikit.js: </strong>and uikit.min.js are Govau UIKit's js library. Requred for their JS components for work</li>
+                    </ul>
+                </p>
+                <p>SPF and Govau's js libraries work indipendently. It is suggested that both of the files be imported to the projects.</p>
             </div>
             <div class="col-md-1"></div>
         </div>

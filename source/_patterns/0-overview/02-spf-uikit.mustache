@@ -1,0 +1,74 @@
+<main class="uikit-grid">
+
+    <div class="spf-text-banner spf-text-banner--hero">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p>
+                    <h1>SPF UIKit</h1>
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-lg-2">
+                {{> overview-menu}}
+            </div>
+            <div class="col-lg-10 spf-page-content spf-page-content--right">
+                <p>SPF UIkit is made based on Pattern Lab. The source code is being hosted on a public repository on Bitbucket
+                    and can be cloned/downloaded from there. Also, a built version of it is hosted on Bitbucket as a static
+                    website. They can be accessed using the following links:</p>
+                <p>
+                    <ul class="uikit-link-list uikit-link-list--inline">
+                        <li><a href="{{overview-content.repository-url}}" title="Pattern Lab source code" rel="external"
+                                target="_blank">Source code</a></li>
+                        <li><a href="{{overview-content.built-version-url}}" title="Browse Pattern Lab"
+                                rel="external" target="_blank">Built version</a></li>
+                    </ul>
+                </p>
+                <p>
+                    <h2>Pattern Lab</h2>
+                    <p><a href="https://github.com/pattern-lab/edition-node-grunt" title="Pattern Lab Node (GRUNT) version"
+                            rel="external" target="_blank">Pattern Lab Node (GRUNT) version</a> is used to make SPF UIKit. This
+                        version is based on Pattern Lab Mustache.
+                    </p>
+                </p>
+                <p>
+                    <h2>GRUNT</h2>
+                    <p><a href="http://gruntjs.com" title="GRUNT" rel="external" target="_blank">GRUNT</a> is a JS automation
+                        tool. Pattern Lab uses GRUNT to run/build the styleguide. Required tasks are defined in a js filed
+                        name Gruntfile.js. This file can be found in the root directolry of SPF's UIKit source code. Examples
+                        of commands are:
+                        <ul>
+                            <li>
+                                <code>grunt patternlab:serve</code>: To run Pattern Lab and watch changes
+                            </li>
+                        </ul>
+                    </p>
+                </p>
+                <p>
+                    <h2>NPM</h2>
+                    <p><a href="https://www.npmjs.com" title="NPM" rel="external" target="_blank">NPM</a> is used in Pattern
+                        Lab as package manager. Examples of commands are:
+                        <ul>
+                            <li>
+                                <code>NPM install</code>: To install all the packages that Pattern Lab requires simply navigate
+                                to source code's root directory and run
+                            </li>
+                            <li>
+                                <code>NPM run patternlab:serve</code>: To run Pattern Lab and watch changes
+                            </li>
+                        </ul>
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+</main>

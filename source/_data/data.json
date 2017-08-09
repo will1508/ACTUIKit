@@ -444,15 +444,51 @@
             "id": "tab3"
         }
     ],
-    "downloadLinks": [
-        {
-            "downloadLinkTitle": "Download PDF",
-            "downloadLinkSize": "xx.x MB",
-            "textLinkClassname": "spf-download-link spf-download-link--pdf",
-            "fontawesomeFont": "fa-arrow-circle-down",
-            "fontawesomeSize": "fa-1x"
-        }
-    ],
+    "downloadLinks": {
+        "noTitle": [
+            {
+                "downloadLinkSize": "xx.x MB",
+                "downloadLinkClassname": "spf-download-link",
+                "fontawesomeFont": "fa-arrow-circle-down",
+                "fontawesomeSize": "fa-1x"
+            }
+        ],
+        "pdf": [
+            {
+                "downloadLinkTitle": "Download PDF",
+                "downloadLinkSize": "xx.x MB",
+                "downloadLinkClassname": "spf-download-link spf-download-link--pdf",
+                "fontawesomeFont": "fa-arrow-circle-down",
+                "fontawesomeSize": "fa-1x"
+            }
+        ],
+        "word": [
+            {
+                "downloadLinkTitle": "Download Word",
+                "downloadLinkSize": "xx.x MB",
+                "downloadLinkClassname": "spf-download-link spf-download-link--word",
+                "fontawesomeFont": "fa-arrow-circle-down",
+                "fontawesomeSize": "fa-1x"
+            }
+        ],
+        "ppt": [
+            {
+                "downloadLinkTitle": "Download PowerPoint",
+                "downloadLinkSize": "xx.x MB",
+                "downloadLinkClassname": "spf-download-link spf-download-link--ppt",
+                "fontawesomeFont": "fa-arrow-circle-down",
+                "fontawesomeSize": "fa-1x"
+            }
+        ],
+        "txt": [
+            {
+                "downloadLinkTitle": "Download Text",
+                "downloadLinkSize": "xx.x MB",
+                "downloadLinkClassname": "spf-download-link spf-download-link--txt",
+                "fontawesomeFont": "fa-arrow-circle-down",
+                "fontawesomeSize": "fa-1x"
+            }
+        ]    },
     "contactUsForm": [
         {
             "buttonText": "Submit",
@@ -600,7 +636,7 @@
     "title": "Pattern Lab",
     "bodyClass": "uikit-body spf-body",
     "overview-content": {
-        "repository-url":"https://bitbucket.org/actgovproject/actgov-patternlab",
+        "repository-url": "https://bitbucket.org/actgovproject/actgov-patternlab",
         "repository-downloads": "https://bitbucket.org/actgovproject/actgov-patternlab/downloads/",
         "built-version-url": "https://bitbucket.org/actgovproject/actgovproject.bitbucket.io"
     }

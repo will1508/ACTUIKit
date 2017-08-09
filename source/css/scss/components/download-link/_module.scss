@@ -8,51 +8,35 @@
     }
     .spf-download-link--size {
         &::before {
-            content: "[ ";
-            margin-right: 4px;
-        }
-        &::after {
-            content: " ]";
+            content: "[ \f016";
             font-family: FontAwesome;
             font-style: normal;
             font-weight: normal;
             text-decoration: inherit;
+            margin-right: 4px;
+        }
+        &::after {
+            content: " ]";
         }
     }
     &.spf-download-link--pdf {
         .spf-download-link--size::before {
             content: "[ \f1c1 ";
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration: inherit;
         }
     }
     &.spf-download-link--word {
         .spf-download-link--size::before {
             content: "[ \f1c2 ";
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration: inherit;
         }
     }
     &.spf-download-link--ppt {
         .spf-download-link--size::before {
             content: "[ \f1c4 ";
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration: inherit;
         }
     }
     &.spf-download-link--txt {
         .spf-download-link--size::before {
             content: "[ \f0f6 ";
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration: inherit;
         }
     }
 }

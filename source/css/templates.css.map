@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "templates.css",
-	"sources": [
-		"templates.scss"
-	],
-	"names": [],
-	"mappings": "AAEA,AAAY,WAAD,CAAC,UAAU,CAAC;EACnB,MAAM,EAAE,cAAc,CAAC,cAAc,CAAC,cAAc,CAAC,cAAc,GACtE"
-}

@@ -24,14 +24,18 @@
     "buttonEnabled": true,
     "buttonDisabled": false,
     "buttonText": "Button",
-    "textFieldLabel": "Text Field label",
-    "textFieldValue": "",
-    "fieldName": "textField1",
-    "placeholder": "Place holder",
-    "labelClassname": "",
-    "inputClassname": "",
-    "extraAttributes": "",
     "textFields": {
+        "textField": [
+            {
+                "textFieldLabel": "Text Field label",
+                "textFieldValue": "",
+                "fieldName": "textField1",
+                "placeholder": "",
+                "labelClassname": "",
+                "inputClassname": "",
+                "extraAttributes": ""
+            }
+        ],
         "textFieldDisabled": [
             {
                 "textFieldLabel": "Text Field diabled",
@@ -488,7 +492,8 @@
                 "fontawesomeFont": "fa-arrow-circle-down",
                 "fontawesomeSize": "fa-1x"
             }
-        ]    },
+        ]
+    },
     "contactUsForm": [
         {
             "buttonText": "Submit",

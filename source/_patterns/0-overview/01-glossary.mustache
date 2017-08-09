@@ -20,6 +20,13 @@
                 {{> overview-menu}}
             </div>
             <div class="col-lg-10 spf-page-content spf-page-content--right">
+                <p><strong>Note: </strong>In HTML to make SPF UIKit wors, all SPF elements must be wrapped in an element with
+                    the follwoing classnames:</p>
+                <ul>
+                    <li>"uikit-body" for Govau UIKit components, and also because SPF UIKit is built based on Govau UIKit</li>
+                    <li>"spf-body"</li>
+                </ul>
+                <p>Following table is a glossary of all SPF UIKit classnames that are not covered in patterns.</p>
                 <table class="spf-table table-wrapped table-striped table-bordered">
                     <thead>
                         <tr>
@@ -29,21 +36,36 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
+                            <td>spf-body</td>
+                            <td>Main SPF UIKit classname. All SPF elements must be wrapped by an element with this classname</td>
 
                         </tr>
                         <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
+                            <td>spf-page-content</td>
+                            <td>Using for content element in page, works well in combination with sidebar class names. Example:
+                                content part in <a href="{{link.templates-template-03}}" title="Template 03">Template 03</a></td>
                         </tr>
                         <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
+                            <td>spf-page-content--right</td>
+                            <td>An extention of spf-page-content when the page has a sidebar on right and content is on the right
+                                side of the page. Example: <a href="{{link.templates-template-03}}" title="Template 03">Template 03</a>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
+                            <td>spf-page-content--left</td>
+                            <td>An extention of spf-page-content when the page has a sidebar on right and content is on the left
+                                side of the page. Example: <a href="{{link.templates-temlpate-04}}" title="Template 04">Template 04</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>spf-page-sidebar--left</td>
+                            <td>Used for a sidebar next to content element, when sidebar is on the left. Example: <a href="{{link.templates-template-03}}" title="Template 03">Template 03</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>spf-page-sidebar--right</td>
+                            <td>Used for a sidebar next to content element, when sidebar is on the right. Example: <a href="{{link.templates-temlpate-04}}" title="Template 04">Template 04</a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

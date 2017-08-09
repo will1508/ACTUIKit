@@ -20,12 +20,21 @@
                 {{> overview-menu}}
             </div>
             <div class="col-lg-10 spf-page-content spf-page-content--right">
+                <h2>Body classnames</h2>
                 <p><strong>Note: </strong>In HTML to make SPF UIKit wors, all SPF elements must be wrapped in an element with
                     the follwoing classnames:</p>
                 <ul>
                     <li>"uikit-body" for Govau UIKit components, and also because SPF UIKit is built based on Govau UIKit</li>
                     <li>"spf-body"</li>
                 </ul>
+                <h2>Grid system</h2>
+                <p>SPF's Grid system is taken from Govau UIKit which is similar to Bootstrap's 12 column grid system. To apply grid system"</p>
+                <ul>
+                    <li>wrap the section of the page that uses grid system with an element with classname "uikit-grid"</li>
+                    <li>Assign Bootstrap grid classnames to children elements</li>
+                    <li>Example: <a href="{{link.global-grid-12}}" title="Grid system">SPF's grid system</a></li>
+                </ul>
+                <h2>Styles glossary</h2>
                 <p>Following table is a glossary of all SPF UIKit classnames that are not covered in patterns.</p>
                 <table class="spf-table table-wrapped table-striped table-bordered">
                     <thead>

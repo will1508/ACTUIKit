@@ -14,7 +14,8 @@
       "css": "./source/css/",
       "themes": "./source/css/scss/themes/",
       "uikit": "./node_modules/@gov.au/",
-      "fontawesome": "./node_modules/font-awesome/"
+      "fontawesome": "./node_modules/font-awesome/",
+      "dist": "./dist/"
     },
     "public": {
       "root": "./public/",

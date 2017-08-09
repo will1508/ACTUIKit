@@ -659,6 +659,13 @@ body {
 		content: 'Link: #{ $uikit-colour-Link }'
 	}
 }
+.palette__color--Gradiant {
+	background-color: $spf-colour-second-Gradiant;
+
+	&:after {
+		content: 'Link: #{ $spf-colour-second-Gradiant }'
+	}
+}
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -718,6 +725,9 @@ body {
 .contrast-box--link {
 	background-color: $uikit-colour-Link;
 }
+.contrast-box--gradiant {
+	background-color: $spf-colour-second-Gradiant;
+}
 
 .contrast-white {
 	.contrast-box {
@@ -743,6 +753,9 @@ body {
 	}
 	.contrast-box--link:after {
 		@include check-contrast( uikit-color-contrast( #fff, $uikit-colour-Link ) );
+	}
+	.contrast-box--gradiant:after {
+		@include check-contrast( uikit-color-contrast( #fff, $spf-colour-second-Gradiant) );
 	}
 }
 
@@ -771,6 +784,9 @@ body {
 	.contrast-box--link:after {
 		@include check-contrast( uikit-color-contrast( $uikit-colour-Text, $uikit-colour-Link ) );
 	}
+	.contrast-box--gradiant:after {
+		@include check-contrast( uikit-color-contrast( $uikit-colour-Text, $spf-colour-second-Gradiant) );
+	}
 }
 
 .contrast-hero {
@@ -797,6 +813,9 @@ body {
 	}
 	.contrast-box--link:after {
 		@include check-contrast( uikit-color-contrast( $uikit-colour-Hero, $uikit-colour-Link ) );
+	}
+	.contrast-box--gradiant:after {
+		@include check-contrast( uikit-color-contrast( $uikit-colour-Hero, $spf-colour-second-Gradiant ) );
 	}
 }
 
@@ -825,6 +844,9 @@ body {
 	.contrast-box--link:after {
 		@include check-contrast( uikit-color-contrast( $uikit-colour-Primary, $uikit-colour-Link ) );
 	}
+	.contrast-box--gradiant:after {
+		@include check-contrast( uikit-color-contrast( $uikit-colour-Primary, $spf-colour-second-Gradiant ) );
+	}
 }
 
 .contrast-secondary {
@@ -851,6 +873,9 @@ body {
 	}
 	.contrast-box--link:after {
 		@include check-contrast( uikit-color-contrast( $uikit-colour-Secondary, $uikit-colour-Link ) );
+	}
+	.contrast-box--gradiant:after {
+		@include check-contrast( uikit-color-contrast( $uikit-colour-Secondary, $spf-colour-second-Gradiant ) );
 	}
 }
 
@@ -905,6 +930,33 @@ body {
 	}
 	.contrast-box--link:after {
 		@include check-contrast( uikit-color-contrast( $uikit-colour-Link, $uikit-colour-Link ) );
+	}
+}
+
+.contrast-gradiant {
+	.contrast-gradiant {
+		color: $spf-colour-second-Gradiant;
+	}
+	.contrast-box--white:after {
+		@include check-contrast( uikit-color-contrast( $spf-colour-second-Gradiant, #fff ) );
+	}
+	.contrast-box--background:after {
+		@include check-contrast( uikit-color-contrast( $spf-colour-second-Gradiant, $uikit-colour-Background ) );
+	}
+	.contrast-box--hero:after {
+		@include check-contrast( uikit-color-contrast( $spf-colour-second-Gradiant, $uikit-colour-Hero ) );
+	}
+	.contrast-box--primary:after {
+		@include check-contrast( uikit-color-contrast( $spf-colour-second-Gradiant, $uikit-colour-Primary ) );
+	}
+	.contrast-box--secondary:after {
+		@include check-contrast( uikit-color-contrast( $spf-colour-second-Gradiant, $uikit-colour-Secondary ) );
+	}
+	.contrast-box--border:after {
+		@include check-contrast( uikit-color-contrast( $spf-colour-second-Gradiant, $uikit-colour-Border ) );
+	}
+	.contrast-box--link:after {
+		@include check-contrast( uikit-color-contrast( $spf-colour-second-Gradiant, $uikit-colour-Link ) );
 	}
 }
 
@@ -2123,6 +2175,8 @@ body {
 		}
 	}
 }
+
+
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------

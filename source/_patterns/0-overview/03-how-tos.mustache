@@ -67,7 +67,8 @@
                     UIKit.
                 </p>
                 <p>
-                    When running or building only one theme can be selected. Theme name can be passed as a parameter in command. As example "actgov" theme can be selected as following:
+                    When running or building only one theme can be selected. Theme name can be passed as a parameter in command. As example "actgov"
+                    theme can be selected as following:
                     <ul>
                         <li>Navigate the root directory.</li>
                         <li>GRUNT
@@ -85,19 +86,44 @@
                     </ul>
                 </p>
                 <h3>Adding a theme</h3>
-                <p>Theme files are located in theme folder (<a href="{{link.overview-code-structure}}" title="Link to file structure">More information on file structure</a>) Follow these steps to make a new theme:
-                <ol>
-                    <li>Make a folder named as your new theme.</li>
-                    <li>Copy the following files from actgov folder to your new theme's folder:
-                        <ul>
-                            <li>_colors.scss</li>
-                            <li>_cariables.scss</li>
-                        </ul>
-                    </li>
-                    <li>Make required changes to the new theme files.</li>
-                    <li>To start/build with new theme use parameter "theme=themename" when runnung the command.</li>
-                </ol>
-            </p>
+                <p>Theme files are located in theme folder (<a href="{{link.overview-code-structure}}" title="Link to file structure">More information on file structure</a>)
+                    Follow these steps to make a new theme:
+                    <ol>
+                        <li>Make a folder named as your new theme.</li>
+                        <li>Copy the following files from actgov folder to your new theme's folder:
+                            <ul>
+                                <li>_colors.scss</li>
+                                <li>_cariables.scss</li>
+                            </ul>
+                        </li>
+                        <li>Make required changes to the new theme files.</li>
+                        <li>To start/build with new theme use parameter "theme=themename" when runnung the command.</li>
+                    </ol>
+                </p>
+                <h2>Use SPF UIKit in projects</h2>
+                <p>
+                    After build command runs, all needs to be done is to copy the files in dist folder and import them to the project. Dist folder contains the followings.
+                    <ul>
+                        <li>SPF style files
+                            <ul>
+                                <li><strong>style.css : </strong>SPF style file. Includes Govau UIKit styles so there is no need to import it separately.</li>
+                                <li><strong>style.min.css and style.css.map :</strong>Minified version of style.css and related source map file</li>
+                            </ul>
+                        </li>
+                        <li>SPF JS files
+                            <ul>
+                                <li><strong>spf.js : </strong>SPF JS file. required to be used if SPF JS components are being used in project</li>
+                                <li><strong>spf.min.js and spf.min.js.map :</strong>Minified version of spf.css and related source map file</li>
+                            </ul>
+                        </li>
+                        <li>Govau JS files
+                            <ul>
+                                <li><strong>uikit.js : </strong>Govau UIKit's JS file. required to be used if Govau JS components are being used in project</li>
+                                <li><strong>uikit.min.js and uikit.min.js.map :</strong>Minified version of uikit.css and related source map file</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
             </div>
             <div class="col-md-1"></div>
         </div>

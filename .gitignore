@@ -6,7 +6,24 @@ patternlab.json
 Thumbs.db
 .idea/
 public
+
+# ignoring patternlab generated file
 source/css/scss/vendors/_uikit.scss
+
+# ignoring all minified related files
 source/css/style.css
 source/css/style.css.map
-**/to-be-removed
+source/css/style.min.css
+source/css/templates.css
+source/css/templates.min.css
+source/css/templates.css.map
+source/css/uikit.css
+source/css/uikit.min.css
+source/css/uikit.css.map
+source/js/spf.min.js
+source/js/spf.min.js.map
+source/js/uikit.min.js
+source/js/uikit.min.js.map
+
+# ignoring dist folder, will be made when after build
+dist

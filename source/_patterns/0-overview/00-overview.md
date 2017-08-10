@@ -1,4 +1,4 @@
 ---
 title: overview
 ---
-An overview of SPF UI kit 1.0
+An introduction to SPF UI kit 1.0

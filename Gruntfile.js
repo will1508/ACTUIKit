@@ -321,7 +321,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['clean:initial', 'copy:theme', 'copy:testPagesStylesDev', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
 
-  grunt.registerTask('patternlab:build', ['clean:initial', 'copy:theme', 'copy:testPagesStylesBuild', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:dist']);
+  grunt.registerTask('patternlab:build', ['clean:initial', 'copy:theme', 'copy:testPagesStylesBuild', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'copy:dist']);
 
   grunt.registerTask('patternlab:watch', ['clean:initial', 'copy:theme', 'copy:testPagesStylesDev', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'watch:all']);
 

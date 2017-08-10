@@ -65,6 +65,7 @@
   "author": "Brian Muenzenmeyer",
   "scripts": {
     "postinstall": "node node_modules/patternlab-node/core/scripts/postinstall.js",
+    "patternlab": "grunt",
     "patternlab:build": "grunt patternlab:build",
     "patternlab:serve": "grunt patternlab:serve",
     "patternlab:watch": "grunt patternlab:watch",

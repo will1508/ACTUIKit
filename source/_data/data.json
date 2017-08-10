@@ -159,6 +159,10 @@
         "intro-diagram-small": {
             "src": "../../images/overview-section/intro_diagram_small.png",
             "alt": "Atomic design"
+        },
+        "sass_modular-approach": {
+            "src": "../../images/overview-section/sass_diagram_1024.png",
+            "alt": "SASS modular approach"
         }
     },
     "logoList": [

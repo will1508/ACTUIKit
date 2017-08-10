@@ -127,6 +127,25 @@ module.exports = function (grunt) {
       }
     ];
 
+    var testPagesStyles = {
+      build: [
+        {
+          expand: true,
+          cwd: path.resolve(paths().source.css + '/scss/test-pages/build/'),
+          src: '*',
+          dest: path.resolve(paths().source.css)
+        }
+      ]
+      , dev: [
+        {
+          expand: true,
+          cwd: path.resolve(paths().source.css + '/scss/test-pages/dev/'),
+          src: '*',
+          dest: path.resolve(paths().source.css)
+        }
+      ]
+    }
+
     var dist = [
       {
         expand: true,
@@ -145,7 +164,9 @@ module.exports = function (grunt) {
       main: { 'files': files },
       theme: { 'files': themeFiles },
       fontawesome: { 'files': fontawesome },
-      dist: { 'files': dist }
+      dist: { 'files': dist },
+      testPagesStylesBuild: { 'files': testPagesStyles.build },
+      testPagesStylesDev: { 'files': testPagesStyles.dev }
     })
   };
 
@@ -298,11 +319,11 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
+  grunt.registerTask('default', ['clean:initial', 'copy:theme', 'copy:testPagesStylesDev', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main']);
 
-  grunt.registerTask('patternlab:build', ['clean:initial', 'copy:theme', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:dist']);
+  grunt.registerTask('patternlab:build', ['clean:initial', 'copy:theme', 'copy:testPagesStylesBuild', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:dist']);
 
-  grunt.registerTask('patternlab:watch', ['clean:initial', 'copy:theme', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'watch:all']);
+  grunt.registerTask('patternlab:watch', ['clean:initial', 'copy:theme', 'copy:testPagesStylesDev', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'watch:all']);
 
-  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
+  grunt.registerTask('patternlab:serve', ['clean:initial', 'copy:theme', 'copy:testPagesStylesDev', 'copy:fontawesome', 'sass:dist', 'cssmin', 'concat:patterns', 'concat:uikit', 'babel', 'uglify:uikit', 'clean:uglifyFiles', 'patternlab', 'copy:main', 'browserSync', 'watch:all']);
 };

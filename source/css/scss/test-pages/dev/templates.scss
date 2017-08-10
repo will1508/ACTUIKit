@@ -1,0 +1,42 @@
+// Template 4
+
+.uikit-body .no-margin {
+  margin: uikit-space(0);
+}
+
+.spf-link-text-sidebar {
+    padding-left: uikit-space(2);
+    display: inline-block;
+    width: 100%;
+
+    h2 {
+        padding: 0;
+        margin-top: 0;
+        line-height: 1em;
+    }
+
+  .spf-link-text-block {
+    margin: uikit-space(0);
+    padding: uikit-space(0) uikit-space(0) uikit-space(1) uikit-space(0);
+
+    > * {
+      margin: uikit-space(0);
+      padding: uikit-space(0);
+    }
+  }
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Grid boxes
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+.grids {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(rebeccapurple, 0.2);
+	text-align: center;
+
+	> span {
+		display: block;
+		background-color: rgba(rebeccapurple, 0.7);
+	}
+}

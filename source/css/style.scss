@@ -99,46 +99,15 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 \*------------------------------------*/
 @import "scss/vendors/uikit";
 @import "../fonts/font-awesome/css/font-awesome.min.css";
+
+/*------------------------------------*\
+    SPF UIKit components
+\*------------------------------------*/
 @import "scss/components/components";
 
+/*------------------------------------*\
+    Pattern Lab required.
+    Govau UIKit text pages styles.
+\*------------------------------------*/
 @import "uikit.scss";
 @import "templates.scss";
-/*------------------------------------*\
-    $BASE
-\*------------------------------------*/
-// @import "scss/base/fonts";
-// @import "scss/base/normalize";
-
-/*------------------------------------*\
-    $GOOGLE FONTS
-\*------------------------------------*/
-// @import '../fonts/iconfont/material-icons.css';
-
-/*------------------------------------*\
-    $COMPONENTS
-\*------------------------------------*/
-// @import "scss/components/blocks";
-// @import "scss/components/buttons";
-// @import "scss/components/carousels";
-// @import "scss/components/footer";
-// @import "scss/components/footer-nav";
-// @import "scss/components/forms";
-// @import "scss/components/fields";
-// @import "scss/components/header";
-// @import "scss/components/logo";
-// @import "scss/components/icons";
-// @import "scss/components/lists";
-// @import "scss/components/messaging";
-// @import "scss/components/primary-nav";
-// @import "scss/components/nav";
-// @import "scss/components/page-header";
-// @import "scss/components/sections";
-// @import "scss/components/text";
-// @import "scss/components/box";
-// @import "scss/components/feedback";
-
-
-/*------------------------------------*\
-    $LAYOUT
-\*------------------------------------*/
-@import "scss/layout/layout";

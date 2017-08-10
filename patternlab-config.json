@@ -33,7 +33,7 @@
     "templates",
     "pages"
   ],
-  "defaultPattern": "/?p=overview-overview",
+  "defaultPattern": "overview-overview",
   "startPath": "/?p=overview-overview",
   "cleanPublic": true,
   "patternExtension": "mustache",

@@ -18,7 +18,6 @@ var SPF = SPF || {};
                 })
             }
         }
-
     }
 
     SPF.toggleClassnames = function (element) {

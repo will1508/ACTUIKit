@@ -24,11 +24,11 @@
                     <ul>
                         <li>
                             Cloning using GIT: Clone from the
-                            <a href="{{overview-content.built-version-url}}" title="SPF UIKit repository" rel="external" target="_blank">repository</a>
+                            <a href="{{overview-content.built-version-url}}" title="SPF UI Kit repository" rel="external" target="_blank">repository</a>
                         </li>
                         <li>
                             Download zip file repository: Clone from the
-                            <a href="{{overview-content.repository-downloads}}" title="SPF UIKit repository" rel="external" target="_blank">repository downloads</a>
+                            <a href="{{overview-content.repository-downloads}}" title="SPF UI Kit repository" rel="external" target="_blank">repository downloads</a>
                         </li>
                     </ul>
                 </p>
@@ -43,18 +43,18 @@
                 </p>
                 <h2>Start/Build</h2>
                 <p>
-                    Both GRUNT and NPM can be used to run and build SPF UIKit.
+                    Both GRUNT and NPM can be used to run and build SPF UI Kit.
                     <ul>
                         <li>Navigate the root directory.</li>
                         <li>GRUNT
                             <ul>
-                                <li>To start UIKit and watch the changes run: <code>grunt patternlab:serve</code></li>
+                                <li>To start UI Kit and watch the changes run: <code>grunt patternlab:serve</code></li>
                                 <li>To build run: <code>grunt patternlab:build</code></li>
                             </ul>
                         </li>
                         <li>NPM
                             <ul>
-                                <li>To start UIKit and watch the changes run: <code>npm run patternlab:serve</code></li>
+                                <li>To start UI Kit and watch the changes run: <code>npm run patternlab:serve</code></li>
                                 <li>To build run: <code>npm run patternlab:build</code></li>
                             </ul>
                         </li>
@@ -62,9 +62,9 @@
                 </p>
                 <h2>Themes</h2>
                 <p>
-                    In SPF UIKit, multiple themes can be defined and used. Themes might be different in color schemes, or default padding and
+                    In SPF UI Kit, multiple themes can be defined and used. Themes might be different in color schemes, or default padding and
                     margins. This can be done by defining different values for SASS global variables that are uses in SPF
-                    UIKit.
+                    UI Kit.
                 </p>
                 <p>
                     When running or building only one theme can be selected. Theme name can be passed as a parameter in command. As example "actgov"
@@ -73,13 +73,13 @@
                         <li>Navigate the root directory.</li>
                         <li>GRUNT
                             <ul>
-                                <li>To start UIKit and watch the changes run: <code>grunt patternlab:serve --theme=actgov</code></li>
+                                <li>To start UI Kit and watch the changes run: <code>grunt patternlab:serve --theme=actgov</code></li>
                                 <li>To build run: <code>grunt patternlab:build --theme=actgov</code></li>
                             </ul>
                         </li>
                         <li>NPM
                             <ul>
-                                <li>To start UIKit and watch the changes run: <code>npm run patternlab:serve -- --theme=actgov</code></li>
+                                <li>To start UI Kit and watch the changes run: <code>npm run patternlab:serve -- --theme=actgov</code></li>
                                 <li>To build run: <code>npm run patternlab:build -- --theme=actgov</code></li>
                             </ul>
                         </li>
@@ -100,13 +100,13 @@
                         <li>To start/build with new theme use parameter "theme=themename" when runnung the command.</li>
                     </ol>
                 </p>
-                <h2>Use SPF UIKit in projects</h2>
+                <h2>Use SPF UI Kit in projects</h2>
                 <p>
                     After build command runs, all needs to be done is to copy the files in dist folder and import them to the project. Dist folder contains the followings.
                     <ul>
                         <li>SPF style files
                             <ul>
-                                <li><strong>style.css : </strong>SPF style file. Includes Govau UIKit styles so there is no need to import it separately.</li>
+                                <li><strong>style.css : </strong>SPF style file. Includes Govau UI Kit styles so there is no need to import it separately.</li>
                                 <li><strong>style.min.css and style.css.map :</strong>Minified version of style.css and related source map file</li>
                             </ul>
                         </li>
@@ -118,7 +118,7 @@
                         </li>
                         <li>Govau JS files
                             <ul>
-                                <li><strong>uikit.js : </strong>Govau UIKit's JS file. required to be used if Govau JS components are being used in project</li>
+                                <li><strong>uikit.js : </strong>Govau UI Kit's JS file. required to be used if Govau JS components are being used in project</li>
                                 <li><strong>uikit.min.js and uikit.min.js.map :</strong>Minified version of uikit.css and related source map file</li>
                             </ul>
                         </li>

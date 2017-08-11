@@ -26,9 +26,11 @@ var SPF = SPF || {};
         if (element.classList.contains('close')) {
             element.classList.remove('close');
             element.classList.add('open');
+            element.setAttribute('aria-expanded', 'true');
         } else if (element.classList.contains('open')) {
             element.classList.remove('open');
             element.classList.add('close');
+            element.setAttribute('aria-expanded', 'false');
         }
     }
 
@@ -67,8 +69,10 @@ var SPF = SPF || {};
 
             if (thisTabElement.getAttribute('id') !== tabId) {
                 thisTabElement.classList.remove('active');
+                thisTabElement.setAttribute('aria-hidden', 'true');
             } else {
                 thisTabElement.classList.add('active');
+                thisTabElement.setAttribute('aria-hidden', 'false');
             }
         }
 
@@ -76,8 +80,10 @@ var SPF = SPF || {};
             var thisMenuItem = tabMenuItems[j];
             if (thisMenuItem.getAttribute('aria-controls') === tabId) {
                 thisMenuItem.classList.add('active');
+                thisMenuItem.setAttribute('aria-expanded', 'true');
             } else {
                 thisMenuItem.classList.remove('active');
+                thisMenuItem.setAttribute('aria-expanded', 'false');
             }
         };
 

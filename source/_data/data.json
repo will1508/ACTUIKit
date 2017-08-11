@@ -408,21 +408,21 @@
                     "textLinkTitle": "Tab 1",
                     "linkListLiClass": "spf-tabs-menu---item-wrapper",
                     "textLinkClassname": "spf-tabs-menu---item",
-                    "extraAttributes": "aria-controls='tab1'"
+                    "extraAttributes": "aria-controls='tab1' aria-expanded='false'"
                 },
                 {
                     "textLinkText": "Tab 2",
                     "textLinkTitle": "Tab 2",
                     "linkListLiClass": "spf-tabs-menu---item-wrapper",
                     "textLinkClassname": "spf-tabs-menu---item",
-                    "extraAttributes": "aria-controls='tab2'"
+                    "extraAttributes": "aria-controls='tab2' aria-expanded='false'"
                 },
                 {
                     "textLinkText": "Tab 3",
                     "textLinkTitle": "Tab 3",
                     "linkListLiClass": "spf-tabs-menu---item-wrapper",
                     "textLinkClassname": "spf-tabs-menu---item active",
-                    "extraAttributes": "aria-controls='tab3'"
+                    "extraAttributes": "aria-controls='tab3' aria-expanded='false'"
                 }
             ]
         }

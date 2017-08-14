@@ -1,15 +1,19 @@
 try {
     var accordionToggles = document.querySelectorAll('.accordion-toggle');
-    for (elem of accordionToggles) {
+    for (i = 0; i < accordionToggles.length; i++) {
+        var elem=accordionToggles[i];
         elem.addEventListener('click', (e) => {
             UIKIT.accordion.Toggle(e.target);
         });
     }
-} catch (e) { }
+} catch (e) {
+    console.log(e) 
+}
 
 try {
     var accordionToggles = document.querySelectorAll('.accordion-toggleSlow');
-    for (elem of accordionToggles) {
+    for (i = 0; i < accordionToggles.length; i++) {
+        var elem=accordionToggles[i];
         elem.addEventListener('click', (e) => {
             UIKIT.accordion.Toggle(e.target, 1000);
         });
@@ -18,7 +22,8 @@ try {
 
 try {
     var accordionTogglesCallback = document.querySelectorAll('.accordion-toggleCallback');
-    for (elem of accordionTogglesCallback) {
+    for (i = 0; i < accordionTogglesCallback.length; i++) {
+        var elem=accordionTogglesCallback[i];
         elem.addEventListener('click', (e) => {
             UIKIT.accordion.Toggle(e.target, undefined, {
                 onOpen: function () {

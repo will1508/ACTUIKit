@@ -1,4 +1,4 @@
-closeDropdown1 = () => {
+var closeDropdown1 = () => {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-1"),
         property: 'height',
@@ -10,7 +10,7 @@ closeDropdown1 = () => {
     });
 }
 
-openDropdown1 = () => {
+var openDropdown1 = () => {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-1"),
         property: "height",
@@ -22,7 +22,7 @@ openDropdown1 = () => {
     })
 }
 
-toggleDropdown1 = () => {
+var toggleDropdown1 = () => {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-1"),
         property: "height",
@@ -45,11 +45,11 @@ toggleDropdown1 = () => {
     })
 }
 
-stopDropdown1 = () => {
+var stopDropdown1 = () => {
     UIKIT.animate.Stop(document.getElementById("dropdown-1"))
 }
 
-closeDropdown2 = () => {
+var closeDropdown2 = () => {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-2"),
         property: "width",
@@ -60,7 +60,7 @@ closeDropdown2 = () => {
     })
 }
 
-openDropdown2 = () => {
+var openDropdown2 = () => {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-2"),
         property: "width",
@@ -71,7 +71,7 @@ openDropdown2 = () => {
     })
 }
 
-toggleDropdown2 = () => {
+var toggleDropdown2 = () => {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-2"),
         property: "width",
@@ -93,11 +93,11 @@ toggleDropdown2 = () => {
     })
 }
 
-stopDropdown2 = () => {
+var stopDropdown2 = () => {
     UIKIT.animate.Stop(document.getElementById("dropdown-2"))
 }
 
-removePadding = () => {
+var removePadding = () => {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-padding1"),
         property: "padding",
@@ -108,7 +108,7 @@ removePadding = () => {
     })
 }
 
-addPadding = () => {
+var addPadding = () => {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-padding1"),
         property: "padding",
@@ -119,7 +119,7 @@ addPadding = () => {
     })
 }
 
-togglePadding = () => {
+var togglePadding = () => {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-padding1"),
         property: "padding",
@@ -143,11 +143,11 @@ togglePadding = () => {
     })
 }
 
-stopPadding = () => {
+var stopPadding = () => {
     UIKIT.animate.Stop(document.getElementById("dropdown-padding1"))
 }
 
-addMargin = () => {
+var addMargin = () => {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-margin1"),
         property: "margin",
@@ -158,7 +158,7 @@ addMargin = () => {
     })
 }
 
-removeMargin = () => {
+var removeMargin = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("dropdown-margin1"),
@@ -170,7 +170,7 @@ removeMargin = () => {
     })
 }
 
-toggleMargin = () => {
+var toggleMargin = () => {
     UIKIT.animate.Toggle({
         element:
         document.getElementById("dropdown-margin1"),
@@ -195,11 +195,11 @@ toggleMargin = () => {
     })
 }
 
-stopMargin = () => {
+var stopMargin = () => {
     UIKIT.animate.Stop(document.getElementById("dropdown-margin1"))
 }
 
-animateBack = () => {
+var animateBack = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("dropdown-position1"),
@@ -212,7 +212,7 @@ animateBack = () => {
     })
 }
 
-animateForward = () => {
+var animateForward = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("dropdown-position1"),
@@ -225,7 +225,7 @@ animateForward = () => {
     })
 }
 
-animateTogglePos = () => {
+var animateTogglePos = () => {
     UIKIT.animate.Toggle({
         element:
         document.getElementById("dropdown-position1"),
@@ -251,11 +251,11 @@ animateTogglePos = () => {
     })
 }
 
-animateStopPos = () => {
+var animateStopPos = () => {
     UIKIT.animate.Stop(document.getElementById("dropdown-position1"))
 }
 
-openDropdown3 = () => {
+var openDropdown3 = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("dropdown-3"),
@@ -268,7 +268,7 @@ openDropdown3 = () => {
     })
 }
 
-closeDropdown3 = () => {
+var closeDropdown3 = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("dropdown-3"),
@@ -281,7 +281,7 @@ closeDropdown3 = () => {
     })
 }
 
-toggleDropdown3 = () => {
+var toggleDropdown3 = () => {
     UIKIT.animate.Toggle({
         element:
         document.getElementById("dropdown-3"),
@@ -306,11 +306,11 @@ toggleDropdown3 = () => {
     })
 }
 
-stopDropdown3 = () => {
+var stopDropdown3 = () => {
     UIKIT.animate.Stop(document.getElementById("dropdown-3"))
 }
 
-openDropdown4 = () => {
+var openDropdown4 = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("dropdown-4"),
@@ -323,7 +323,7 @@ openDropdown4 = () => {
     })
 }
 
-closeDropdown4 = () => {
+var closeDropdown4 = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("dropdown-4"),
@@ -336,7 +336,7 @@ closeDropdown4 = () => {
     })
 }
 
-toggleDropdown4 = () => {
+var toggleDropdown4 = () => {
     UIKIT.animate.Toggle({
         element:
         document.getElementById("dropdown-4"),
@@ -361,11 +361,11 @@ toggleDropdown4 = () => {
     })
 }
 
-stopDropdown4 = () => {
+var stopDropdown4 = () => {
     UIKIT.animate.Stop(document.getElementById("dropdown-4"))
 }
 
-openDropdown5 = () => {
+var openDropdown5 = () => {
     UIKIT.animate.Run({
         element:
         document.querySelectorAll(".js-vertical-dropdown-group"),
@@ -378,7 +378,7 @@ openDropdown5 = () => {
     })
 }
 
-closeDropdown5 = () => {
+var closeDropdown5 = () => {
     UIKIT.animate.Run({
         element:
         document.querySelectorAll(".js-vertical-dropdown-group"),
@@ -391,7 +391,7 @@ closeDropdown5 = () => {
     })
 }
 
-toggleDropdown5 = () => {
+var toggleDropdown5 = () => {
     UIKIT.animate.Toggle({
         element:
         document.querySelectorAll(".js-vertical-dropdown-group"),
@@ -414,7 +414,7 @@ toggleDropdown5 = () => {
     })
 }
 
-openDropdown6 = () => {
+var openDropdown6 = () => {
     UIKIT.animate.Run({
         element:
         document.querySelectorAll(".js-horizontal-dropdown-group"),
@@ -427,7 +427,7 @@ openDropdown6 = () => {
     })
 }
 
-closeDropdown6 = () => {
+var closeDropdown6 = () => {
     UIKIT.animate.Run({
         element:
         document.querySelectorAll(".js-horizontal-dropdown-group"),
@@ -440,7 +440,7 @@ closeDropdown6 = () => {
     })
 }
 
-toggleDropdown6 = () => {
+var toggleDropdown6 = () => {
     UIKIT.animate.Toggle({
         element:
         document.querySelectorAll(".js-horizontal-dropdown-group"),
@@ -463,7 +463,7 @@ toggleDropdown6 = () => {
     })
 }
 
-openEdgeCase = () => {
+var openEdgeCase = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("edgecase1"),
@@ -476,7 +476,7 @@ openEdgeCase = () => {
     })
 }
 
-closeEdgeCase = () => {
+var closeEdgeCase = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("edgecase1"),
@@ -489,7 +489,7 @@ closeEdgeCase = () => {
     })
 }
 
-toggleEdgeCase = () => {
+var toggleEdgeCase = () => {
     UIKIT.animate.Toggle({
         element:
         document.getElementById("edgecase1"),
@@ -515,7 +515,7 @@ toggleEdgeCase = () => {
     })
 }
 
-openEdgeCase2 = () => {
+var openEdgeCase2 = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("edgecase2"),
@@ -528,7 +528,7 @@ openEdgeCase2 = () => {
     })
 }
 
-closeEdgeCase2 = () => {
+var closeEdgeCase2 = () => {
     UIKIT.animate.Run({
         element:
         document.getElementById("edgecase2"),
@@ -541,7 +541,7 @@ closeEdgeCase2 = () => {
     })
 }
 
-toggleEdgeCase2 = () => {
+var toggleEdgeCase2 = () => {
     UIKIT.animate.Toggle({
         element:
         document.getElementById("edgecase2"),

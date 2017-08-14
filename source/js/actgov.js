@@ -13,108 +13,50 @@ if (document.querySelector('.spf-top-nav-mobile')) {
 
 try {
     var accordionToggles = document.querySelectorAll('.accordion-toggle');
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-        for (var _iterator = accordionToggles[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            elem = _step.value;
-
-            elem.addEventListener('click', function (e) {
-                UIKIT.accordion.Toggle(e.target);
-            });
-        }
-    } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-            }
-        } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
-            }
-        }
+    for (i = 0; i < accordionToggles.length; i++) {
+        var elem = accordionToggles[i];
+        elem.addEventListener('click', function (e) {
+            UIKIT.accordion.Toggle(e.target);
+        });
     }
-} catch (e) {}
+} catch (e) {
+    console.log(e);
+}
 
 try {
     var accordionToggles = document.querySelectorAll('.accordion-toggleSlow');
-    var _iteratorNormalCompletion2 = true;
-    var _didIteratorError2 = false;
-    var _iteratorError2 = undefined;
-
-    try {
-        for (var _iterator2 = accordionToggles[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-            elem = _step2.value;
-
-            elem.addEventListener('click', function (e) {
-                UIKIT.accordion.Toggle(e.target, 1000);
-            });
-        }
-    } catch (err) {
-        _didIteratorError2 = true;
-        _iteratorError2 = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                _iterator2.return();
-            }
-        } finally {
-            if (_didIteratorError2) {
-                throw _iteratorError2;
-            }
-        }
+    for (i = 0; i < accordionToggles.length; i++) {
+        var elem = accordionToggles[i];
+        elem.addEventListener('click', function (e) {
+            UIKIT.accordion.Toggle(e.target, 1000);
+        });
     }
 } catch (e) {}
 
 try {
     var accordionTogglesCallback = document.querySelectorAll('.accordion-toggleCallback');
-    var _iteratorNormalCompletion3 = true;
-    var _didIteratorError3 = false;
-    var _iteratorError3 = undefined;
-
-    try {
-        for (var _iterator3 = accordionTogglesCallback[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-            elem = _step3.value;
-
-            elem.addEventListener('click', function (e) {
-                UIKIT.accordion.Toggle(e.target, undefined, {
-                    onOpen: function onOpen() {
-                        console.log('This function will run when an accordion opens');
-                    },
-                    afterOpen: function afterOpen() {
-                        console.log('This function will run after an accordion has opened');
-                    },
-                    onClose: function onClose() {
-                        console.log('This function will run when an accordion closes');
-                    },
-                    afterClose: function afterClose() {
-                        console.log('This function will run after an accordion has closed');
-                    }
-                });
+    for (i = 0; i < accordionTogglesCallback.length; i++) {
+        var elem = accordionTogglesCallback[i];
+        elem.addEventListener('click', function (e) {
+            UIKIT.accordion.Toggle(e.target, undefined, {
+                onOpen: function onOpen() {
+                    console.log('This function will run when an accordion opens');
+                },
+                afterOpen: function afterOpen() {
+                    console.log('This function will run after an accordion has opened');
+                },
+                onClose: function onClose() {
+                    console.log('This function will run when an accordion closes');
+                },
+                afterClose: function afterClose() {
+                    console.log('This function will run after an accordion has closed');
+                }
             });
-        }
-    } catch (err) {
-        _didIteratorError3 = true;
-        _iteratorError3 = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                _iterator3.return();
-            }
-        } finally {
-            if (_didIteratorError3) {
-                throw _iteratorError3;
-            }
-        }
+        });
     }
 } catch (e) {}
 
-closeDropdown1 = function closeDropdown1() {
+var closeDropdown1 = function closeDropdown1() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-1"),
         property: 'height',
@@ -126,7 +68,7 @@ closeDropdown1 = function closeDropdown1() {
     });
 };
 
-openDropdown1 = function openDropdown1() {
+var openDropdown1 = function openDropdown1() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-1"),
         property: "height",
@@ -138,7 +80,7 @@ openDropdown1 = function openDropdown1() {
     });
 };
 
-toggleDropdown1 = function toggleDropdown1() {
+var toggleDropdown1 = function toggleDropdown1() {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-1"),
         property: "height",
@@ -161,11 +103,11 @@ toggleDropdown1 = function toggleDropdown1() {
     });
 };
 
-stopDropdown1 = function stopDropdown1() {
+var stopDropdown1 = function stopDropdown1() {
     UIKIT.animate.Stop(document.getElementById("dropdown-1"));
 };
 
-closeDropdown2 = function closeDropdown2() {
+var closeDropdown2 = function closeDropdown2() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-2"),
         property: "width",
@@ -176,7 +118,7 @@ closeDropdown2 = function closeDropdown2() {
     });
 };
 
-openDropdown2 = function openDropdown2() {
+var openDropdown2 = function openDropdown2() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-2"),
         property: "width",
@@ -187,7 +129,7 @@ openDropdown2 = function openDropdown2() {
     });
 };
 
-toggleDropdown2 = function toggleDropdown2() {
+var toggleDropdown2 = function toggleDropdown2() {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-2"),
         property: "width",
@@ -209,11 +151,11 @@ toggleDropdown2 = function toggleDropdown2() {
     });
 };
 
-stopDropdown2 = function stopDropdown2() {
+var stopDropdown2 = function stopDropdown2() {
     UIKIT.animate.Stop(document.getElementById("dropdown-2"));
 };
 
-removePadding = function removePadding() {
+var removePadding = function removePadding() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-padding1"),
         property: "padding",
@@ -224,7 +166,7 @@ removePadding = function removePadding() {
     });
 };
 
-addPadding = function addPadding() {
+var addPadding = function addPadding() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-padding1"),
         property: "padding",
@@ -235,7 +177,7 @@ addPadding = function addPadding() {
     });
 };
 
-togglePadding = function togglePadding() {
+var togglePadding = function togglePadding() {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-padding1"),
         property: "padding",
@@ -259,11 +201,11 @@ togglePadding = function togglePadding() {
     });
 };
 
-stopPadding = function stopPadding() {
+var stopPadding = function stopPadding() {
     UIKIT.animate.Stop(document.getElementById("dropdown-padding1"));
 };
 
-addMargin = function addMargin() {
+var addMargin = function addMargin() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-margin1"),
         property: "margin",
@@ -274,7 +216,7 @@ addMargin = function addMargin() {
     });
 };
 
-removeMargin = function removeMargin() {
+var removeMargin = function removeMargin() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-margin1"),
         property: "margin",
@@ -285,7 +227,7 @@ removeMargin = function removeMargin() {
     });
 };
 
-toggleMargin = function toggleMargin() {
+var toggleMargin = function toggleMargin() {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-margin1"),
         property: "margin",
@@ -309,11 +251,11 @@ toggleMargin = function toggleMargin() {
     });
 };
 
-stopMargin = function stopMargin() {
+var stopMargin = function stopMargin() {
     UIKIT.animate.Stop(document.getElementById("dropdown-margin1"));
 };
 
-animateBack = function animateBack() {
+var animateBack = function animateBack() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-position1"),
         property: "left",
@@ -325,7 +267,7 @@ animateBack = function animateBack() {
     });
 };
 
-animateForward = function animateForward() {
+var animateForward = function animateForward() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-position1"),
         property: "left",
@@ -337,7 +279,7 @@ animateForward = function animateForward() {
     });
 };
 
-animateTogglePos = function animateTogglePos() {
+var animateTogglePos = function animateTogglePos() {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-position1"),
         property: "left",
@@ -362,11 +304,11 @@ animateTogglePos = function animateTogglePos() {
     });
 };
 
-animateStopPos = function animateStopPos() {
+var animateStopPos = function animateStopPos() {
     UIKIT.animate.Stop(document.getElementById("dropdown-position1"));
 };
 
-openDropdown3 = function openDropdown3() {
+var openDropdown3 = function openDropdown3() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-3"),
         property: "height",
@@ -378,7 +320,7 @@ openDropdown3 = function openDropdown3() {
     });
 };
 
-closeDropdown3 = function closeDropdown3() {
+var closeDropdown3 = function closeDropdown3() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-3"),
         property: "height",
@@ -390,7 +332,7 @@ closeDropdown3 = function closeDropdown3() {
     });
 };
 
-toggleDropdown3 = function toggleDropdown3() {
+var toggleDropdown3 = function toggleDropdown3() {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-3"),
         property: "height",
@@ -414,11 +356,11 @@ toggleDropdown3 = function toggleDropdown3() {
     });
 };
 
-stopDropdown3 = function stopDropdown3() {
+var stopDropdown3 = function stopDropdown3() {
     UIKIT.animate.Stop(document.getElementById("dropdown-3"));
 };
 
-openDropdown4 = function openDropdown4() {
+var openDropdown4 = function openDropdown4() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-4"),
         property: "width",
@@ -430,7 +372,7 @@ openDropdown4 = function openDropdown4() {
     });
 };
 
-closeDropdown4 = function closeDropdown4() {
+var closeDropdown4 = function closeDropdown4() {
     UIKIT.animate.Run({
         element: document.getElementById("dropdown-4"),
         property: "width",
@@ -442,7 +384,7 @@ closeDropdown4 = function closeDropdown4() {
     });
 };
 
-toggleDropdown4 = function toggleDropdown4() {
+var toggleDropdown4 = function toggleDropdown4() {
     UIKIT.animate.Toggle({
         element: document.getElementById("dropdown-4"),
         property: "width",
@@ -466,11 +408,11 @@ toggleDropdown4 = function toggleDropdown4() {
     });
 };
 
-stopDropdown4 = function stopDropdown4() {
+var stopDropdown4 = function stopDropdown4() {
     UIKIT.animate.Stop(document.getElementById("dropdown-4"));
 };
 
-openDropdown5 = function openDropdown5() {
+var openDropdown5 = function openDropdown5() {
     UIKIT.animate.Run({
         element: document.querySelectorAll(".js-vertical-dropdown-group"),
         property: "height",
@@ -482,7 +424,7 @@ openDropdown5 = function openDropdown5() {
     });
 };
 
-closeDropdown5 = function closeDropdown5() {
+var closeDropdown5 = function closeDropdown5() {
     UIKIT.animate.Run({
         element: document.querySelectorAll(".js-vertical-dropdown-group"),
         property: "height",
@@ -494,7 +436,7 @@ closeDropdown5 = function closeDropdown5() {
     });
 };
 
-toggleDropdown5 = function toggleDropdown5() {
+var toggleDropdown5 = function toggleDropdown5() {
     UIKIT.animate.Toggle({
         element: document.querySelectorAll(".js-vertical-dropdown-group"),
         property: "height",
@@ -516,7 +458,7 @@ toggleDropdown5 = function toggleDropdown5() {
     });
 };
 
-openDropdown6 = function openDropdown6() {
+var openDropdown6 = function openDropdown6() {
     UIKIT.animate.Run({
         element: document.querySelectorAll(".js-horizontal-dropdown-group"),
         property: "width",
@@ -528,7 +470,7 @@ openDropdown6 = function openDropdown6() {
     });
 };
 
-closeDropdown6 = function closeDropdown6() {
+var closeDropdown6 = function closeDropdown6() {
     UIKIT.animate.Run({
         element: document.querySelectorAll(".js-horizontal-dropdown-group"),
         property: "width",
@@ -540,7 +482,7 @@ closeDropdown6 = function closeDropdown6() {
     });
 };
 
-toggleDropdown6 = function toggleDropdown6() {
+var toggleDropdown6 = function toggleDropdown6() {
     UIKIT.animate.Toggle({
         element: document.querySelectorAll(".js-horizontal-dropdown-group"),
         property: "width",
@@ -562,7 +504,7 @@ toggleDropdown6 = function toggleDropdown6() {
     });
 };
 
-openEdgeCase = function openEdgeCase() {
+var openEdgeCase = function openEdgeCase() {
     UIKIT.animate.Run({
         element: document.getElementById("edgecase1"),
         property: "height",
@@ -574,7 +516,7 @@ openEdgeCase = function openEdgeCase() {
     });
 };
 
-closeEdgeCase = function closeEdgeCase() {
+var closeEdgeCase = function closeEdgeCase() {
     UIKIT.animate.Run({
         element: document.getElementById("edgecase1"),
         property: "height",
@@ -586,7 +528,7 @@ closeEdgeCase = function closeEdgeCase() {
     });
 };
 
-toggleEdgeCase = function toggleEdgeCase() {
+var toggleEdgeCase = function toggleEdgeCase() {
     UIKIT.animate.Toggle({
         element: document.getElementById("edgecase1"),
         property: "height",
@@ -611,7 +553,7 @@ toggleEdgeCase = function toggleEdgeCase() {
     });
 };
 
-openEdgeCase2 = function openEdgeCase2() {
+var openEdgeCase2 = function openEdgeCase2() {
     UIKIT.animate.Run({
         element: document.getElementById("edgecase2"),
         property: "height",
@@ -623,7 +565,7 @@ openEdgeCase2 = function openEdgeCase2() {
     });
 };
 
-closeEdgeCase2 = function closeEdgeCase2() {
+var closeEdgeCase2 = function closeEdgeCase2() {
     UIKIT.animate.Run({
         element: document.getElementById("edgecase2"),
         property: "height",
@@ -635,7 +577,7 @@ closeEdgeCase2 = function closeEdgeCase2() {
     });
 };
 
-toggleEdgeCase2 = function toggleEdgeCase2() {
+var toggleEdgeCase2 = function toggleEdgeCase2() {
     UIKIT.animate.Toggle({
         element: document.getElementById("edgecase2"),
         property: "height",

@@ -289,10 +289,13 @@ module.exports = function (grunt) {
         presets: ['es2015']
       },
       uikit: {
-        files: {
+        files: [{
           src: path.resolve(paths().source.js + '/uikit.js'),
           dest: path.resolve(paths().source.js + '/uikit.js')
-        }
+        }, {
+          src: path.resolve(paths().source.js + '/actgov.js'),
+          dest: path.resolve(paths().source.js + '/actgov.js')
+        }]
       }
     },
     uglify: {

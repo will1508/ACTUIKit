@@ -151,12 +151,17 @@ module.exports = function (grunt) {
         expand: true,
         cwd: path.resolve(paths().source.css),
         src: ['style.css', 'style.min.css', 'style.css.map'],
-        dest: path.resolve(paths().source.dist)
+        dest: path.resolve(paths().source.dist + 'css')
       }, {
         expand: true,
         cwd: path.resolve(paths().source.js),
         src: ['spf.js', 'spf.min.js', 'spf.min.js.map', 'uikit.js', 'uikit.min.js', 'uikit.min.js.map'],
-        dest: path.resolve(paths().source.dist)
+        dest: path.resolve(paths().source.dist + 'js')
+      }, {
+        expand: true,
+        cwd: path.resolve(paths().source.fonts + '/font-awesome/fonts/'),
+        src: ['*'],
+        dest: path.resolve(paths().source.dist + 'fonts')
       }
     ];
 

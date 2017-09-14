@@ -122,6 +122,18 @@
         {
             "textLinkTitle": "Link 2",
             "textLinkText": "Link 2"
+        },
+        {
+            "textLinkTitle": "Link 3",
+            "textLinkText": "Link 3"
+        },
+        {
+            "textLinkTitle": "Link 4",
+            "textLinkText": "Link 4"
+        },
+        {
+            "textLinkTitle": "Link 5",
+            "textLinkText": "Link 5"
         }
     ],
     "accordionContent": "Accordion body",
@@ -131,6 +143,10 @@
         "headerLogo": {
             "src": "../../images/logo_140x72.png",
             "alt": "Header logo"
+        },
+        "subNavImage": {
+            "src": "../../images/subNav_280x144.png",
+            "alt": "Sub Nav Image"
         },
         "banner": {
             "src": "../../images/banner_Xx420.png",
@@ -224,7 +240,6 @@
         {
             "tileTitle": "Title"
         }
-
     ],
     "tableHeadings": [
         {

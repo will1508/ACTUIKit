@@ -1,0 +1,24 @@
+//--------------------------------------------------------------
+// Site nav and sub nav
+// The main navigation element on the site, along with a subnav for the subsections
+//
+//--------------------------------------------------------------
+// @import 'print';
+
+.spf-body .spf-sub-nav {
+  background-color: #f0f3f5;
+}
+
+.spf-body .spf-sub-nav hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: solid 1px $uikit-colour-Primary;
+}
+.spf-body .spf-sub-nav-row {
+  padding: uikit-space(1);
+}
+
+.spf-body .spf-sub-nav .spf-sub-nav-fav-links{
+  border-right: solid 1px $uikit-colour-Border;
+}
+

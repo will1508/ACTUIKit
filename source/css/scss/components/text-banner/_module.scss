@@ -26,6 +26,8 @@
         &.spf-text-banner--gradiant {
             background: linear-gradient(to right, $uikit-colour-Primary, $spf-colour-second-Gradiant);
             color: $uikit-colour-Background;
+            width: auto;
+            display: block;
         }
         &.spf-text-banner--image {
             background-image: url('../../../../images/text-banner-image.png');
